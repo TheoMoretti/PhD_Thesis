@@ -1,0 +1,39 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is '/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.blg'
+[53] biber-darwin:340> INFO - === Sat May  3, 2025, 19:58:26
+[64] Biber.pm:415> INFO - Reading '/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.bcf'
+[148] Biber.pm:952> INFO - Found 57 citekeys in bib section 0
+[160] Biber.pm:4340> INFO - Processing section 0
+[168] Biber.pm:4531> INFO - Looking for bibtex format file '/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/./bib.bib' for section 0
+[173] bibtex.pm:1689> INFO - LaTeX decoding ...
+[236] bibtex.pm:1494> INFO - Found BibTeX data source '/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/./bib.bib'
+[271] Utils.pm:395> WARN - legacy month field 'feb' in entry 'TTPET-110ps' is not an integer - this will probably not sort properly.
+[283] Utils.pm:395> WARN - legacy month field 'mar' in entry 'Monolith_20ps' is not an integer - this will probably not sort properly.
+[327] Utils.pm:395> WARN - legacy month field 'Oct' in entry 'inelastic_XS_ATLAS' is not an integer - this will probably not sort properly.
+[363] Utils.pm:395> WARN - legacy month field 'Jan' in entry 'Drell_Yann' is not an integer - this will probably not sort properly.
+[367] Utils.pm:395> WARN - legacy month field 'Sep' in entry 'Primakoff_process' is not an integer - this will probably not sort properly.
+[376] Utils.pm:395> WARN - legacy month field 'may' in entry 'FASER_Detector' is not an integer - this will probably not sort properly.
+[494] Utils.pm:395> WARN - legacy month field 'Nov' in entry 'neutrino_pop' is not an integer - this will probably not sort properly.
+[504] Utils.pm:395> WARN - legacy month field 'Jun' in entry 'QCD_axion_PecceiQuinn' is not an integer - this will probably not sort properly.
+[509] Utils.pm:395> WARN - legacy month field 'Mar' in entry 'ALPs_general' is not an integer - this will probably not sort properly.
+[512] Utils.pm:395> WARN - legacy month field 'Oct' in entry 'GIM_mechanism' is not an integer - this will probably not sort properly.
+[670] Utils.pm:395> WARN - legacy month field 'Aug' in entry 'CKM' is not an integer - this will probably not sort properly.
+[836] Utils.pm:395> WARN - legacy month field 'Aug' in entry 'Weinberg' is not an integer - this will probably not sort properly.
+[871] Utils.pm:395> WARN - legacy month field 'sep' in entry 'SiGEHBT_band_Structure' is not an integer - this will probably not sort properly.
+[880] Utils.pm:395> WARN - legacy month field 'jan' in entry 'timepix4' is not an integer - this will probably not sort properly.
+[902] Utils.pm:395> WARN - legacy month field 'nov' in entry 'ATTRACT_proto1_50ps' is not an integer - this will probably not sort properly.
+[912] Utils.pm:395> WARN - legacy month field 'mar' in entry 'MONOLITH_proto2_20ps' is not an integer - this will probably not sort properly.
+[934] Utils.pm:395> WARN - legacy month field 'jan' in entry 'MONOLITH_RadHard_lab' is not an integer - this will probably not sort properly.
+[956] Utils.pm:395> WARN - legacy month field 'jul' in entry 'MONOLITH_RadHard_testbeam' is not an integer - this will probably not sort properly.
+[978] Utils.pm:395> WARN - legacy month field 'nov' in entry 'ATTRACT_proto1' is not an integer - this will probably not sort properly.
+[989] Utils.pm:395> WARN - legacy month field 'feb' in entry 'ATTRACT_proto1_testbeam' is not an integer - this will probably not sort properly.
+[1004] Utils.pm:395> WARN - legacy month field 'dec' in entry 'timeres_SiliconDetectors' is not an integer - this will probably not sort properly.
+[1172] Utils.pm:395> WARN - BibTeX subsystem: /var/folders/_c/7kpbkhcn64s3ljbxfnhhkb_00000gn/T/biber_tmp_c9KQ/283e1cb250985c2debc501124f55eeff_40097.utf8, line 7, warning: 1 characters of junk seen at toplevel
+[1172] Utils.pm:395> WARN - BibTeX subsystem: /var/folders/_c/7kpbkhcn64s3ljbxfnhhkb_00000gn/T/biber_tmp_c9KQ/283e1cb250985c2debc501124f55eeff_40097.utf8, line 15, warning: 1 characters of junk seen at toplevel
+[1236] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1236] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1236] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1236] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[1290] bbl.pm:654> INFO - Writing '/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.bbl' with encoding 'UTF-8'
+[2080] bbl.pm:757> INFO - Output to /Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.bbl
+[2080] Biber.pm:128> INFO - WARNINGS: 23

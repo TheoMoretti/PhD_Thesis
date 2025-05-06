@@ -1,0 +1,117 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The FASER Detector: Looking Forward for New Physics}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Development of Monolithic Silicon Pixel Detectors for HEP.}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Motivation for a new detector technology}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Monolithic sensors for ultra-fast timing}{5}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Monolithic sensors for TeV-scale photon detection }{5}{subsection.1.2.3}%
+\contentsline {chapter}{\numberline {2}FASER: Looking forward for Long-Lived-Particles}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Physics program: A probe to the Hidden sector and more}{9}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Production of LLPs}{9}{subsection.2.1.1}%
+\contentsline {subsubsection}{Rare meson decays}{9}{section*.6}%
+\contentsline {subsubsection}{Dark Bremsstrahlung}{9}{section*.8}%
+\contentsline {subsubsection}{Hard scatterings}{10}{section*.9}%
+\contentsline {subsubsection}{"Beam Dump" production}{10}{section*.10}%
+\contentsline {subsubsection}{LLPs reaching FASER}{10}{section*.11}%
+\contentsline {subsection}{\numberline {2.1.2}Vector Portal: Dark photon}{11}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Pseudoscalar Portal: Axion Like Particles}{12}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Neutrinos from collider}{14}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}The ForwArd Search ExpeRiment}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Background from the Standard Model to LLP signals}{16}{subsection.2.2.1}%
+\contentsline {subsubsection}{Muon-induced backgrounds}{16}{section*.17}%
+\contentsline {subsubsection}{Neutrino-induced backgrounds}{17}{section*.19}%
+\contentsline {subsubsection}{Beam-induced backgrounds}{18}{section*.21}%
+\contentsline {subsubsection}{Validation with in situ measurements}{18}{section*.22}%
+\contentsline {subsection}{\numberline {2.2.2}Detector requirements}{18}{subsection.2.2.2}%
+\contentsline {subsubsection}{Position within TI12 tunnel}{18}{section*.23}%
+\contentsline {subsubsection}{Energy and Momentum measurements}{18}{section*.24}%
+\contentsline {subsubsection}{Large target mass detector for neutrinos}{19}{section*.25}%
+\contentsline {subsubsection}{Trigger and Data acquisition}{19}{section*.26}%
+\contentsline {subsection}{\numberline {2.2.3}Original detector layout}{19}{subsection.2.2.3}%
+\contentsline {subsubsection}{The magnet system}{20}{section*.28}%
+\contentsline {subsubsection}{The tracking system}{20}{section*.29}%
+\contentsline {subsubsection}{The Scintillator and calorimeter systems}{20}{section*.30}%
+\contentsline {subsubsection}{The FASER$\nu $ emulsion detector}{21}{section*.31}%
+\contentsline {subsubsection}{Trigger and Data Acquisition}{21}{section*.32}%
+\contentsline {subsection}{\numberline {2.2.4}Charged and neutral decay signatures from LLPs}{22}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Axion Like Particles in FASER}{24}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Production from rare meson decays}{24}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Decay into di-photons}{27}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Sensitivity reach with new PreShower detector}{29}{subsection.2.3.3}%
+\contentsline {chapter}{\numberline {3}Monolithic silicon pixel detectors}{33}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Fundamentals of semiconductors}{34}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Intrinsic and doped semiconductors}{34}{subsection.3.1.1}%
+\contentsline {subsubsection}{Intrinsic semiconductors}{35}{section*.47}%
+\contentsline {subsubsection}{Doping: extrinsic semiconductor}{38}{section*.50}%
+\contentsline {subsection}{\numberline {3.1.2}Junction and external voltage}{39}{subsection.3.1.2}%
+\contentsline {subsubsection}{Effect of external voltage}{40}{section*.52}%
+\contentsline {subsubsection}{Junction capacitance and full depletion}{42}{section*.54}%
+\contentsline {section}{\numberline {3.2}Signal formation and charge carrier transport}{43}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Drift of electrons and holes}{43}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Weighting field and Shockley-Ramo theorem}{45}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Space charge and signal formation}{47}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Signal readout and processing}{50}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detector readout}{50}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Amplification stage }{51}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Equivalent Noise Charge}{53}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}SiGe BiCMOS HBTs}{54}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Pixelated detector technologies }{56}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Hybrid pixel detectors }{56}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Monolithic pixel detectors }{58}{subsection.3.4.2}%
+\contentsline {subsubsection}{Small Collection Electrode}{59}{section*.65}%
+\contentsline {subsubsection}{Large Collection Electrode}{60}{section*.67}%
+\contentsline {section}{\numberline {3.5}Effects of radiation \leavevmode {\color {blue} 4 pages}}{61}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Processes involved \leavevmode {\color {red} 2 pages}}{61}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Consequences of damages and solutions \leavevmode {\color {red} 2 pages}}{61}{subsection.3.5.2}%
+\contentsline {chapter}{\numberline {4}Monolithic pixel detectors for HEP applications (30 pages)}{62}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Prototypes and design characteristics}{63}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}ATTRACT prototype}{63}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}MONOLITH prototype }{64}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Time resolution of silicon pixel detectors \leavevmode {\color {blue} 4 pages}}{66}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Charge collection noise contribution}{67}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Time jitter contribution \leavevmode {\color {red} 2 pages}}{68}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Time walk contribution \leavevmode {\color {red} 2 pages}}{68}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Other contributions \leavevmode {\color {red} 2 pages}}{68}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3} Testbeam at SPS testbeam facility \leavevmode {\color {blue} 17 pages}}{69}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Layout of test beam experiment \leavevmode {\color {red} 2 pages}}{69}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}The FE-I4 telescope: track reconstruction \leavevmode {\color {red} 2 pages}}{69}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Analysis methods and dataset construction \leavevmode {\color {red} 3 pages}}{69}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Detection efficiency \leavevmode {\color {red} 4 pages}}{69}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Time resolution \leavevmode {\color {red} 6 pages}}{69}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}Effects of radiation \leavevmode {\color {blue} 5 pages}}{70}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Radiation tolerance MONOLITH prototypes \leavevmode {\color {red} 5 pages}}{70}{subsection.4.4.1}%
+\contentsline {chapter}{\numberline {5}The new FASER Pre-Shower detector (14 pages)}{71}{chapter.5}%
+\contentsline {section}{\numberline {5.1}ASIC description \leavevmode {\color {blue} 6 pages}}{71}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Requirements \leavevmode {\color {red} 2 pages}}{71}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Architecture \leavevmode {\color {red} 4 pages}}{71}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Detector design \leavevmode {\color {blue} 6 pages}}{71}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Layout of the preshower \leavevmode {\color {red} 2 pages}}{71}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Modules \leavevmode {\color {red} 4 pages}}{71}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Planes \leavevmode {\color {red} 4 pages}}{71}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Readout and detector control \leavevmode {\color {blue} 4 pages}}{71}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Readout \leavevmode {\color {red} 2 pages}}{71}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Logic Board and APP \leavevmode {\color {red} 2 pages}}{71}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}PIM and Interlock \leavevmode {\color {red} 2 pages}}{71}{subsection.5.3.3}%
+\contentsline {chapter}{\numberline {6}Development of the new FASER Pre-shower detector (37 pages)}{72}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Pre-Production ASIC characterization \leavevmode {\color {blue} 6 pages}}{72}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}ASIC description \leavevmode {\color {red} 3 pages}}{72}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Time-Over-Threshold mismatch \leavevmode {\color {red} 3 pages}}{72}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Production ASIC description \leavevmode {\color {blue} 3 pages}}{72}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Detector qualification and commissioning \leavevmode {\color {blue} 19 pages}}{72}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Module assembly \leavevmode {\color {red} 3 pages}}{72}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Characterization set-up \leavevmode {\color {red} 3 pages}}{72}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Front-End working points \leavevmode {\color {red} 2 pages}}{72}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Threshold and Noise scans \leavevmode {\color {red} 4 pages}}{72}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.5}Load scan and Charge calibration \leavevmode {\color {red} 4 pages}}{72}{subsection.6.3.5}%
+\contentsline {subsection}{\numberline {6.3.6}Plane assembly \leavevmode {\color {red} 3 pages}}{72}{subsection.6.3.6}%
+\contentsline {section}{\numberline {6.4}Trigger and Data Acquisition: TDAQ \leavevmode {\color {blue} 9 pages}}{72}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Slow-Control and ASIC configuration \leavevmode {\color {red} 3 pages}}{72}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Readout \leavevmode {\color {red} 2 pages}}{72}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Data conversion \leavevmode {\color {red} 3 pages}}{72}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.4.4}Data corruption and solutions \leavevmode {\color {red} 3 pages}}{72}{subsection.6.4.4}%
+\contentsline {section}{\numberline {6.5}Testbeam campaign for detector commissioning}{72}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Layout, powering and readout}{72}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}}{72}{subsection.6.5.2}%
+\contentsline {chapter}{\numberline {7}Outlook and conclusion (4 pages)}{73}{chapter.7}%
+\contentsline {chapter}{Bibliography}{78}{chapter*.73}%

@@ -1,0 +1,174 @@
+\documentclass[a4paper, 11pt, twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage[hidelinks]{hyperref}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=3.0cm]{geometry}
+\setlength{\headheight}{13.6pt}
+\hbadness=10000
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage[justification=centering]{caption}
+\usepackage[T1]{fontenc}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\newcommand{\chref}[1]{\ref{#1}}
+\newcommand{\secref}[1]{\ref{#1}}
+\newcommand{\subsecref}[1]{\ref{#1}}
+\newcommand{\note}[1]{\textcolor{violet}{#1}}
+\usepackage{enumerate}
+\usepackage{lmodern}
+\usepackage{float}
+\usepackage{amsmath, amssymb, esint}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{dsfont}
+\usepackage{tensor}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{dsfont}
+\usepackage{siunitx}
+\usepackage{tikz-feynman}
+\usepackage{physics}
+\usepackage[sorting=none]{biblatex}
+\addbibresource{./bib.bib}
+\usepackage{changepage}
+\usepackage[acronyms]{glossaries}
+\tikzfeynmanset{compat=1.1.0}
+\sisetup{output-exponent-marker=\textsc{e}, bracket-negative-numbers, open-bracket={\text{-}}, close-bracket={}}
+\pagestyle{fancy}
+\fancyhead[LE,RO]{\leftmark}
+\fancyhead[RO,LE]{}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0.1pt}
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+\makeatletter							% Title
+\def\printtitle{%						
+    {\centering \@title\par}}
+\makeatother									
+
+\makeatletter							% Author
+\def\printauthor{%				
+    {\centering \large \@author}}				
+\makeatother							
+
+
+\begin{document}
+
+\begin{titlepage}
+	\centering % Centre everything on the title page	
+	\scshape % Use small caps for all text on the title page
+	\vspace*{\baselineskip} % White space at the top of the page
+	
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal rule
+	\rule{\textwidth}{0.4pt} % Thin horizontal rule
+	
+	\vspace{0.75\baselineskip} % Whitespace above the title
+	
+	{\LARGE The FASER Preshower upgrade:\\} 
+	\vspace{0.25\baselineskip}
+	{\Large A high spatial resolution W-Si preshower detector enabling sensitivity to Long-Lived Particle decays into photons\\}
+	% {\Large  through the development and assembly of a Monolithic Silicon Pixel Detector.} % Title
+	
+	\vspace{0.75\baselineskip} % Whitespace below the title
+	
+	\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal rule
+	\rule{\textwidth}{1.6pt} % Thick horizontal rule
+	
+	\vspace{2\baselineskip} % Whitespace after the title block
+	
+	%------------------------------------------------
+	%	Subtitle
+	%------------------------------------------------
+	
+	\textit{2021 - 2025}
+	
+	\vspace*{0.5\baselineskip} % Whitespace under the subtitle
+	
+	%------------------------------------------------
+	%	Editor(s)
+	%------------------------------------------------
+	
+	\begin{center}  \includegraphics[width=7cm]{UniGe_Logo}  \end{center}
+	
+	\vspace*{0.5\baselineskip}
+	
+	Written by
+	
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+	
+	{\scshape\large Théo Moretti} % Editor list
+
+	\vspace{2\baselineskip} % Whitespace below the editor list
+	
+	\textit{\large Université de Genève, Suisse \\
+			Section de Physique - Département de Physique Nucléaire et Corpusculaire \\}
+			\texttt{theo.moretti@unige.ch} \\ % Editor affiliation
+	
+	\vspace{2\baselineskip} % Whitespace between editor names and publisher logo
+
+Supervised by Professor Giuseppe Iacobucci
+	
+	
+	\vspace{0.3\baselineskip} % Whitespace under the publisher logo
+	
+	
+
+\end{titlepage}
+
+				
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+
+\chapter*{Acknowledgements}
+
+
+% TODO Choose between impersonal or personal "we" pronouns and correct it throughout the full thesis 
+
+\vspace{15mm}
+
+
+\hspace{120mm}
+
+\input{chapters/chapter1.tex}
+\clearpage
+
+\input{chapters/chapter5.tex}
+\clearpage
+
+\input{chapters/chapter2.tex}
+\clearpage
+
+\input{chapters/chapter3.tex}
+\clearpage
+
+\input{chapters/chapter6.tex}
+\clearpage
+
+\input{chapters/chapter4.tex}
+\clearpage
+
+\input{chapters/chapter7.tex}
+\clearpage
+
+\input{chapters/chapter8.tex}
+\clearpage
+
+\printbibliography
+
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\end{document}
+
+

@@ -1,0 +1,816 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{cern_SM}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=350ae988c85cf1a13c8cc0d38f28d0ee}{%
+           family={CERN},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{fullhash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{bibnamehash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{authorbibnamehash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{authornamehash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{authorfullhash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.home.cern/science/physics/standard-model}}
+      \field{title}{The Standard Model}
+    \endentry
+    \entry{HL_LHC_report}{book}{}
+      \name{author}{1}{}{%
+        {{hash=350ae988c85cf1a13c8cc0d38f28d0ee}{%
+           family={{CERN}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{}}%
+      }
+      \strng{namehash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{fullhash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{bibnamehash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{authorbibnamehash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{authornamehash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \strng{authorfullhash}{350ae988c85cf1a13c8cc0d38f28d0ee}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The European Physical Society Conference on High Energy Physics (EPS-HEP 2019)}}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.23731/CYRM-2020-0010
+      \endverb
+    \endentry
+    \entry{PreShower_TP}{report}{}
+      \name{author}{1}{}{%
+        {{hash=33e02febd5dce687445220c22abbfdf6}{%
+           family={Boyd},
+           familyi={B\bibinitperiod},
+           given={Jamie},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{33e02febd5dce687445220c22abbfdf6}
+      \strng{fullhash}{33e02febd5dce687445220c22abbfdf6}
+      \strng{bibnamehash}{33e02febd5dce687445220c22abbfdf6}
+      \strng{authorbibnamehash}{33e02febd5dce687445220c22abbfdf6}
+      \strng{authornamehash}{33e02febd5dce687445220c22abbfdf6}
+      \strng{authorfullhash}{33e02febd5dce687445220c22abbfdf6}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The FASER W-Si High Precision Preshower Technical Proposal}}
+      \field{type}{techreport}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2803084
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2803084
+      \endverb
+    \endentry
+    \entry{PhaseII_Atlas}{report}{}
+      \name{author}{1}{}{%
+        {{hash=ebfe6052e5f504e4a3579c49c44afe41}{%
+           family={ATLAS},
+           familyi={A\bibinitperiod},
+           given={Collaboration},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{fullhash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{bibnamehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{authorbibnamehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{authornamehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{authorfullhash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Letter of Intent for the Phase-II Upgrade of the ATLAS Experiment}}
+      \field{type}{techreport}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/1502664
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/1502664
+      \endverb
+    \endentry
+    \entry{PhaseII_CMS}{report}{}
+      \name{author}{1}{}{%
+        {{hash=edd0c19f34364975cab5f620d5fd2116}{%
+           family={Committee},
+           familyi={C\bibinitperiod},
+           given={CERN\bibnamedelima LHC},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+           prefix={experiments},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{edd0c19f34364975cab5f620d5fd2116}
+      \strng{fullhash}{edd0c19f34364975cab5f620d5fd2116}
+      \strng{bibnamehash}{edd0c19f34364975cab5f620d5fd2116}
+      \strng{authorbibnamehash}{edd0c19f34364975cab5f620d5fd2116}
+      \strng{authornamehash}{edd0c19f34364975cab5f620d5fd2116}
+      \strng{authorfullhash}{edd0c19f34364975cab5f620d5fd2116}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ex}
+      \field{title}{Technical proposal for a MIP timing detector in the CMS experiment Phase 2 upgrade}
+      \field{type}{techreport}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2296612
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2296612
+      \endverb
+    \endentry
+    \entry{MRPCs_AliceTOF}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d0442d3a705dd16cac5d956546ead37e}{%
+           family={Antonioli},
+           familyi={A\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0442d3a705dd16cac5d956546ead37e}
+      \strng{fullhash}{d0442d3a705dd16cac5d956546ead37e}
+      \strng{bibnamehash}{d0442d3a705dd16cac5d956546ead37e}
+      \strng{authorbibnamehash}{d0442d3a705dd16cac5d956546ead37e}
+      \strng{authornamehash}{d0442d3a705dd16cac5d956546ead37e}
+      \strng{authorfullhash}{d0442d3a705dd16cac5d956546ead37e}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0920-5632}
+      \field{journaltitle}{Nuclear Physics B - Proceedings Supplements}
+      \field{note}{Innovative Particle and Radiation Detectors}
+      \field{title}{The ALICE time of flight system}
+      \field{volume}{125}
+      \field{year}{2003}
+      \field{pages}{193\bibrangedash 197}
+      \range{pages}{5}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0920-5632(03)90990-X
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S092056320390990X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S092056320390990X
+      \endverb
+    \endentry
+    \entry{TTPET-110ps}{article}{}
+      \name{author}{16}{}{%
+        {{hash=cc6d3aab28cfdad6f6aa0bb12cc39436}{%
+           family={Paolozzi},
+           familyi={P\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e94dfa0154153d85fcfab77876783fdf}{%
+           family={Bandi},
+           familyi={B\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a5855a3536e502ad05a80c208e2e6d2f}{%
+           family={Cardarelli},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7b7b42feff5c078957eebc09209f5c2a}{%
+           family={Débieux},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8b19b37b967fe930a70491b5d807ec2d}{%
+           family={Favre},
+           familyi={F\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fd6826a88bbdaa804bca079c2fc54c39}{%
+           family={Ferrère},
+           familyi={F\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3577dc5b16d39b99eb999ab15ae33a1e}{%
+           family={Forshaw},
+           familyi={F\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bcb6f44d7c492b365ac7a426fa1a5d25}{%
+           family={Hayakawa},
+           familyi={H\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=36fc38c0439e421c95247b10dd1d8b33}{%
+           family={Iacobucci},
+           familyi={I\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=66b6dac6e8306145fc7324b0a709d7f9}{%
+           family={Kaynak},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=130a97651bb20837040125c90718f5ed}{%
+           family={Miucci},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d88685814cb9011262750b401d97ec65}{%
+           family={Nessi},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c78ec7d6f9fc1b02750519d143724253}{%
+           family={Ripiccini},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=321a518b4f0b598c308ca93578cd1a80}{%
+           family={Rücker},
+           familyi={R\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=fadc38ebaec819382ad82fbf094bf900}{%
+           family={Valerio},
+           familyi={V\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f7fdc47bff7d9c4dada8be93cd0247a7}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f56a7868b29e2df7c583a4c15a959023}
+      \strng{fullhash}{bbac108e88ca950db63bffb8dd824cb8}
+      \strng{bibnamehash}{f56a7868b29e2df7c583a4c15a959023}
+      \strng{authorbibnamehash}{f56a7868b29e2df7c583a4c15a959023}
+      \strng{authornamehash}{f56a7868b29e2df7c583a4c15a959023}
+      \strng{authorfullhash}{bbac108e88ca950db63bffb8dd824cb8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Instrumentation}
+      \field{month}{2}
+      \field{number}{02}
+      \field{title}{Characterization of the demonstrator of the fast silicon monolithic ASIC for the TT-PET project}
+      \field{volume}{14}
+      \field{year}{2019}
+      \field{pages}{P02009}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/14/02/P02009
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1748-0221/14/02/P02009
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1748-0221/14/02/P02009
+      \endverb
+    \endentry
+    \entry{Monolith_20ps}{article}{}
+      \name{author}{28}{}{%
+        {{hash=81f4e683f533b09c63b0044adacd3412}{%
+           family={Zambito},
+           familyi={Z\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8f05018b83b28fe9ee7cbcae01dbc859}{%
+           family={Milanesio},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=81e3f9b68065a46f35fa979ec2586473}{%
+           family={Moretti},
+           familyi={M\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=cc6d3aab28cfdad6f6aa0bb12cc39436}{%
+           family={Paolozzi},
+           familyi={P\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=54eae50e964b37c1660c1041375b26e3}{%
+           family={Munker},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f36898d641721cb459364df190a2d37c}{%
+           family={Cardella},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=cee65936490d087dae8cf0ab974d65ed}{%
+           family={Kugathasan},
+           familyi={K\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=cdf8e3973b3c8d070eb4f1ab72332c05}{%
+           family={Martinelli},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2fee64c0b9a48259e4a94e79acb11174}{%
+           family={Picardi},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4bccfab5f242d91eed6b183d5c3e5818}{%
+           family={Elviretti},
+           familyi={E\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=321a518b4f0b598c308ca93578cd1a80}{%
+           family={Rücker},
+           familyi={R\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c1474a3c67f13f3b4205370a7cb7a770}{%
+           family={Trusch},
+           familyi={T\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=26f5aac8804b19236227e497fb3753b3}{%
+           family={Cadoux},
+           familyi={C\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a5855a3536e502ad05a80c208e2e6d2f}{%
+           family={Cardarelli},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7b7b42feff5c078957eebc09209f5c2a}{%
+           family={Débieux},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8b19b37b967fe930a70491b5d807ec2d}{%
+           family={Favre},
+           familyi={F\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c1cd5d4a4f33a60bc9dde79be826fc29}{%
+           family={Fenoglio},
+           familyi={F\bibinitperiod},
+           given={C.A.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3143e3c466c40d0ace7f749cfa47e1d2}{%
+           family={Ferrere},
+           familyi={F\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=59e08bf5cd77b3dc2084da9c049711c7}{%
+           family={Gonzalez-Sevilla},
+           familyi={G\bibinithyphendelim S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2750cbfab11241cda2003bd5bb709199}{%
+           family={Iodice},
+           familyi={I\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f0376741d7ad3d5c02cb2c99e6fc42cc}{%
+           family={Kotitsa},
+           familyi={K\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f37ff17e68b74a1234a7c5836a99c491}{%
+           family={Magliocca},
+           familyi={M\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d88685814cb9011262750b401d97ec65}{%
+           family={Nessi},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0c4d7de85e1fb0b74543c65f7da52161}{%
+           family={Pizarro-Medina},
+           familyi={P\bibinithyphendelim M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=072121b8a35bf568f780f406f2c5ef93}{%
+           family={Sabater\bibnamedelima Iglesias},
+           familyi={S\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=479dc284e57fd5ab3dfe0dd4a83a01d3}{%
+           family={Saidi},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=87c10e47a829ab0467c340e495dd5cc0}{%
+           family={Vicente\bibnamedelimb Barreto\bibnamedelima Pinto},
+           familyi={V\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=36fc38c0439e421c95247b10dd1d8b33}{%
+           family={Iacobucci},
+           familyi={I\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{0e6ffb30f4da8b62ecf059dc9d1d702e}
+      \strng{fullhash}{a3cc4686b9454150ba605aa88c3d55af}
+      \strng{bibnamehash}{0e6ffb30f4da8b62ecf059dc9d1d702e}
+      \strng{authorbibnamehash}{0e6ffb30f4da8b62ecf059dc9d1d702e}
+      \strng{authornamehash}{0e6ffb30f4da8b62ecf059dc9d1d702e}
+      \strng{authorfullhash}{a3cc4686b9454150ba605aa88c3d55af}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Instrumentation}
+      \field{month}{3}
+      \field{number}{03}
+      \field{title}{20 ps time resolution with a fully-efficient monolithic silicon pixel detector without internal gain layer}
+      \field{volume}{18}
+      \field{year}{2023}
+      \field{pages}{P03047}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/18/03/P03047
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1748-0221/18/03/P03047
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1748-0221/18/03/P03047
+      \endverb
+    \endentry
+    \entry{detectors}{book}{}
+      \name{author}{2}{}{%
+        {{hash=cdb61438aeb4f18b81555a6e90e78f5d}{%
+           family={Kolanoski},
+           familyi={K\bibinitperiod},
+           given={Hermann},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f5ee2b81fdcc2af5637e063906fe3918}{%
+           family={Wermes},
+           familyi={W\bibinitperiod},
+           given={Norbert},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{cb554d11ecf13d996cbec39a894c99df}
+      \strng{fullhash}{cb554d11ecf13d996cbec39a894c99df}
+      \strng{bibnamehash}{cb554d11ecf13d996cbec39a894c99df}
+      \strng{authorbibnamehash}{cb554d11ecf13d996cbec39a894c99df}
+      \strng{authornamehash}{cb554d11ecf13d996cbec39a894c99df}
+      \strng{authorfullhash}{cb554d11ecf13d996cbec39a894c99df}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780198858362}
+      \field{month}{06}
+      \field{title}{Particle Detectors: Fundamentals and Applications}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1093/oso/9780198858362.001.0001
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/book/43645/book-pdf/50609306/9780191899232\_web.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/oso/9780198858362.001.0001
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/oso/9780198858362.001.0001
+      \endverb
+    \endentry
+    \entry{SolidState}{book}{}
+      \name{author}{2}{}{%
+        {{hash=e68ad48c3eb6c3d0385c1fbffcc1d5e1}{%
+           family={Hook},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=217cd8c34245864090ecff0583dd8227}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={H.\bibnamedelimi E.},
+           giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chichester, UK}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{306ae60e4be0cbb98f937c4c3fa36e1a}
+      \strng{fullhash}{306ae60e4be0cbb98f937c4c3fa36e1a}
+      \strng{bibnamehash}{306ae60e4be0cbb98f937c4c3fa36e1a}
+      \strng{authorbibnamehash}{306ae60e4be0cbb98f937c4c3fa36e1a}
+      \strng{authornamehash}{306ae60e4be0cbb98f937c4c3fa36e1a}
+      \strng{authorfullhash}{306ae60e4be0cbb98f937c4c3fa36e1a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{title}{Solid State Physics}
+      \field{year}{1995}
+    \endentry
+    \entry{Si_Crystals_planes}{article}{}
+      \name{author}{2}{}{%
+        {{hash=98ede377e25f89c42262a57aad692bab}{%
+           family={Bean},
+           familyi={B\bibinitperiod},
+           given={K.E.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=24456164905ef0e50fbedceef1a6751d}{%
+           family={Gleim},
+           familyi={G\bibinitperiod},
+           given={P.S.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{eead426858fe07cb97f3da66e5065bf2}
+      \strng{fullhash}{eead426858fe07cb97f3da66e5065bf2}
+      \strng{bibnamehash}{eead426858fe07cb97f3da66e5065bf2}
+      \strng{authorbibnamehash}{eead426858fe07cb97f3da66e5065bf2}
+      \strng{authornamehash}{eead426858fe07cb97f3da66e5065bf2}
+      \strng{authorfullhash}{eead426858fe07cb97f3da66e5065bf2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{number}{9}
+      \field{title}{The influence of crystal orientation on silicon semiconductor processing}
+      \field{volume}{57}
+      \field{year}{1969}
+      \field{pages}{1469\bibrangedash 1476}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/PROC.1969.7320
+      \endverb
+      \keyw{Silicon;Etching;Crystallography;Circuits;Crystals;Chemical technology;Isolation technology;Semiconductor films;Dielectric films;Epitaxial growth}
+    \endentry
+    \entry{PhysicsOfSemiconductors}{book}{}
+      \name{author}{2}{}{%
+        {{hash=0368503a4c8dbadc87fba75b046d54c9}{%
+           family={Sze},
+           familyi={S\bibinitperiod},
+           given={Simon\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3a098cf0efb234b77c1016e613b83730}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Kwok\bibnamedelima K.},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{b21c62d6facff3cf52ca6502da222427}
+      \strng{fullhash}{b21c62d6facff3cf52ca6502da222427}
+      \strng{bibnamehash}{b21c62d6facff3cf52ca6502da222427}
+      \strng{authorbibnamehash}{b21c62d6facff3cf52ca6502da222427}
+      \strng{authornamehash}{b21c62d6facff3cf52ca6502da222427}
+      \strng{authorfullhash}{b21c62d6facff3cf52ca6502da222427}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{isbn}{978-0470068328}
+      \field{title}{Physics of Semiconductor Devices}
+      \field{year}{2006}
+    \endentry
+    \entry{leroy2012silicon}{book}{}
+      \name{author}{2}{}{%
+        {{hash=a1e1c392666b9ecc0eb71846902cde29}{%
+           family={Leroy},
+           familyi={L\bibinitperiod},
+           given={Claude},
+           giveni={C\bibinitperiod}}}%
+        {{hash=eaece2b34d17f5522f6fdee4ab90ea5e}{%
+           family={Rancoita},
+           familyi={R\bibinitperiod},
+           given={Pier-Giorgio},
+           giveni={P\bibinithyphendelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific}%
+      }
+      \strng{namehash}{9e199f92e7659ce62443ac6154834476}
+      \strng{fullhash}{9e199f92e7659ce62443ac6154834476}
+      \strng{bibnamehash}{9e199f92e7659ce62443ac6154834476}
+      \strng{authorbibnamehash}{9e199f92e7659ce62443ac6154834476}
+      \strng{authornamehash}{9e199f92e7659ce62443ac6154834476}
+      \strng{authorfullhash}{9e199f92e7659ce62443ac6154834476}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-9814390040}
+      \field{title}{Silicon Solid State Devices and Radiation Detection}
+      \field{year}{2012}
+    \endentry
+    \entry{Drude}{article}{}
+      \name{author}{1}{}{%
+        {{hash=290807f54157e53b212c1dcd5a0753f1}{%
+           family={Drude},
+           familyi={D\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{290807f54157e53b212c1dcd5a0753f1}
+      \strng{fullhash}{290807f54157e53b212c1dcd5a0753f1}
+      \strng{bibnamehash}{290807f54157e53b212c1dcd5a0753f1}
+      \strng{authorbibnamehash}{290807f54157e53b212c1dcd5a0753f1}
+      \strng{authornamehash}{290807f54157e53b212c1dcd5a0753f1}
+      \strng{authorfullhash}{290807f54157e53b212c1dcd5a0753f1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annalen der Physik}
+      \field{number}{3}
+      \field{title}{Zur Elektronentheorie der Metalle}
+      \field{volume}{306}
+      \field{year}{1900}
+      \field{pages}{566\bibrangedash 613}
+      \range{pages}{48}
+      \verb{doi}
+      \verb https://doi.org/10.1002/andp.19003060312
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.19003060312
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19003060312
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19003060312
+      \endverb
+    \endentry
+    \entry{drift_velocity_vs_E}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b389dafff2f3bf919b60535165a77f24}{%
+           family={Caughey},
+           familyi={C\bibinitperiod},
+           given={D.M.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=09a12c4507e7f8e85f689a93248e1d5c}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={R.E.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{e1d9bc7a22cdf8bdbd37c52652127a91}
+      \strng{fullhash}{e1d9bc7a22cdf8bdbd37c52652127a91}
+      \strng{bibnamehash}{e1d9bc7a22cdf8bdbd37c52652127a91}
+      \strng{authorbibnamehash}{e1d9bc7a22cdf8bdbd37c52652127a91}
+      \strng{authornamehash}{e1d9bc7a22cdf8bdbd37c52652127a91}
+      \strng{authorfullhash}{e1d9bc7a22cdf8bdbd37c52652127a91}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{number}{12}
+      \field{title}{Carrier mobilities in silicon empirically related to doping and field}
+      \field{volume}{55}
+      \field{year}{1967}
+      \field{pages}{2192\bibrangedash 2193}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1109/PROC.1967.6123
+      \endverb
+      \keyw{Silicon;Doping;Electron mobility;Charge carrier processes;Conductors;Density measurement;Conductivity;Equations;Portable media players;Board of Directors}
+    \endentry
+    \entry{beta_drift_velocity}{article}{}
+      \name{author}{1}{}{%
+        {{hash=02db8c6a1f73a70bcaf2de71c9218e44}{%
+           family={Thornber},
+           familyi={T\bibinitperiod},
+           given={K.\bibnamedelimi K.},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{02db8c6a1f73a70bcaf2de71c9218e44}
+      \strng{fullhash}{02db8c6a1f73a70bcaf2de71c9218e44}
+      \strng{bibnamehash}{02db8c6a1f73a70bcaf2de71c9218e44}
+      \strng{authorbibnamehash}{02db8c6a1f73a70bcaf2de71c9218e44}
+      \strng{authornamehash}{02db8c6a1f73a70bcaf2de71c9218e44}
+      \strng{authorfullhash}{02db8c6a1f73a70bcaf2de71c9218e44}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0021-8979}
+      \field{journaltitle}{Journal of Applied Physics}
+      \field{month}{04}
+      \field{number}{4}
+      \field{title}{Relation of drift velocity to low‐field mobility and high‐field saturation velocity}
+      \field{volume}{51}
+      \field{year}{1980}
+      \field{pages}{2127\bibrangedash 2136}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1063/1.327885
+      \endverb
+      \verb{eprint}
+      \verb https://pubs.aip.org/aip/jap/article-pdf/51/4/2127/18387995/2127\_1\_online.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/1.327885
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.327885
+      \endverb
+    \endentry
+    \entry{Shockley–Ramo}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4531d1092d63818ea1f778f00376f52b}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Zhong},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{4531d1092d63818ea1f778f00376f52b}
+      \strng{fullhash}{4531d1092d63818ea1f778f00376f52b}
+      \strng{bibnamehash}{4531d1092d63818ea1f778f00376f52b}
+      \strng{authorbibnamehash}{4531d1092d63818ea1f778f00376f52b}
+      \strng{authornamehash}{4531d1092d63818ea1f778f00376f52b}
+      \strng{authorfullhash}{4531d1092d63818ea1f778f00376f52b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0168-9002}
+      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
+      \field{number}{1}
+      \field{title}{Review of the Shockley–Ramo theorem and its application in semiconductor gamma-ray detectors}
+      \field{volume}{463}
+      \field{year}{2001}
+      \field{pages}{250\bibrangedash 267}
+      \range{pages}{18}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0168-9002(01)00223-6
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168900201002236
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168900201002236
+      \endverb
+      \keyw{Shockley–Ramo theorem,Radiation detectors,Single polarity charge sensing,X- and γ-ray spectrometers,Wide band-gap semiconductors,Position sensitive detectors}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
