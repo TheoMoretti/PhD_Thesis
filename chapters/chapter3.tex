@@ -66,7 +66,7 @@ The characterisation of such prototypes is essential and a robust and reliable t
 	\section{Time resolution of silicon pixel detectors \textcolor{blue}{ 4 pages}}
 	One of the main focuses of the development of silicon-based monolithic pixel detectors, first under the ATTRACT project and then under the MONOLITH project, is the achievement of very good time resolution, trying to get as close as possible to the intrinsic limits of the technologies implemented. The time resolution is defined as the error one makes when measuring the time of passage of a particle in the active part. There are multiple contributions to the time resolution of a silicon-based device, both from the sensor itself, the front-end electronics and the digital readout. The contribution from the digital readout for the studies carried out in this work is the one of the oscilloscope used to readout the 4 analog pixels as explained in \note{section ref}. 
 	
-	In order to better explain was time walk is, a collection of waveforms from the testbeam test of the \textit{MONOLITH} prototype was put together in figure \ref{im:waveforms_timeresolution}. There waveforms were aligned vertically with respect to each waveform's average level in the region before the signal but also horizontally using a very precise timing reference. The close-up view shows the time at which each waveforms would cross a discrimination threshold labeled $V_{th}$, also known at Time of Arrival (ToA) of the signal.
+	In order to better explain was time walk is, a collection of waveforms from the testbeam test of the \textit{MONOLITH} prototype was put together in figure \ref{im:waveforms_timeresolution}. There waveforms were aligned vertically with respect to each waveform's average level in the region before the signal but also horizontally using a very precise timing reference. The close-up view shows the time at which each waveforms would cross a discrimination threshold labeled $V_{th}$, also known at Time of Arrival ($ToA$) of the signal.
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.85\linewidth]{files/waveforms_timeresolution}
@@ -74,7 +74,7 @@ The characterisation of such prototypes is essential and a robust and reliable t
 		\label{im:waveforms_timeresolution}
 	\end{figure} 
 	
-	If one was to build a distribution of the ToA, the shape of the distribution obtained is close to the one of a Gaussian function. The standard deviation of the fit of the ToA distribution with a Gaussian function gives the total time resolution of the system composed of the sensor, the front-end electronics and the readout system. 
+	If one was to build a distribution of the $ToA$, the shape of the distribution obtained is close to the one of a Gaussian function. The standard deviation of the fit of the ToA distribution with a Gaussian function gives the total time resolution of the system composed of the sensor, the front-end electronics and the readout system. 
 	
 	It is possible to group into four different categories the contributions to the time resolutions as listed by \cite{timeres_SiliconDetectors}:
 	\begin{itemize}
@@ -115,9 +115,9 @@ The characterisation of such prototypes is essential and a robust and reliable t
 
 		While the Bethe equation provides the mean energy loss, the actual energy deposited by a charged particle in a thin detector fluctuates significantly due to the stochastic nature of the ionisation process. Most events result in small charge deposits well below the mean, while a few involve large energy transfers to atomic electrons , producing a long tail in the energy loss distribution. This results in a highly skewed shape known as a Landau distribution and the associated fluctuations directly impact the number of electron-hole pairs generated in the silicon and manifest as an intrinsic charge collection noise. This noise will not only create a variation in the amplitude of the signal, which is at the root of the time-walk contribution (discussed in depth later in \note{section ref}), but will also create irregularities in the induced current, also contributing to the overall time resolution \cite{timepix4}. 
 
-		\subsection{Time jitter contribution \textcolor{red}{ 2 pages}}
+		\subsection{Time jitter contribution}
 		
-		It was already anticipated in \note{section ref} that the different noise sources on the amplifier also contribute to the overall time resolution of the detector. These noise sources will effectively translate into an output voltage noise $\sigma_\text{V}$ onto the output voltage of the amplifier $V(t)$. The time jitter is defined as the uncertainty of the ToA due to early or late crossing of the signal to a fixed level that is the discrimination threshold $V_{\text{th}}$. The contribution of the output voltage noise on the time resolution depends on the slew rate of the output voltage signal around the level $V_{\text{th}}$ and can be expressed as
+		It was already anticipated in \note{section ref} that the different noise sources on the amplifier also contribute to the overall time resolution of the detector. These noise sources will effectively translate into an output voltage noise $\sigma_\text{V}$ onto the output voltage of the amplifier $V(t)$. The time jitter is defined as the uncertainty of the $ToA$ due to early or late crossing of the signal to a fixed level that is the discrimination threshold $V_{\text{th}}$. The contribution of the output voltage noise on the time resolution depends on the slew rate of the output voltage signal around the level $V_{\text{th}}$ and can be expressed as
 		\begin{equation}
 			\sigma_{\text{jitter}} = \frac{\sigma_{\text{V}}}{dV/dt} = t_{\text{rise}} \frac{\text{Signal}}{\sigma_{\text{V}}}
 		\end{equation}  
@@ -127,19 +127,62 @@ The characterisation of such prototypes is essential and a robust and reliable t
 		Another important consideration to make is the choice of the discrimination level $V_{\text{th}}$. Indeed the slew rate of the output voltage signal is not constant over the rise of the signal. At the beginning of the rise, the slew rate progressively increases and reaches a maximum defined by the slope of the induced current and the frequency response of the amplifier. The slew rate then progressively decreases the closer it gets to the peaking time $t_{\text{peak}}$, defined as the time at which $V(t)$ reaches its maximum value, as most of the charge has been collected. As a consequence, the point with maximum slew rate is usually the time corresponding to half of the output voltage value at the peaking time. The choice of a discrimination threshold usually does not only depend purely on the time resolution considerations but this discussion is reserved for further on. 
 		
 		
-		\subsection{Time walk contribution \textcolor{red}{ 2 pages}}
+		\subsection{Time walk contribution}
+		The time-walk effect is associated to the different crossing time of a fixed discrimination threshold by signals having different output voltage maximum heights. This effect can be due for example to Landau fluctuations on the deposited charge of an impinging particle in the active part of the sensor. Fortunately, this contribution to the time resolution can be corrected for by performing a so called time-walk correction so that for any signal with any maximum height, the crossing time of the level $V_{\text{th}}$ is essentially the same. The zoomed-in frame in figure \ref{im:waveforms_timeresolution} already highlights the trend associated to time-walk: signals with larger maximum height will have an early crossing time while signals with smaller maximum height will have a delayed crossing time. To better illustrate this principle, a simple scenario including signals with linear rise and equal peaking time can be considered, the $ToA$ as a function of the signa amplitude can then be extracted as: 
+		\begin{equation}
+			V(t) = \frac{V_{\text{max}}}{t_{\text{peak}}} t \hspace{5mm} \Rightarrow \hspace{5mm} ToA = \frac{V_{\text{th}}}{V_{\text{max}}} t_{\text{peak}}
+		\end{equation}
 		
+		This analytical formula for the $ToA$ value as a function of the signals maximum height exhibits and inversely proportional behaviour asymptotically reaching zero for signals with infinite slew rate. Usually, in order to perform a time-walk correction, one would need to extract an analytical form describing the behaviour of the ToA against the signal's maximum height and subtract for every signal, the value of the analytical form evaluated at the signal's maximum amplitude, to the value of the $ToA$, hence correcting for time-walk. 
 		
-		\subsection{Other contributions \textcolor{red}{ 2 pages}}
-	
+		It is also interesting to note that is one was able to define a dynamic discrimination threshold value to be a fixed fraction of the signal's maximum height, the ToA would become: 
+		\begin{equation}
+			V_{\text{th}} = f \cdot V_{\text{max}} \hspace{5mm} \Rightarrow \hspace{5mm} ToA = \frac{f \cdot V_{\text{max}}}{V_{\text{max}}} t_{\text{peak}} = f \cdot t_{\text{peak}} 
+		\end{equation}
+		
+		In this simple and ideal case assumption, if the peaking time of the signal is constant, the time-walk effect can be completely corrected and its contribution to the overall time resolution becomes null. The choice of the value of the fraction $f$ is also important. Indeed, it was shown previously that the time jitter depends on the slew rate of the signal around the discrimination level. The slew rate was identified to be the largest around half the peaking time and so the value chosen is usually $f = 0.5$ to minimise the time jitter contribution. 
+		For the \textit{ATTRACT} and \textit{MONOLITH} prototypes different methods for time-walk correction were investigated in order to minimises this contribution. An explanation of each procedure will be given in the dedicated sections. 
+		\note{Add discussion on Constant Fraction Discriminator and how to implement an online time walk correction ?} 
+		
+		\subsection{Other contributions}
+		Fluctuations in the induced current from the impinging particle are a source of noise contributing to the overall time resolution through a distorsion of the signal. The discussion of so called Landau fluctuations was made under the assumption that sensor-wise, no fluctuations were added and that the root cause of the fluctuations were solely associated to the variation in deposited charge across the depth of the active volume. If on the contrary, one was to assume perfectly uniform charge deposition, the fluctuations coming from the sensor characteristics could be extracted. The Shockley-Ramo theorem gives the expression for the induced current as a function of the weighting field $E_w$ and the drift velocity of charge carriers $v_D$ as given in equation \ref{eq:ShockleyRamo}. From this expression to key aspects are fondamental: 
+		\begin{itemize}
+			\item The drift velocity of charge carriers have to be constant over the full active volume. To achieve that, it was shown in \note{section ref} that for high enough values of the electric field, the drift velocity of both electrons and holes saturates. This ensures that charge carriers will always move at the same velocity anywhere in the active volume. The value of the saturated velocity as well as the electric field required to reach saturation both depend on the temperature as which the sensor is operated. Essentially, the smaller the temperature the higher the saturated drift velocity and the smaller the electric field required for saturation. The curves for drift velocity against electric field for electrons at different sensor temperatures can be found in \cite{timepix4}. To achieve such high and uniform electric field 
+			\item The weighting field has to be as high and homogeneous as possible over the full active volume. In order to satisfy these conditions, the geometry of the sensor has to produce weighting field lines as straight and uniform as possible, just like in the case of a parallel plate capacitor. It was shown in equation \ref{eq:weighting_field} that the smaller the detector thickness, the higher the weighting field. In this regard, the large collection electrode implementation provides a geometry closer to that of the parallel plate capacitor with respect to the small collection electrode design. A comparison of the weighting field in the two scenario is shown in figure \ref{im:weighting_field_simulation} and was taken from \cite{timepix4}.
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.85\linewidth]{files/weighting_field_simulation}
+				\caption{Comparison of the weighting field from the large collection electrode (left) and small collection electrode (right). The homogeneity of the field as a function of the $x$ position below the electrode is much better for the large collection electrode. }
+				\label{im:weighting_field_simulation}
+			\end{figure}
+		\end{itemize}
+		
+		Both parameters point towards the same direction regarding the geometry of the active volume: the ratio between the size of the electrode and the depth of the active volume has to be as big as possible in order to get as close as possible to the ideal parallel plate capacitor, providing homogeneity of drift velocity and weighting field. A small active volume thickness is also compatible with a large weighting field. Unfortunately, a trade-off has once again to be made, a large collection electrode and very thin active volume increases the sensor capacitance, hence increasing the noise in the input of the amplifier. In order to obtain the best possible performance, a tailored design of each key detector characteristics has to be made. 
+		
+		A last contribution to the time resolution arises from the digitisation of the time itself. Indeed the information is typically performed in a Time-to-Digital Converter (TDC) for which the time of the leading edge of the discriminator is digitised and the information is then stored in a time bin defined by the TDC Least Significant Bit (LSB) \cite{timepix4}. If the time bins have a width $\Delta t$ then the contribution to the time resolution is of the order of: 
+		\begin{equation}
+			\sigma_{\text{TDC}} = \frac{\Delta t}{\sqrt{12}}
+		\end{equation}
+		
+		In the following discussion, the time associated to the different sampling points of the waveforms registered by the oscilloscope with a sampling rate of 40 GS/s, resulting in a time bin width of $\Delta t = $ \SI{25}{\pico\second} and so a contribution to the time resolution $\sigma_{\text{TDC}} =$ \SI{7}{\pico\second}. A simple interpolation between consecutive sampling points helps reducing by an additional factor 2 this contribution, hence making it insignificant for the time resolution measured with the \textit{ATTRACT} and \textit{MONOLITH} prototypes. 
 	\clearpage
-	\section{ Testbeam at SPS testbeam facility \textcolor{blue}{ 17 pages}}
+	\section{Testbeam as the CERN SPS facility \textcolor{blue}{ 17 pages}}
+	The characterisation of the performance in terms of time resolution and detection efficiency is usually performed using a focused beam of particles behaving like MIPs. As these particle deposit the minimum amount of energy through ionisation, they constitute the perfect probe to estimate the performance of a detector as they provide the minimum possible energy any ionising particle could deposit. Additionally, particles in a wide range of energies behave almost like a MIP, hence providing a description of the performance relative to a wide category of particles. 
+	At CERN, thr proton are injected into the LHC by the Super Proton Synchrotron (SPS) a \SI{6.9}{\kilo\meter} long circular accelerator capable of delivering proton with an energy up to \SI{450}{\giga\electronvolt}. While the LHC doesn't need to be filled, the proton accelerated in the SPS can serve a different purpose, such as providing the North Area site in Prévessin with protons. The beam is split and sent into different target, producing a wide range of particles later sent into 4 different beam-lines in the experimental hall. In the work presented in this section, a beam of pions with momentum of 120 GeV/c and 180 GeV/c has been used respectively for the characterisation of the prototypes \textit{ATTRACT} and \textit{MONOLITH} prototypes. 
+	
+	At first a general description of the experimental set-up used throughout the different data taking campaigns will be presented along with the specificities for each of them. The procedure progressively improved with time and experience, making the procedure more efficient, robust and precise. The advantage of a testbeam is also to be able to perform position dependent measurement of the many performances indices of the Detector Under Test (DUT) through the use of a particle telescope.    
+	
+	
+	
+	
 		\subsection{Layout of test beam experiment \textcolor{red}{ 2 pages}} 
 		\subsection{The FE-I4 telescope: track reconstruction \textcolor{red}{ 2 pages}}
 		\subsection{Analysis methods and dataset construction \textcolor{red}{ 3 pages}}
 		
 %%PAPER ON ATTRACT
 %\section{Efficiency and time resolution measurement}
+%\subsection{ATTRACT prototype}
+%\subsection{MONOLITH prototype}
 %\label{sec:results}
 %
 %\subsection{Testbeam experiment setup and data set}
