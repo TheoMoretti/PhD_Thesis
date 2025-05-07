@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.17)  6 MAY 2025 16:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.17)  7 MAY 2025 10:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1049,7 +1049,7 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 60.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (/Users/theo/Desktop/PhD_Thesis_BackUp/.texpadtmp/Thesis.aux
+) (/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.aux
 
 LaTeX Warning: Label ` ' multiply defined.
 
@@ -1111,7 +1111,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 60.
 LaTeX Info: Redefining \pageref on input line 60.
 LaTeX Info: Redefining \nameref on input line 60.
- (/Users/theo/Desktop/PhD_Thesis_BackUp/.texpadtmp/Thesis.out) (/Users/theo/Desktop/PhD_Thesis_BackUp/.texpadtmp/Thesis.out)
+ (/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.out) (/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.out)
 \@outlinefile=\write5
 \openout5 = `Thesis.out'.
 
@@ -1213,7 +1213,7 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis.bbl' found.
- (/Users/theo/Desktop/PhD_Thesis_BackUp/.texpadtmp/Thesis.bbl)
+ (/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 60.
 Package biblatex Info: Reference segment=0 on input line 60.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 60.
@@ -1276,7 +1276,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 11
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [1
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./UniGe_Logo.png>] (/Users/theo/Desktop/PhD_Thesis_BackUp/.texpadtmp/Thesis.toc [2
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./UniGe_Logo.png>] (/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.toc [2
 
 ] [3])
 \tf@toc=\write6
@@ -1772,7 +1772,7 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/bethe_bloch.pdf): PDF
 <files/bethe_bloch.pdf, id=1421, 1253.68375pt x 671.50874pt>
 File: files/bethe_bloch.pdf Graphic file (type pdf)
 <use files/bethe_bloch.pdf>
-Package pdftex.def Info: files/bethe_bloch.pdf  used on input line 101.
+Package pdftex.def Info: files/bethe_bloch.pdf  used on input line 106.
 (pdftex.def)             Requested size: 386.96027pt x 207.26387pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1838,7 +1838,7 @@ Overfull \hbox (15.60942pt too wide) in paragraph at lines 169--169
 
 [77] 
 AED: lastpage setting LastPage
-[78] (/Users/theo/Desktop/PhD_Thesis_BackUp/.texpadtmp/Thesis.aux)
+[78] (/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1850,17 +1850,17 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  44374 strings out of 478994
- 874304 string characters out of 5858184
- 1659087 words of memory out of 5000000
+ 874576 string characters out of 5858184
+ 1658072 words of memory out of 5000000
  60632 multiletter control sequences out of 15000+600000
  502292 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,20n,102p,1389b,2449s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsco10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /Users/theo/Desktop/PhD_Thesis_BackUp/.texpadtmp/Thesis.pdf (82 pages, 56138212 bytes).
+Output written on "/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.pdf" (82 pages, 56139466 bytes).
 PDF statistics:
- 1793 PDF objects out of 2073 (max. 8388607)
- 1538 compressed objects within 16 object streams
+ 1794 PDF objects out of 2073 (max. 8388607)
+ 1539 compressed objects within 16 object streams
  401 named destinations out of 1000 (max. 500000)
  971 words of extra memory for PDF output out of 10000 (max. 10000000)
 

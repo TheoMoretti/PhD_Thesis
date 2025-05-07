@@ -2484,6 +2484,7 @@
     <bcf:citekey order="135">PDG</bcf:citekey>
     <bcf:citekey order="136">Paolozzi_thesis</bcf:citekey>
     <bcf:citekey order="137">PDG</bcf:citekey>
+    <bcf:citekey order="138">timepix4</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

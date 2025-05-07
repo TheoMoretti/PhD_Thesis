@@ -610,7 +610,7 @@ The high event rates combined with high spatial resolution required and low amou
 		\begin{equation}
 			i = \frac{Nev}{d} \hspace{5mm} \rightarrow \hspace{5mm} \sigma_i^2 = {\left( \frac{ev}{d} \sigma_N \right)}^2 + {\left( \frac{eN}{d} \sigma_v \right)}^2
 		\end{equation}
-		Three different noise sources can be identified: the thermal noise associated to the thermal fluctuation in velocities of charge carries, the shot noise and $1/f$ noise which are collectively associated to the variation in number density of charge carriers \cite{detectors}.
+		Three different noise sources can be identified: the thermal noise associated to the thermal fluctuation in velocities of charge carriers, the shot noise and $1/f$ noise which are collectively associated to the variation in number density of charge carriers \cite{detectors}.
 		For a BJT, two separate equivalent noise sources can be identified that are the parallel and series noise sources. The first noise source accounts for thermal noise in the base resistance of the BJT and shot noise in the collector while the more significant parallel noise accounts for shot noise produced by the leakage current in the base. The contribution to the ENC from the amplifier can be qualitatively expressed as a function of the shaping time $\tau_m$ such that:    
 		\begin{equation}
   			ENC(\tau_m) = \sqrt{2 \frac{a}{\tau_m} {\left( C_{det} + C_{in} \right)}^2 + 4 \frac{\ln(2)}{\pi} b{\left( C_{det} + C_{in} \right)}^2 + \frac{2}{3}c \tau_m} 
@@ -620,7 +620,7 @@ The high event rates combined with high spatial resolution required and low amou
   			ENC_{series \hspace{1mm} noise} \propto \sqrt{k_1 \frac{{\left( C_{det} + C_{in} \right)}^2}{\beta} + k_2 R_b {\left( C_{det} + C_{in} \right)}^2}
   			\label{eq:ENC_series}
 		\end{equation}
-		where $k_1$ and $k_2$ are constants. The above equation shows that in order to further mitigate the contribution of the series noise in a BJT, one would need to have a reduced the base resistance $R_b$ and also profit from a high current gain $\beta$. 
+		where $k_1$ and $k_2$ are constants. The above equation shows that in order to further mitigate the contribution of the series noise in a BJT, one would need to have a reduced the base resistance $R_b$ and also profit from a high current gain $\beta$. Moreover, it is interesting to note that this noise also depends on the detector capacitance. Therefore, minimising the noise of the amplifier is also accomplished through the minimisation of the detector capacitance.
 
 		
 		\subsection{SiGe BiCMOS HBTs}\label{subsec:2.3.4}

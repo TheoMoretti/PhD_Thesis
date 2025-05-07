@@ -90,25 +90,46 @@ The characterisation of such prototypes is essential and a robust and reliable t
 	\end{equation}
 	
 	It is possible to discuss each contributions individually to better understand the origins of each contribution with the scope of understanding how the design of the full detector ca be optimised. 
+	
 	 	\subsection{Charge collection noise contribution}
-	 	The energy lost by particle when crossing a target material is mostly coming from electromagnetic interactions during which the transferred energy leads to ionisation and atomic or collective excitation of the target. The energy loss per unit length of a particle whose energy is higher than the electron mass is material dependent and is well described by the Bethe equation: 
-	 	\begin{equation}
-	 		\left\langle -\frac{dE}{dx} \right\rangle = K z^2 \frac{Z}{A} \frac{1}{\beta^2} \left[ \frac{1}{2} \ln\left( \frac{2 m_e c^2 \beta^2 \gamma^2 W_{\text{max}}}{I^2} \right) - \beta^2 - \frac{\delta(\beta \gamma)}{2} \right]
-	 	\end{equation}
-	 	To better illustrate the profile of energy loss of a particle in a material, the energy loss per unit length scaled to the density of the material, also know as mass stopping power, in Copper is shown for particles whose $\beta \gamma$ ranges from $10^{-3}$ and $10^5$ and is given in figure \ref{im:bethe_bloch} and was taken from \cite{PDG}.
-	 	\begin{figure}[h]
+	 	The energy lost by a charged particle when traversing a material arises primarily from electromagnetic interactions, in which the transferred energy results in ionisation or excitation of the target medium. For relativistic particles with energies well above the electron mass, the average energy loss per unit length is material-dependent and is accurately described by the Bethe formula:
+
+		\begin{equation}
+			\left\langle -\frac{dE}{dx} \right\rangle = K z^2 \frac{Z}{A} \frac{1}{\beta^2} \left[ \frac{1}{2} \ln\left( \frac{2 m_e c^2 \beta^2 \gamma^2 W_{\text{max}}}{I^2} \right) - \beta^2 - \frac{\delta(\beta \gamma)}{2} \right],
+		\end{equation}
+
+		where $K$ is a constant, $z$ is the charge of the incident particle, $Z$ and $A$ are the atomic number and mass number of the medium, $\beta$ and $\gamma$ are the relativistic parameters, $I$ is the mean excitation potential of the material, and $W_{\text{max}}$ the maximum energy transferable in a single collision.
+
+		To better illustrate the behaviour of energy loss across a wide range of particle velocities, figure \ref{im:bethe_bloch} shows the mass stopping power (i.e. the energy loss per unit length scaled by the density of the medium) in copper as a function of $\beta \gamma$, ranging from $10^{-3}$ to $10^5$ \cite{PDG}.
+
+		\begin{figure}[h]
 			\centering
 			\includegraphics[width=0.85\linewidth]{files/bethe_bloch}
-			\caption{Mass stopping power, for particles with $\beta \gamma$ ranging between $10^{-3}$ and $10^5$ for a target made of copper.}
+			\caption{Mass stopping power for charged particles with $\beta \gamma$ ranging from $10^{-3}$ to $10^5$ in copper.}
 			\label{im:bethe_bloch}
-		\end{figure} 
-		
-		It is interesting to identify a few features of the mas stopping power, such as the minimum of ionisation reached for particles whose $\beta \gamma \simeq 3$. These particules are identified with the minimum energy loss and are also called Minimum Ionising Particles (MIPs). Above the minimum, the energy loss increases indefinitely and is dominated from $\beta\gamma = 0.1$ up to $\beta \gamma =1000$ by the scattering between the charged incident particle in the target's electrons. At even higher energies, radiative losses start to play the dominant role while energy lost through ionisation slightly decreases.  
-	
-		For electrons, compared to heavier particles, the dominant processes for energies above a few tens of MeV are radiative processes \cite{Paolozzi_thesis}. Secondary photons could be produced and could themselves start an electromagnetic cascade. Above energies of \SI{1}{\mega\electronvolt}, its mean free path is well above 10 g/cm$^2$ for most materials \cite{PDG}, hence it can be neglected for thin detectors
-	 	  
+		\end{figure}
+
+		One of the key features is the minimum ionisation point, which occurs for particles with $\beta \gamma \simeq 3$. Such particles are referred to as Minimum Ionising Particles (MIPs) and exhibit the lowest energy loss due to ionisation. Beyond this point, the stopping power increases logarithmically with energy due to enhanced interactions with atomic electrons. At very high energies ($\beta \gamma \gtrsim 10^3$), radiative losses such as bremsstrahlung become dominant, particularly for light particles like electrons, while the contribution from ionisation gradually decreases.
+
+		For electrons, radiative losses begin to dominate at energies above a few tens of MeV, leading to the production of secondary photons that can initiate electromagnetic cascades \cite{Paolozzi_thesis}. However, in the context of thin silicon detectors, these processes can often be neglected, as the mean free path of such photons typically exceeds $10\,\text{g/cm}^2$ for energies above \SI{1}{\mega\electronvolt} \cite{PDG}.
+
+		While the Bethe equation provides the mean energy loss, the actual energy deposited by a charged particle in a thin detector fluctuates significantly due to the stochastic nature of the ionisation process. Most events result in small charge deposits well below the mean, while a few involve large energy transfers to atomic electrons , producing a long tail in the energy loss distribution. This results in a highly skewed shape known as a Landau distribution and the associated fluctuations directly impact the number of electron-hole pairs generated in the silicon and manifest as an intrinsic charge collection noise. This noise will not only create a variation in the amplitude of the signal, which is at the root of the time-walk contribution (discussed in depth later in \note{section ref}), but will also create irregularities in the induced current, also contributing to the overall time resolution \cite{timepix4}. 
+
 		\subsection{Time jitter contribution \textcolor{red}{ 2 pages}}
+		
+		It was already anticipated in \note{section ref} that the different noise sources on the amplifier also contribute to the overall time resolution of the detector. These noise sources will effectively translate into an output voltage noise $\sigma_\text{V}$ onto the output voltage of the amplifier $V(t)$. The time jitter is defined as the uncertainty of the ToA due to early or late crossing of the signal to a fixed level that is the discrimination threshold $V_{\text{th}}$. The contribution of the output voltage noise on the time resolution depends on the slew rate of the output voltage signal around the level $V_{\text{th}}$ and can be expressed as
+		\begin{equation}
+			\sigma_{\text{jitter}} = \frac{\sigma_{\text{V}}}{dV/dt} = t_{\text{rise}} \frac{\text{Signal}}{\sigma_{\text{V}}}
+		\end{equation}  
+		
+		where $t_{\text{rise}}$ is defined as the rise time of the signal and Signal/$\sigma_{\text{V}}$ is commonly know as the Signal-to-Noise Ratio (SNR). The slew rate can be up to a good approximation be considered as constant, this is highlighted in the zoomed-frame of figure \ref{im:waveforms_timeresolution}. The implications are straightforward, if one wants to reduce the contribution of the time jitter, the rise time of the signal must be as small as possible, and the SNR has to be as large as possible. Translating these two trends into parameters of the amplifier, this would respectively mean a large bandwidth and a large gain. Unfortunately for amplifiers there is always a trade-off between gain and bandwidth as the product of these two quantities is constant and its value is defined by the operation parameters of the amplifier itself. 
+	
+		Another important consideration to make is the choice of the discrimination level $V_{\text{th}}$. Indeed the slew rate of the output voltage signal is not constant over the rise of the signal. At the beginning of the rise, the slew rate progressively increases and reaches a maximum defined by the slope of the induced current and the frequency response of the amplifier. The slew rate then progressively decreases the closer it gets to the peaking time $t_{\text{peak}}$, defined as the time at which $V(t)$ reaches its maximum value, as most of the charge has been collected. As a consequence, the point with maximum slew rate is usually the time corresponding to half of the output voltage value at the peaking time. The choice of a discrimination threshold usually does not only depend purely on the time resolution considerations but this discussion is reserved for further on. 
+		
+		
 		\subsection{Time walk contribution \textcolor{red}{ 2 pages}}
+		
+		
 		\subsection{Other contributions \textcolor{red}{ 2 pages}}
 	
 	\clearpage
