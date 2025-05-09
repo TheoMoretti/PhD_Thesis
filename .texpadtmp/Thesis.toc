@@ -64,54 +64,68 @@
 \contentsline {section}{\numberline {3.5}Effects of radiation \leavevmode {\color {blue} 4 pages}}{61}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Processes involved \leavevmode {\color {red} 2 pages}}{61}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Consequences of damages and solutions \leavevmode {\color {red} 2 pages}}{61}{subsection.3.5.2}%
-\contentsline {chapter}{\numberline {4}Monolithic pixel detectors for HEP applications (30 pages)}{62}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Prototypes and design characteristics}{63}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}ATTRACT prototype}{63}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}MONOLITH prototype }{64}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Time resolution of silicon pixel detectors \leavevmode {\color {blue} 4 pages}}{66}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Charge collection noise contribution}{67}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Time jitter contribution}{68}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Time walk contribution}{69}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Other contributions}{69}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Testbeam as the CERN SPS facility \leavevmode {\color {blue} 17 pages}}{72}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Layout of test beam experiment \leavevmode {\color {red} 2 pages}}{72}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}The FE-I4 telescope: track reconstruction \leavevmode {\color {red} 2 pages}}{72}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Analysis methods and dataset construction \leavevmode {\color {red} 3 pages}}{72}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Detection efficiency \leavevmode {\color {red} 4 pages}}{72}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Time resolution \leavevmode {\color {red} 6 pages}}{72}{subsection.4.3.5}%
-\contentsline {section}{\numberline {4.4}Effects of radiation \leavevmode {\color {blue} 5 pages}}{73}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Radiation tolerance MONOLITH prototypes \leavevmode {\color {red} 5 pages}}{73}{subsection.4.4.1}%
-\contentsline {chapter}{\numberline {5}The new FASER Pre-Shower detector (14 pages)}{74}{chapter.5}%
-\contentsline {section}{\numberline {5.1}ASIC description \leavevmode {\color {blue} 6 pages}}{74}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Requirements \leavevmode {\color {red} 2 pages}}{74}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Architecture \leavevmode {\color {red} 4 pages}}{74}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Detector design \leavevmode {\color {blue} 6 pages}}{74}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Layout of the preshower \leavevmode {\color {red} 2 pages}}{74}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Modules \leavevmode {\color {red} 4 pages}}{74}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Planes \leavevmode {\color {red} 4 pages}}{74}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Readout and detector control \leavevmode {\color {blue} 4 pages}}{74}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Readout \leavevmode {\color {red} 2 pages}}{74}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Logic Board and APP \leavevmode {\color {red} 2 pages}}{74}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}PIM and Interlock \leavevmode {\color {red} 2 pages}}{74}{subsection.5.3.3}%
-\contentsline {chapter}{\numberline {6}Development of the new FASER Pre-shower detector (37 pages)}{75}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Pre-Production ASIC characterization \leavevmode {\color {blue} 6 pages}}{75}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}ASIC description \leavevmode {\color {red} 3 pages}}{75}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Time-Over-Threshold mismatch \leavevmode {\color {red} 3 pages}}{75}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Production ASIC description \leavevmode {\color {blue} 3 pages}}{75}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Detector qualification and commissioning \leavevmode {\color {blue} 19 pages}}{75}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Module assembly \leavevmode {\color {red} 3 pages}}{75}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Characterization set-up \leavevmode {\color {red} 3 pages}}{75}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Front-End working points \leavevmode {\color {red} 2 pages}}{75}{subsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.3.4}Threshold and Noise scans \leavevmode {\color {red} 4 pages}}{75}{subsection.6.3.4}%
-\contentsline {subsection}{\numberline {6.3.5}Load scan and Charge calibration \leavevmode {\color {red} 4 pages}}{75}{subsection.6.3.5}%
-\contentsline {subsection}{\numberline {6.3.6}Plane assembly \leavevmode {\color {red} 3 pages}}{75}{subsection.6.3.6}%
-\contentsline {section}{\numberline {6.4}Trigger and Data Acquisition: TDAQ \leavevmode {\color {blue} 9 pages}}{75}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Slow-Control and ASIC configuration \leavevmode {\color {red} 3 pages}}{75}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Readout \leavevmode {\color {red} 2 pages}}{75}{subsection.6.4.2}%
-\contentsline {subsection}{\numberline {6.4.3}Data conversion \leavevmode {\color {red} 3 pages}}{75}{subsection.6.4.3}%
-\contentsline {subsection}{\numberline {6.4.4}Data corruption and solutions \leavevmode {\color {red} 3 pages}}{75}{subsection.6.4.4}%
-\contentsline {section}{\numberline {6.5}Testbeam campaign for detector commissioning}{75}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Layout, powering and readout}{75}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}}{75}{subsection.6.5.2}%
-\contentsline {chapter}{\numberline {7}Outlook and conclusion (4 pages)}{76}{chapter.7}%
-\contentsline {chapter}{Bibliography}{81}{chapter*.74}%
+\contentsline {chapter}{\numberline {4}Monolithic Pixel Detectors for HEP Applications}{62}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Prototypes and Design Characteristics}{63}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}ATTRACT Prototype}{63}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}MONOLITH Prototype}{64}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Time Resolution of Silicon Pixel Detectors}{66}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Charge Collection Noise Contribution}{67}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Time Jitter Contribution}{68}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Time Walk Contribution}{69}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Other Contributions}{69}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Particle Telescope and Track Reconstruction}{72}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Test Beam Characterisation of \textit {ATTRACT} Prototypes}{73}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Front-End Calibrations}{73}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Testbeam experiment setup and data set}{74}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Cross talk and robustness to induced noise}{76}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Detection efficiency}{77}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Time resolution measurement}{79}{subsection.4.4.5}%
+\contentsline {subsubsection}{Time-walk correction}{80}{section*.85}%
+\contentsline {subsubsection}{Extraction of the time resolution}{80}{section*.87}%
+\contentsline {section}{\numberline {4.5}Test Beam Characterisation of \textit {MONOLITH} Prototypes}{83}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Front-End Calibrations}{83}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Testbeam Setup, Track-Selection Criteria and Data Samples}{83}{subsection.4.5.2}%
+\contentsline {subsubsection}{Telescope-Track Selection Criteria}{85}{section*.93}%
+\contentsline {subsubsection}{Data samples}{86}{section*.95}%
+\contentsline {subsection}{\numberline {4.5.3}Detection Efficiency}{86}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Time Resolution \leavevmode {\color {red} 6 pages}}{88}{subsection.4.5.4}%
+\contentsline {subsubsection}{Time-walk correction}{89}{section*.101}%
+\contentsline {subsubsection}{Results}{90}{section*.103}%
+\contentsline {section}{\numberline {4.6}Radiation Tolerance of \textit {MONOLITH} Prototypes}{94}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Data samples and experimental set-up}{94}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Detection efficiency}{94}{subsection.4.6.2}%
+\contentsline {section}{\numberline {4.7}Time resolution}{97}{section.4.7}%
+\contentsline {chapter}{\numberline {5}The new FASER Pre-Shower detector (14 pages)}{101}{chapter.5}%
+\contentsline {section}{\numberline {5.1}ASIC description \leavevmode {\color {blue} 6 pages}}{101}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Requirements \leavevmode {\color {red} 2 pages}}{101}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Architecture \leavevmode {\color {red} 4 pages}}{101}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Detector design \leavevmode {\color {blue} 6 pages}}{101}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Layout of the preshower \leavevmode {\color {red} 2 pages}}{101}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Modules \leavevmode {\color {red} 4 pages}}{101}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Planes \leavevmode {\color {red} 4 pages}}{101}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Readout and detector control \leavevmode {\color {blue} 4 pages}}{101}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Readout \leavevmode {\color {red} 2 pages}}{101}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Logic Board and APP \leavevmode {\color {red} 2 pages}}{101}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}PIM and Interlock \leavevmode {\color {red} 2 pages}}{101}{subsection.5.3.3}%
+\contentsline {chapter}{\numberline {6}Development of the new FASER Pre-shower detector (37 pages)}{102}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Pre-Production ASIC characterization \leavevmode {\color {blue} 6 pages}}{102}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}ASIC description \leavevmode {\color {red} 3 pages}}{102}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Time-Over-Threshold mismatch \leavevmode {\color {red} 3 pages}}{102}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Production ASIC description \leavevmode {\color {blue} 3 pages}}{102}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Detector qualification and commissioning \leavevmode {\color {blue} 19 pages}}{102}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Module assembly \leavevmode {\color {red} 3 pages}}{102}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Characterization set-up \leavevmode {\color {red} 3 pages}}{102}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Front-End working points \leavevmode {\color {red} 2 pages}}{102}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Threshold and Noise scans \leavevmode {\color {red} 4 pages}}{102}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.5}Load scan and Charge calibration \leavevmode {\color {red} 4 pages}}{102}{subsection.6.3.5}%
+\contentsline {subsection}{\numberline {6.3.6}Plane assembly \leavevmode {\color {red} 3 pages}}{102}{subsection.6.3.6}%
+\contentsline {section}{\numberline {6.4}Trigger and Data Acquisition: TDAQ \leavevmode {\color {blue} 9 pages}}{102}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Slow-Control and ASIC configuration \leavevmode {\color {red} 3 pages}}{102}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Readout \leavevmode {\color {red} 2 pages}}{102}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Data conversion \leavevmode {\color {red} 3 pages}}{102}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.4.4}Data corruption and solutions \leavevmode {\color {red} 3 pages}}{102}{subsection.6.4.4}%
+\contentsline {section}{\numberline {6.5}Testbeam campaign for detector commissioning}{102}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Layout, powering and readout}{102}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}}{102}{subsection.6.5.2}%
+\contentsline {chapter}{\numberline {7}Outlook and conclusion (4 pages)}{103}{chapter.7}%
+\contentsline {chapter}{Bibliography}{108}{chapter*.120}%

@@ -7867,7 +7867,130 @@
       \verb https://doi.org/10.1093/ptep/ptaa104
       \endverb
     \endentry
+    \entry{telescope}{article}{}
+      \name{author}{11}{}{%
+        {{hash=86e4ef44e673eee7683c6bea50031956}{%
+           family={Benoit},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=597fff1e1ff474a95aff15018e773417}{%
+           family={Mendizabal},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi Bilbao\bibnamedelima De},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=2a9af441721541c0d2313e92fc7d69d8}{%
+           family={Bello},
+           familyi={B\bibinitperiod},
+           given={F.A.\bibnamedelimi Di},
+           giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=3143e3c466c40d0ace7f749cfa47e1d2}{%
+           family={Ferrere},
+           familyi={F\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=352029b58384cdc5b1126cecb86218f3}{%
+           family={Golling},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=59e08bf5cd77b3dc2084da9c049711c7}{%
+           family={Gonzalez-Sevilla},
+           familyi={G\bibinithyphendelim S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=36fc38c0439e421c95247b10dd1d8b33}{%
+           family={Iacobucci},
+           familyi={I\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2ca3d42d6d85783361ac86637c4c1fd6}{%
+           family={Kocian},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ce3eb22755de9ac7ebe91000e57ea62e}{%
+           family={Muenstermann},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=916159bd397dfb7b8998d7a01c491ba7}{%
+           family={Ristic},
+           familyi={R\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e214fdcf07456f33f75c40aab9a140a5}{%
+           family={Sciuccati},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IOP} Publishing}%
+      }
+      \strng{namehash}{6a49396bceabb718892df9ba41d84a29}
+      \strng{fullhash}{217c857f10809108a0b89fac4788ce73}
+      \strng{bibnamehash}{6a49396bceabb718892df9ba41d84a29}
+      \strng{authorbibnamehash}{6a49396bceabb718892df9ba41d84a29}
+      \strng{authornamehash}{6a49396bceabb718892df9ba41d84a29}
+      \strng{authorfullhash}{217c857f10809108a0b89fac4788ce73}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Instrumentation}
+      \field{month}{7}
+      \field{number}{07}
+      \field{title}{The {FE}-{I4} telescope for particle tracking in testbeam experiments}
+      \field{volume}{11}
+      \field{year}{2016}
+      \field{pages}{P07003\bibrangedash P07003}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/11/07/p07003
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/1748-0221/11/07/p07003
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/1748-0221/11/07/p07003
+      \endverb
+    \endentry
+    \entry{vicente_thesis}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=e6a77ec1cbde8f98fff2c75d470c1382}{%
+           family={Pinto},
+           familyi={P\bibinitperiod},
+           given={M.\bibnamedelimi Vicente\bibnamedelima Barreto},
+           giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Geneva}%
+      }
+      \list{location}{1}{%
+        {https://www.unige.ch/dpnc/en/master-phd/phd/}%
+      }
+      \strng{namehash}{e6a77ec1cbde8f98fff2c75d470c1382}
+      \strng{fullhash}{e6a77ec1cbde8f98fff2c75d470c1382}
+      \strng{bibnamehash}{e6a77ec1cbde8f98fff2c75d470c1382}
+      \strng{authorbibnamehash}{e6a77ec1cbde8f98fff2c75d470c1382}
+      \strng{authornamehash}{e6a77ec1cbde8f98fff2c75d470c1382}
+      \strng{authorfullhash}{e6a77ec1cbde8f98fff2c75d470c1382}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{New pixel-detector technologies for the {ATLAS ITk} upgrade and the {CLIC} vertex detector}
+      \field{type}{phdthesis}
+      \field{year}{2019}
+    \endentry
   \enddatalist
+  \missing{DisplacementDamageMoll}
+  \missing{FEI4_telescope}
+  \missing{RadiationDamageBruzzi}
+  \missing{SiGeRadiationDamage}
+  \missing{Zambito_2023}
+  \missing{milanesio2023radiation}
 \endrefsection
 \endinput
 
