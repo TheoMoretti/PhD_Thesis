@@ -2267,6 +2267,7 @@
       \strng{authorbibnamehash}{7d1d798b59a6e1ce2f00977c5d21120d}
       \strng{authornamehash}{7d1d798b59a6e1ce2f00977c5d21120d}
       \strng{authorfullhash}{7d1d798b59a6e1ce2f00977c5d21120d}
+      \field{extraname}{1}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -6282,6 +6283,7 @@
       \strng{authorbibnamehash}{eec79be039ea749f1432f9813e56f860}
       \strng{authornamehash}{eec79be039ea749f1432f9813e56f860}
       \strng{authorfullhash}{ca5cf190b67cb06bc7f22ac1f5c564a6}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -7984,13 +7986,362 @@
       \field{type}{phdthesis}
       \field{year}{2019}
     \endentry
+    \entry{CYRIC_facility}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c480f0c467c686ddd4b73d6f0899b636}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={K.\bibnamedelimi Nakamura},
+           giveni={K\bibinitperiod\bibinitdelim N\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{c480f0c467c686ddd4b73d6f0899b636}
+      \strng{fullhash}{c480f0c467c686ddd4b73d6f0899b636}
+      \strng{bibnamehash}{c480f0c467c686ddd4b73d6f0899b636}
+      \strng{authorbibnamehash}{c480f0c467c686ddd4b73d6f0899b636}
+      \strng{authornamehash}{c480f0c467c686ddd4b73d6f0899b636}
+      \strng{authorfullhash}{c480f0c467c686ddd4b73d6f0899b636}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{number}{06}
+      \field{title}{{Irradiation and testbeam of KEK/HPK planar p-type pixel modules for HL-LHC}}
+      \field{volume}{10}
+      \field{year}{2015}
+      \field{pages}{C06008}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/10/06/C06008
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1748-0221/10/06/C06008
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1748-0221/10/06/C06008
+      \endverb
+    \endentry
+    \entry{LabRad_Mono2023}{article}{}
+      \name{author}{1}{}{%
+        {{hash=19b7af9eb1f56998e1c6f3e54244e6de}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={M.\bibnamedelimi Milanesio},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{19b7af9eb1f56998e1c6f3e54244e6de}
+      \strng{fullhash}{19b7af9eb1f56998e1c6f3e54244e6de}
+      \strng{bibnamehash}{19b7af9eb1f56998e1c6f3e54244e6de}
+      \strng{authorbibnamehash}{19b7af9eb1f56998e1c6f3e54244e6de}
+      \strng{authornamehash}{19b7af9eb1f56998e1c6f3e54244e6de}
+      \strng{authorfullhash}{19b7af9eb1f56998e1c6f3e54244e6de}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Instrumentation}
+      \field{month}{10}
+      \field{number}{03}
+      \field{title}{{Radiation Tolerance of SiGe BiCMOS Monolithic Silicon Pixel Detectors without Internal Gain Layer}}
+      \field{volume}{18}
+      \field{year}{2023}
+      \field{pages}{P03047}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/18/03/P03047
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1748-0221/18/03/P03047
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1748-0221/18/03/P03047
+      \endverb
+    \endentry
+    \entry{Moretti_irradiated}{article}{}
+      \name{author}{30}{}{%
+        {{hash=81e3f9b68065a46f35fa979ec2586473}{%
+           family={Moretti},
+           familyi={M\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8f05018b83b28fe9ee7cbcae01dbc859}{%
+           family={Milanesio},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f36898d641721cb459364df190a2d37c}{%
+           family={Cardella},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=cee65936490d087dae8cf0ab974d65ed}{%
+           family={Kugathasan},
+           familyi={K\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2fee64c0b9a48259e4a94e79acb11174}{%
+           family={Picardi},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=da3a7fccc3e548846392da8e33bb0f38}{%
+           family={Semendyaev},
+           familyi={S\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=4bccfab5f242d91eed6b183d5c3e5818}{%
+           family={Elviretti},
+           familyi={E\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=321a518b4f0b598c308ca93578cd1a80}{%
+           family={Rücker},
+           familyi={R\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=5c3dabad2510efba9299b354d41adff4}{%
+           family={Nakamura},
+           familyi={N\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3c2bf1111fa71cfbccb66b269cfc30cd}{%
+           family={Takubo},
+           familyi={T\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a4448405e5c71ab56bb1bd5ecb900751}{%
+           family={Togawa},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=26f5aac8804b19236227e497fb3753b3}{%
+           family={Cadoux},
+           familyi={C\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a5855a3536e502ad05a80c208e2e6d2f}{%
+           family={Cardarelli},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3d790b9bb7c2b2ed5f8b7d8dfc6887f0}{%
+           family={Cecconi},
+           familyi={C\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7b7b42feff5c078957eebc09209f5c2a}{%
+           family={Débieux},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8b19b37b967fe930a70491b5d807ec2d}{%
+           family={Favre},
+           familyi={F\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c1cd5d4a4f33a60bc9dde79be826fc29}{%
+           family={Fenoglio},
+           familyi={F\bibinitperiod},
+           given={C.A.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3143e3c466c40d0ace7f749cfa47e1d2}{%
+           family={Ferrere},
+           familyi={F\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=59e08bf5cd77b3dc2084da9c049711c7}{%
+           family={Gonzalez-Sevilla},
+           familyi={G\bibinithyphendelim S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2750cbfab11241cda2003bd5bb709199}{%
+           family={Iodice},
+           familyi={I\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f0376741d7ad3d5c02cb2c99e6fc42cc}{%
+           family={Kotitsa},
+           familyi={K\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f37ff17e68b74a1234a7c5836a99c491}{%
+           family={Magliocca},
+           familyi={M\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d88685814cb9011262750b401d97ec65}{%
+           family={Nessi},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0c4d7de85e1fb0b74543c65f7da52161}{%
+           family={Pizarro-Medina},
+           familyi={P\bibinithyphendelim M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=072121b8a35bf568f780f406f2c5ef93}{%
+           family={Sabater\bibnamedelima Iglesias},
+           familyi={S\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=479dc284e57fd5ab3dfe0dd4a83a01d3}{%
+           family={Saidi},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=87c10e47a829ab0467c340e495dd5cc0}{%
+           family={Vicente\bibnamedelimb Barreto\bibnamedelima Pinto},
+           familyi={V\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=81f4e683f533b09c63b0044adacd3412}{%
+           family={Zambito},
+           familyi={Z\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cc6d3aab28cfdad6f6aa0bb12cc39436}{%
+           family={Paolozzi},
+           familyi={P\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=36fc38c0439e421c95247b10dd1d8b33}{%
+           family={Iacobucci},
+           familyi={I\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{eec79be039ea749f1432f9813e56f860}
+      \strng{fullhash}{ca5cf190b67cb06bc7f22ac1f5c564a6}
+      \strng{bibnamehash}{eec79be039ea749f1432f9813e56f860}
+      \strng{authorbibnamehash}{eec79be039ea749f1432f9813e56f860}
+      \strng{authornamehash}{eec79be039ea749f1432f9813e56f860}
+      \strng{authorfullhash}{ca5cf190b67cb06bc7f22ac1f5c564a6}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Instrumentation}
+      \field{month}{7}
+      \field{number}{07}
+      \field{title}{Testbeam results of irradiated SiGe BiCMOS monolithic silicon pixel detector without internal gain layer}
+      \field{volume}{19}
+      \field{year}{2024}
+      \field{pages}{P07036}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/19/07/P07036
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1748-0221/19/07/P07036
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1748-0221/19/07/P07036
+      \endverb
+    \endentry
+    \entry{RadiationDamageBruzzi}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ace8293293beca46d25ab5e5a2ef3269}{%
+           family={Bruzzi},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ace8293293beca46d25ab5e5a2ef3269}
+      \strng{fullhash}{ace8293293beca46d25ab5e5a2ef3269}
+      \strng{bibnamehash}{ace8293293beca46d25ab5e5a2ef3269}
+      \strng{authorbibnamehash}{ace8293293beca46d25ab5e5a2ef3269}
+      \strng{authornamehash}{ace8293293beca46d25ab5e5a2ef3269}
+      \strng{authorfullhash}{ace8293293beca46d25ab5e5a2ef3269}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Nuclear Science}
+      \field{number}{4}
+      \field{title}{Radiation damage in silicon detectors for high-energy physics experiments}
+      \field{volume}{48}
+      \field{year}{2001}
+      \field{pages}{960\bibrangedash 971}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/23.958706
+      \endverb
+      \keyw{Radiation detectors;Silicon radiation detectors;Physics;Large Hadron Collider;Face detection;Microstrip;Collision mitigation;Lattices;Neutrons;Implants}
+    \endentry
+    \entry{DisplacementDamageMoll}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f230048288d0839f19043f9f1951c469}{%
+           family={Moll},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f230048288d0839f19043f9f1951c469}
+      \strng{fullhash}{f230048288d0839f19043f9f1951c469}
+      \strng{bibnamehash}{f230048288d0839f19043f9f1951c469}
+      \strng{authorbibnamehash}{f230048288d0839f19043f9f1951c469}
+      \strng{authornamehash}{f230048288d0839f19043f9f1951c469}
+      \strng{authorfullhash}{f230048288d0839f19043f9f1951c469}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Nuclear Science}
+      \field{number}{8}
+      \field{title}{Displacement Damage in Silicon Detectors for High Energy Physics}
+      \field{volume}{65}
+      \field{year}{2018}
+      \field{pages}{1561\bibrangedash 1582}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1109/TNS.2018.2819506
+      \endverb
+      \keyw{Radiation detectors;Radiation effects;Large Hadron Collider;Silicon;Leakage currents;Performance evaluation;Simulation;Clusters;defects;displacement damage;nonionizing energy loss (NIEL);particle detectors;radiation effects;semiconductors;silicon;simulation;technology computer-aided design (TCAD)}
+    \endentry
+    \entry{SiGeRadiationDamage}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7d46fdee4e21a284b62acbe903c686f4}{%
+           family={Cressler},
+           familyi={C\bibinitperiod},
+           given={John\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d46fdee4e21a284b62acbe903c686f4}
+      \strng{fullhash}{7d46fdee4e21a284b62acbe903c686f4}
+      \strng{bibnamehash}{7d46fdee4e21a284b62acbe903c686f4}
+      \strng{authorbibnamehash}{7d46fdee4e21a284b62acbe903c686f4}
+      \strng{authornamehash}{7d46fdee4e21a284b62acbe903c686f4}
+      \strng{authorfullhash}{7d46fdee4e21a284b62acbe903c686f4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Nuclear Science}
+      \field{number}{3}
+      \field{title}{Radiation Effects in SiGe Technology}
+      \field{volume}{60}
+      \field{year}{2013}
+      \field{pages}{1992\bibrangedash 2014}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1109/TNS.2013.2248167
+      \endverb
+      \keyw{Silicon germanium;Heterojunction bipolar transistors;CMOS integrated circuits;Silicon;Radiation effects;CMOS technology;BiCMOS integrated circuits;Extreme environment electronics;radiation effects;SiGe heterojunction bipolar transistor (HBT);silicon-Germanium (SiGe);single event effects;space electronics;total ionizing dose}
+    \endentry
   \enddatalist
-  \missing{DisplacementDamageMoll}
-  \missing{FEI4_telescope}
-  \missing{RadiationDamageBruzzi}
-  \missing{SiGeRadiationDamage}
-  \missing{Zambito_2023}
-  \missing{milanesio2023radiation}
 \endrefsection
 \endinput
 

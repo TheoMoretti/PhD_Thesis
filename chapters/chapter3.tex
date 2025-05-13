@@ -31,9 +31,9 @@ The last part of the discussion in this chapter will present first present the r
 	\end{itemize}
 
 		\subsection{ATTRACT Prototype}
-		The \textit{ATTRACT} prototype (2019) is the second prototype designed the scope of the ATTRACT Phase1 MonPicoAD project. Its predecessor was described and tested in \cite{ATTRACT_proto1, ATTRACT_proto1_50ps}. The ASIC was manufactured by the IHP Microelectronics foundry using the IHP SG13G2 \SI{130}{\nano\meter} BiCMOS technology. The design of the ASIC was finalised in 2019 and the wafers received after post processing in 2019. The ASIC has a total size of $2.3 \times 2.5$ mm$^2$ active pixel matrix is subdivided in 12 rows and columns for a total of 144 hexagonal pixels with a \SI{65}{\micro\meter} side resulting in a pixel pitch of roughly \SI{110}{\micro\meter}. The ASIC periphery is located beside the pixel matrix and includes a Slow-Control (SC) interface through which the different bias supplied to the electronics can be controlled. The periphery and pixel matrix is then insulated from the substrate by a total of 18 guard rings which insulates the pixel well from the substrate. The pixel matrix is further subdivided into four 6x6 matrices, each containing a different design for the preamplifier part of the front-end electronics.  
+		The \textit{ATTRACT} prototype (2019) is the second prototype designed the scope of the ATTRACT Phase1 MonPicoAD project. Its predecessor was described and tested in \cite{ATTRACT_proto1, ATTRACT_proto1_50ps}. The ASIC was manufactured by the IHP Microelectronics foundry using the IHP SG13G2 \SI{130}{\nano\meter} BiCMOS technology. The design of the ASIC was finalised in 2019 and the wafers received after post processing in 2019. The ASIC has a total size of $2.3 \times 2.5$ mm$^2$ active pixel matrix is subdivided in 12 rows and columns for a total of 144 hexagonal pixels with a \SI{65}{\micro\meter} side resulting in a pixel pitch of roughly \SI{110}{\micro\meter}. The ASIC periphery is located beside the pixel matrix and includes a Slow-Control (SC) interface through which the different bias supplied to the electronics can be controlled. The periphery and pixel matrix is then insulated from the substrate by a total of 18 guard rings which insulates the pixel well from the substrate. The pixel matrix is further subdivided into four 6x6 matrices, each containing a different design for the preamplifier part of the frontend electronics.  
 			
-		Within one of the four sub-matrices, a set of four pixels are connected to a SiGe HBT amplifier, used as a charge sensitive amplifier, and analog driver directly connect to the output pads. The driver itself is composed of two consecutive HBTs in common collector configuration with a first AC stage coupled to the output of the amplifier \cite{ATTRACT_proto1_testbeam}. The front-ends are located outside of the pixel well and are used to measure and amplify the charge deposited by particles in the sensor. In the results later presented in \note{insert section}, the performances quoted are referred to these four analog pixels. The remaining 140 pixels have their front-end located in pixel and are connected to a digital readout with many discrimination stages, different from one sub-matrix to the other. These pixels also have the output of their discriminator connected to a FAST-OR to provide a discriminated signal for all of them in output. 
+		Within one of the four sub-matrices, a set of four pixels are connected to a SiGe HBT amplifier, used as a charge sensitive amplifier, and analog driver directly connect to the output pads. The driver itself is composed of two consecutive HBTs in common collector configuration with a first AC stage coupled to the output of the amplifier \cite{ATTRACT_proto1_testbeam}. The frontends are located outside of the pixel well and are used to measure and amplify the charge deposited by particles in the sensor. In the results later presented in \note{insert section}, the performances quoted are referred to these four analog pixels. The remaining 140 pixels have their frontend located in pixel and are connected to a digital readout with many discrimination stages, different from one sub-matrix to the other. These pixels also have the output of their discriminator connected to a FAST-OR to provide a discriminated signal for all of them in output. 
 		
 		The active part of the ASIC is build as a \textit{n-on-p} sensor meaning that the pixel well is n-type and the substrate is p-type. The base substrate is doped with Boron and a resistivity of \SI{50}{\ohm \centi\meter}. After implementation, the substrate was thinned to reach a sensor thickness of roughly \SI{60}{\micro\meter}. The total pixel capacitance in input to the preamplifier is estimated to be \SI{80}{\femto\farad} with a depletion depth estimated to be \SI{23}{\micro\meter}. 
 		
@@ -41,7 +41,7 @@ The last part of the discussion in this chapter will present first present the r
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=0.65\linewidth]{files/ATTRACT_ASIC_layout}
-			\caption{Image of the \textit{ATTRACT} prototype taken with a microscope. On top of the image are placed different block representing the different key structure in the ASIC. \note{Add zoom on pixel matrix and add analog Front-End label and names of pixels}}
+			\caption{Image of the \textit{ATTRACT} prototype taken with a microscope. On top of the image are placed different block representing the different key structure in the ASIC. \note{Add zoom on pixel matrix and add analog frontend label and names of pixels}}
 			\label{im:ATTRACT_ASIC_layout}
 		\end{figure} 
 		
@@ -52,7 +52,7 @@ The last part of the discussion in this chapter will present first present the r
 		
 		The \textit{MONOLITH} prototype (2022) is the second prototype of the generation of sensors without internal gain layer designed in the scope of the MONOLITH project. The ASIC was manufactured by the IHP Microelectronics foundry using the IHP SG13G2 \SI{130}{\nano\meter} BiCMOS technology. The design of the ASIC was finalised in 2021 and the wafers received after post processing in 2022. The ASIC has a (smaller) total size of $2.0 \times 2.5$ mm$^2$ active pixel matrix is subdivided in the same was as the \textit{ATTRACT} prototype. The architecture of this prototype is mostly similar to the one presented for the \textit{ATTRACT} prototype except for a few changes.  
 		
-		The front-end design in this prototype is different than the one implemented in the \textit{ATTRACT} prototype as it includes improvements. The first noticeable difference is in the power distribution, indeed the previously the alimentation of the preamplifier and the driver were put together but are now separated. This design change has the objective of removing undesired cross-talk between the four analog pixels. The second modification affects the stability of the front end when operated in high gain configurations. This was achieved by equipping the driver stage with a semi-differential analog output, effectively reducing the common-mode noise outside the ASIC. In addition, the new driver design reduced the signal rise-time, a key parameter in the contribution to the time resolution. Finally, in contrast to the single-ended output used previously, this prototype provides a differential output, helping by offering means to reduce the external noise contributions when analysing the signals offline. 
+		The frontend design in this prototype is different than the one implemented in the \textit{ATTRACT} prototype as it includes improvements. The first noticeable difference is in the power distribution, indeed the previously the alimentation of the preamplifier and the driver were put together but are now separated. This design change has the objective of removing undesired cross-talk between the four analog pixels. The second modification affects the stability of the front end when operated in high gain configurations. This was achieved by equipping the driver stage with a semi-differential analog output, effectively reducing the common-mode noise outside the ASIC. In addition, the new driver design reduced the signal rise-time, a key parameter in the contribution to the time resolution. Finally, in contrast to the single-ended output used previously, this prototype provides a differential output, helping by offering means to reduce the external noise contributions when analysing the signals offline. 
 		
 		For what regards the sensor, the ASIC is build as a \textit{n-on-p} sensor meaning that the pixel well is n-type and the substrate is p-type. The base substrate is doped with Boron and is characterised by its very low resistivity of \SI{0.1}{\ohm \centi\meter} while the \SI{50}{\micro\meter} thick epitaxial layer grown on top is still doped with Boron but with a higher resistivity of \SI{350}{\ohm \centi\meter}. This value is to be compared with the \SI{50}{\ohm \centi\meter} of the previous prototype, leading to a larger production of initial charge in the sensor when crossed by a ionising particle. The total pixel capacitance in input to the preamplifier is estimated to be \SI{100}{\femto\farad}. 
 		
@@ -60,7 +60,7 @@ The last part of the discussion in this chapter will present first present the r
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=0.65\linewidth]{files/MONOLITH_ASIC_layout}
-			\caption{Image of the \textit{MONOLITH} prototype taken with a microscope. On top of the image are placed different block representing the different key structure in the ASIC. \note{Add zoom on pixel matrix and add analog Front-End label and names of pixels}}
+			\caption{Image of the \textit{MONOLITH} prototype taken with a microscope. On top of the image are placed different block representing the different key structure in the ASIC. \note{Add zoom on pixel matrix and add analog frontend label and names of pixels}}
 			\label{im:MONOLITH_ASIC_layout}
 		\end{figure} 
 		 
@@ -68,7 +68,7 @@ The last part of the discussion in this chapter will present first present the r
 		
 	\clearpage
 	\section{Time Resolution of Silicon Pixel Detectors}
-	One of the main focuses of the development of silicon-based monolithic pixel detectors, first under the ATTRACT project and then under the MONOLITH project, is the achievement of very good time resolution, trying to get as close as possible to the intrinsic limits of the technologies implemented. The time resolution is defined as the error one makes when measuring the time of passage of a particle in the active part. There are multiple contributions to the time resolution of a silicon-based device, both from the sensor itself, the front-end electronics and the digital readout. The contribution from the digital readout for the studies carried out in this work is the one of the oscilloscope used to readout the 4 analog pixels as explained in \note{section ref}. 
+	One of the main focuses of the development of silicon-based monolithic pixel detectors, first under the ATTRACT project and then under the MONOLITH project, is the achievement of very good time resolution, trying to get as close as possible to the intrinsic limits of the technologies implemented. The time resolution is defined as the error one makes when measuring the time of passage of a particle in the active part. There are multiple contributions to the time resolution of a silicon-based device, both from the sensor itself, the frontend electronics and the digital readout. The contribution from the digital readout for the studies carried out in this work is the one of the oscilloscope used to readout the 4 analog pixels as explained in \note{section ref}. 
 	
 	In order to better explain was time walk is, a collection of waveforms from the testbeam test of the \textit{MONOLITH} prototype was put together in figure \ref{im:waveforms_timeresolution}. There waveforms were aligned vertically with respect to each waveform's average level in the region before the signal but also horizontally using a very precise timing reference. The close-up view shows the time at which each waveforms would cross a discrimination threshold labeled $V_{th}$, also known at Time of Arrival ($ToA$) of the signal.
 	\begin{figure}[h]
@@ -78,7 +78,7 @@ The last part of the discussion in this chapter will present first present the r
 		\label{im:waveforms_timeresolution}
 	\end{figure} 
 	
-	If one was to build a distribution of the $ToA$, the shape of the distribution obtained is close to the one of a Gaussian function. The standard deviation of the fit of the ToA distribution with a Gaussian function gives the total time resolution of the system composed of the sensor, the front-end electronics and the readout system. 
+	If one was to build a distribution of the $ToA$, the shape of the distribution obtained is close to the one of a Gaussian function. The standard deviation of the fit of the ToA distribution with a Gaussian function gives the total time resolution of the system composed of the sensor, the frontend electronics and the readout system. 
 	
 	It is possible to group into four different categories the contributions to the time resolutions as listed by \cite{timeres_SiliconDetectors}:
 	\begin{itemize}
@@ -96,6 +96,8 @@ The last part of the discussion in this chapter will present first present the r
 	It is possible to discuss each contributions individually to better understand the origins of each contribution with the scope of understanding how the design of the full detector ca be optimised. 
 	
 	 	\subsection{Charge Collection Noise Contribution}
+% TODO: CH4: Check that the description with Landau is correct, the total event is one point in a Landau so that the total amplitude is a Landau (see TB plots), but at the level of single events, it is more something like a struggling function, that is a deviation from the Landau. there are interactions at the level of the single shells on the atom. 
+
 	 	The energy lost by a charged particle when traversing a material arises primarily from electromagnetic interactions, in which the transferred energy results in ionisation or excitation of the target medium. For relativistic particles with energies well above the electron mass, the average energy loss per unit length is material-dependent and is accurately described by the Bethe formula:
 
 		\begin{equation}
@@ -188,19 +190,19 @@ The last part of the discussion in this chapter will present first present the r
 %		\subsection{The FE-I4 Telescope: Track Reconstruction \textcolor{red}{ 2 pages}}
 %		\subsection{Dataset Construction and Analysis Methods \textcolor{red}{ 3 pages}}
 
-	\section{Particle Telescope and Track Reconstruction}
+	\section{Particle Telescope and Track Reconstruction \textcolor{red}{ 2 pages}}
 
 	\clearpage
 	\section{Test Beam Characterisation of \textit{ATTRACT} Prototypes}
-		The \textit{ATTRACT} prototype was first tested in the laboratory at the University of Geneva through the course of late 2020 and early 2021 for a first characterisation of the front-end's amplifier performance as well as an estimation of the time resolution using a source of \Sr and a Low Gain Avalanche Diode (LGAD) for time reference, the results were presented in \cite{Moretti_MasterThesis}.
+		The \textit{ATTRACT} prototype was first tested in the laboratory at the University of Geneva through the course of late 2020 and early 2021 for a first characterisation of the frontend's amplifier performance as well as an estimation of the time resolution using a source of \Sr and a Low Gain Avalanche Diode (LGAD) for time reference, the results were presented in \cite{Moretti_MasterThesis}.
 		
 		In July 2021, a test beam campaign was organised at the CERN SPS North Area experimental hall. The beam used to qualify the two nearly identical \textit{ATTRACT} prototypes was composed of pions with a momentum of \SI{180}{\giga\electronvolt}/c a beam spread of about a few millimetres wide and very straight tracks (almost no beam divergence). The track position on the Device Under Test (DUT) were reconstructed using the FE-I4 UniGe telescope \cite{telescope} and allowed for a mesure of the detection efficiency as a function of the particle position within the pixel. The time resolution was also estimated using the two prototypes under the assumption that their timing performance was equivalent. 
 		
 		The results are presented for the prototypes as a function of the power density (\power) and as a function of the High Voltage (HV) bias  given to the substrate. The following section refers to the work published in early 2022 in the Journal of Instrumentation (JINST) \cite{ATTRACT_proto1_testbeam}. 
 		
-		\subsection{Front-End Calibrations}
+		\subsection{frontend Calibrations}
 
-		Laboratory measurements with X-ray sources were performed to characterise the analog response of the front-end electronics of two ASICs, that will be called here Device Under Test 0 (DUT0) and 1 (DUT1). For these measurements and those described in Section \note{section ref}, the outputs of the analog drivers were connected to a \SI{50}{\ohm} coaxial cable and AC coupled via a \SI{100}{\nano\farad} capacitor to a Lecroy WaveMaster 820zi oscilloscope. The oscilloscope has a sampling rate of 40 Gs/s and its analog bandwidth was limited to 4 GHz. 
+		Laboratory measurements with X-ray sources were performed to characterise the analog response of the frontend electronics of two ASICs, that will be called here Device Under Test 0 (DUT0) and 1 (DUT1). For these measurements and those described in Section \note{section ref}, the outputs of the analog drivers were connected to a \SI{50}{\ohm} coaxial cable and AC coupled via a \SI{100}{\nano\farad} capacitor to a Lecroy WaveMaster 820zi oscilloscope. The oscilloscope has a sampling rate of 40 Gs/s and its analog bandwidth was limited to 4 GHz. 
 		A \Cd source was used to measure the gain of the electronic chain, which includes the pixel, the preamplifier and the driver. To study the response of the electronics as a function of the power density, four different working points were adopted, with  amplifier bias current $I_{\text{preamp}} = $  \SI{7}{\micro\ampere}, \SI{20}{\micro\ampere}, \SI{50}{\micro\ampere} and \SI{150}{\micro\ampere} respectively resulting in power densities of \power = \SI{0.08}{\watt/\centi\meter^2}, \SI{0.24}{\watt/\centi\meter^2}, \SI{0.60}{\watt/\centi\meter^2}, \SI{1.8}{\watt/\centi\meter^2}.
 		\begin{figure}[h]
 			\centering
@@ -210,17 +212,17 @@ The last part of the discussion in this chapter will present first present the r
 		\end{figure}
 		
 		The two main photons from the \Cd source derive from the $ ^{109}Ag $ X-ray K lines of energy $E_{1} = \SI{22.16}{\kilo\electronvolt}$ and $E_{2} = \SI{24.94}{\kilo\electronvolt} $.
-		The spectrum of \Cd was fitted with a double Gaussian function. Figure \ref{im:ATTRACT_CdSpectrum} shows one example of the spectra from DUT0, while Figure \ref{im:ATTRACT_CdFit} shows the amplitude values obtained from the fit of the same spectrum as a function of the deposited charge, assuming an energy of \SI{3.6}{\electronvolt} to generate and electron-hole pair in silicon. A linear fit of the data was used to estimate the charge gain ($ A_q $) of the front-end electronics. 
+		The spectrum of \Cd was fitted with a double Gaussian function. Figure \ref{im:ATTRACT_CdSpectrum} shows one example of the spectra from DUT0, while Figure \ref{im:ATTRACT_CdFit} shows the amplitude values obtained from the fit of the same spectrum as a function of the deposited charge, assuming an energy of \SI{3.6}{\electronvolt} to generate and electron-hole pair in silicon. A linear fit of the data was used to estimate the charge gain ($ A_q $) of the frontend electronics. 
 		
 		
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=0.8\linewidth]{files/ATTRACT_paper/Calibration_DUT0_120V_150uA}
-			\caption{Example of the amplitude measurement as a function of the number of electrons obtained with the \Cd source for one of the working points for DUT0. The superimposed linear fit  is used to parameterise  the response of the front-end at this working point.}
+			\caption{Example of the amplitude measurement as a function of the number of electrons obtained with the \Cd source for one of the working points for DUT0. The superimposed linear fit  is used to parameterise  the response of the frontend at this working point.}
 			\label{im:ATTRACT_CdFit}
 		\end{figure}
 
-		The Equivalent Noise Charge (ENC) of the front-end was then calculated as
+		The Equivalent Noise Charge (ENC) of the frontend was then calculated as
 
 		\vspace{-3mm}
 		\begin{equation*}
@@ -228,7 +230,7 @@ The last part of the discussion in this chapter will present first present the r
 		\end{equation*}
 
 		\vspace{-1mm}
-		where \noise is the standard deviation of the electronics-noise distribution measured on the oscilloscope when the front-end is connected, and $\sigma\_{\text{scope}} =$ \SI{420}{\micro\volt} is the voltage noise of the oscilloscope with the open input connector. The results of the gain and ENC measurements are summarised in Table \ref{tab:ATTRACT_gaintable}. The two DUTs show the same trend within approximately 10\%. At  \power = \SI{0.6}{\watt/\centi\meter^2} the ENC is as low as 50 electrons. As expected, it increases significantly for smaller $ I_{\text{preamp}} $ values, which could produce a degradation of the detection efficiency. The increase of the ENC at \power =  \SI{1.8}{\watt/\centi\meter^2} is due to the configuration of the amplifier used for this working point.
+		where \noise is the standard deviation of the electronics-noise distribution measured on the oscilloscope when the frontend is connected, and $\sigma\_{\text{scope}} =$ \SI{420}{\micro\volt} is the voltage noise of the oscilloscope with the open input connector. The results of the gain and ENC measurements are summarised in Table \ref{tab:ATTRACT_gaintable}. The two DUTs show the same trend within approximately 10\%. At  \power = \SI{0.6}{\watt/\centi\meter^2} the ENC is as low as 50 electrons. As expected, it increases significantly for smaller $ I_{\text{preamp}} $ values, which could produce a degradation of the detection efficiency. The increase of the ENC at \power =  \SI{1.8}{\watt/\centi\meter^2} is due to the configuration of the amplifier used for this working point.
 
 		\begin{table}[h!]
     		\centering
@@ -247,7 +249,7 @@ The last part of the discussion in this chapter will present first present the r
     		\multicolumn{1}{|c|}{0.60} & \multicolumn{1}{c|}{0.70} & \multicolumn{1}{c|}{55.0} & ~54 $\pm$ 1 & \multicolumn{1}{c|}{0.58} & \multicolumn{1}{c|}{50.5} & ~50 $\pm$ 1 \\ \hline
     		\multicolumn{1}{|c|}{1.80} & \multicolumn{1}{c|}{0.81} & \multicolumn{1}{c|}{52.4} & ~76 $\pm$ 1 & \multicolumn{1}{c|}{0.72} & \multicolumn{1}{c|}{44.4} & ~82 $\pm$ 1 \\ \hline
     		\end{tabular}
-    		\caption{Voltage noise, charge gain and ENC of the analog front-end electronics at the four power density working points for HV = 120 V. The lower ENC value measured at \SI{0.6}{\watt/\centi\meter^2} is due to a different configuration of the amplifier and driver working point that acts as a filter for noise, thus reducing the bandwidth.}
+    		\caption{Voltage noise, charge gain and ENC of the analog frontend electronics at the four power density working points for HV = 120 V. The lower ENC value measured at \SI{0.6}{\watt/\centi\meter^2} is due to a different configuration of the amplifier and driver working point that acts as a filter for noise, thus reducing the bandwidth.}
     		\label{tab:ATTRACT_gaintable}
 		\end{table}
 
@@ -265,7 +267,7 @@ The last part of the discussion in this chapter will present first present the r
 		\end{figure}
 
 		The analysis of the data was performed using the full waveform information acquired by the oscilloscopes. The signals from the DUTs were delayed to guarantee that they were always in the second half of the waveform time window acquired by the oscilloscope.
-		This configuration allowed using the first half of the waveform to determine the voltage noise \noise at the output of the analog front-end and set a discrimination threshold $V_{th}$ as a multiple of the voltage noise, independently for the two DUTs. Figure~\ref{im:ATTRACT_waveform} shows a typical waveform with a signal pulse from a MIP at the working point with  \power = \SI{1.8}{\watt/\centi\meter^2}. The dashed line represents the discrimination threshold at $V_{th}=6$ \noise.
+		This configuration allowed using the first half of the waveform to determine the voltage noise \noise at the output of the analog frontend and set a discrimination threshold $V_{th}$ as a multiple of the voltage noise, independently for the two DUTs. Figure~\ref{im:ATTRACT_waveform} shows a typical waveform with a signal pulse from a MIP at the working point with  \power = \SI{1.8}{\watt/\centi\meter^2}. The dashed line represents the discrimination threshold at $V_{th}=6$ \noise.
 
 		\begin{figure}[h]
 			\centering
@@ -275,7 +277,7 @@ The last part of the discussion in this chapter will present first present the r
 		\end{figure}
 
 		The FE-I4 telescope provided the trigger to the oscilloscopes. A Region Of Interest (ROI) of $ 250 \times 600 $  $\mu$ m$^2$ was set on one of the trigger planes of the telescope, centred around the pixels OA0 of the two DUTs that were aligned with respect to the beam line and used for the TOF measurement.
-		Data samples were acquired with DUT0 and DUT1 at the same four front-end working points used for the characterisation of the DUTs with radioactive sources (\note{section ref}) for a high voltage bias of 120 V. At this potential the substrate is not fully depleted. The depletion depth is estimated to be \SI{23}{\micro\meter}, which corresponds to a most probable charge $ Q_{MPV} \approx 1300 $ electrons for a MIP. 
+		Data samples were acquired with DUT0 and DUT1 at the same four frontend working points used for the characterisation of the DUTs with radioactive sources (\note{section ref}) for a high voltage bias of 120 V. At this potential the substrate is not fully depleted. The depletion depth is estimated to be \SI{23}{\micro\meter}, which corresponds to a most probable charge $ Q_{MPV} \approx 1300 $ electrons for a MIP. 
 
 		A high voltage scan was also performed only for the working point \power = \SI{1.8}{\watt/\centi\meter^2}. 
 		To evaluate the efficiency and time resolution of the DUTs in the cleanest possible way, a selection was applied on the quality of the tracks reconstructed by the FE-I4 telescope. The selection consisted in discarding events in which more than one track was reconstructed by the telescope, and in accepting only events with the reconstructed track having an associated hit in each of the five telescope planes and a $ \chi^{2}/NDF \le 1 $. About 30\% of the triggered events survived this stringent selection on the tracks from the telescope. For this final sample the telescope pointing resolution on the DUT planes was estimated to be approximately 10 $\mu$m in both directions \cite{vicente_thesis}.
@@ -321,7 +323,7 @@ The last part of the discussion in this chapter will present first present the r
 			\label{im:ATTRACT_effipreampscan} 
 		\end{figure}
 
-		Figure~\ref{im:ATTRACT_effipreampscan} and Table \ref{tab:ATTRACT_efftable} show the efficiency obtained within the triangular area for the four power density working points at a discrimination threshold of 6\noise and at a sensor bias voltage of \SI{120}{\volt}. The efficiency follows the trend expected from the ENC measurement of Table~\ref{tab:ATTRACT_gaintable}. All the power density working points show an efficiency well above 99\% except for the one at \SI{0.08}{\watt/\centi\meter^2}. At this power density a larger depletion depth would be required to operate the front-end at even higher efficiency. It is also noted that DUT0 shows a lower efficiency, compatibly with the larger ENC measured with the \Cd source (\note{section ref}). At higher power densities DUT0 is slightly more efficient than DUT1. To investigate this difference, the efficiency as a function of the discrimination threshold was inspected. The results are reported in Figure \ref{im:ATTRACT_effthrscan} for $ HV =$ \SI{120}{\volt}. The threshold scan indicates a clear difference in performance, in spite of the fact that both DUTs reach the efficiency plateau at a threshold of six standard deviations of the noise. 
+		Figure~\ref{im:ATTRACT_effipreampscan} and Table \ref{tab:ATTRACT_efftable} show the efficiency obtained within the triangular area for the four power density working points at a discrimination threshold of 6\noise and at a sensor bias voltage of \SI{120}{\volt}. The efficiency follows the trend expected from the ENC measurement of Table~\ref{tab:ATTRACT_gaintable}. All the power density working points show an efficiency well above 99\% except for the one at \SI{0.08}{\watt/\centi\meter^2}. At this power density a larger depletion depth would be required to operate the frontend at even higher efficiency. It is also noted that DUT0 shows a lower efficiency, compatibly with the larger ENC measured with the \Cd source (\note{section ref}). At higher power densities DUT0 is slightly more efficient than DUT1. To investigate this difference, the efficiency as a function of the discrimination threshold was inspected. The results are reported in Figure \ref{im:ATTRACT_effthrscan} for $ HV =$ \SI{120}{\volt}. The threshold scan indicates a clear difference in performance, in spite of the fact that both DUTs reach the efficiency plateau at a threshold of six standard deviations of the noise. 
 
 		\begin{figure}[h]
 			\centering 
@@ -331,7 +333,7 @@ The last part of the discussion in this chapter will present first present the r
 		\end{figure}
 
 		The efficiency measurement of a sensor HV scan carried out for the working point  \power = \SI{1.8}{\watt/\centi\meter^2} is reported in Figure~\ref{im:ATTRACT_effHVscan} and Table~\ref{tab:ATTRACT_efftablehv}. 
-		The scan shows that the two DUTs are in the efficiency plateau at \SI{120}{\volt}. At the \SI{50}{\ohm\cm} substrate resistivity of this prototype, increasing the HV from \SI{120}{\volt} to \SI{160}{\volt} increases the depletion depth by 15\%, which has little or no contribution for the working point at the highest power density, but could have been beneficial for the front-end operation at \SI{0.08}{\watt/\centi\meter^2} for which a small drop in efficiency was observed (Figure~\ref{im:ATTRACT_effipreampscan}).
+		The scan shows that the two DUTs are in the efficiency plateau at \SI{120}{\volt}. At the \SI{50}{\ohm\cm} substrate resistivity of this prototype, increasing the HV from \SI{120}{\volt} to \SI{160}{\volt} increases the depletion depth by 15\%, which has little or no contribution for the working point at the highest power density, but could have been beneficial for the frontend operation at \SI{0.08}{\watt/\centi\meter^2} for which a small drop in efficiency was observed (Figure~\ref{im:ATTRACT_effipreampscan}).
 		
 		\begin{figure}[h]
 			\centering 
@@ -451,13 +453,13 @@ The last part of the discussion in this chapter will present first present the r
 		
 	The results are presented for the prototype as a function of the power density (\power), as a function of the High Voltage (HV) bias given to the substrate and as a function of the particle's position within the pixel. The following section refers to the work published in early 2023 in the Journal of Instrumentation (JINST) \cite{MONOLITH_proto2_20ps}.
 		
-		\subsection{Front-End Calibrations}
+		\subsection{frontend Calibrations}
 		A radioactive \Fe source was used to characterise the ASIC analog electronics chain, comprising the pixel, the preamplifier and the driver, at five working points corresponding to power density values \power = 0.04, 0.13, 0.36, 0.9 and \SI{2.7}{\watt/\centi\meter^2}. The differential analog output signals were used for this measurement.
-		The ENC of the front-end electronics, reported in Table~\ref{tab:MONO_gain}, was computed as 
+		The ENC of the frontend electronics, reported in Table~\ref{tab:MONO_gain}, was computed as 
 		\begin{equation}
 			ENC = \frac{\sqrt{\sigma_{\text{V}}^2 -2\sigma_{\text{scope}}^2}}{A_q}
 		\end{equation}
-		where \noise is the standard deviation of the electronic-noise distribution measured by the oscilloscope when the front-end is connected, $\sigma_{\text{scope}}$ is the voltage noise of the oscilloscope with the open input connector, taken twice to account since the signals used are the difference of two opposite polarities signals for the same pixel individually recorded on a separate oscilloscope channel, and $A_q$ is the charge gain.
+		where \noise is the standard deviation of the electronic-noise distribution measured by the oscilloscope when the frontend is connected, $\sigma_{\text{scope}}$ is the voltage noise of the oscilloscope with the open input connector, taken twice to account since the signals used are the difference of two opposite polarities signals for the same pixel individually recorded on a separate oscilloscope channel, and $A_q$ is the charge gain.
 		
 		\begin{table}[h]
 			\centering
@@ -474,8 +476,8 @@ The last part of the discussion in this chapter will present first present the r
 			0.04  & $ 0.67 \pm 0.01 $ & $ 0.16\pm0.01 $ & $27.0 \pm 0.5 $ & $ 145\pm8$ \\
 			\cline{1-5}
 			\end{tabular}
-			\caption{Charge gain and ENC measured with a $^{55}$Fe source at five different values of the front-end power density. The standard deviations  of the voltage noise and of the oscilloscope noise used for the calculation of the ENC are also reported.}
-			\label{tab:_MONO_gain} 
+			\caption{Charge gain and ENC measured with a $^{55}$Fe source at five different values of the frontend power density. The standard deviations  of the voltage noise and of the oscilloscope noise used for the calculation of the ENC are also reported.}
+			\label{tab:MONO_gain} 
 		\end{table}
 
 	
@@ -520,7 +522,7 @@ The last part of the discussion in this chapter will present first present the r
 		Large samples of data were acquired at the four sensor bias voltage values $HV$ = 120, 160, 200 and 250 V, and at the five power density values reported in Table \ref{tab:MONO_gain}.
 		For all these working points, the samplings of the differential signal in the first 30 ns of the trigger time window were used to determine the standard deviation of the voltage noise $\sigma_V$ of the DUT at the output of the analog front end. The left panel of Figure \ref{im:MONO_waveform} shows a typical waveform acquired for pixel OA0 of the DUT operated at power density \power \SI{2.7}{\watt/\centi\meter^2} and bias voltage $HV=$ \SI{200}{\volt}.
 		The distribution of the differential signal amplitudes from pixel OA0 after the telescope-track selection is shown in the right panel of Figure \ref{im:MONO_waveform}.
-x
+
 		\subsection{Detection Efficiency}
 		The pion tracks reconstructed by the FE-I4 telescope and surviving the analysis selection criteria were used to measure the DUT detection efficiency. The efficiency was computed as the ratio between the number of selected tracks associated to recorded signals with amplitudes above a threshold of 7 times the voltage noise \noise and the total number of selected tracks traversing the DUT in the area corresponding to the four analog pixels. A tolerance of \SI{10}{\micro\meter} in the region outside the external boundaries of the four-pixel area was allowed to account for the finite telescope pointing resolution.
 
@@ -601,7 +603,7 @@ x
 
 
 
-		\subsection{Time Resolution \textcolor{red}{ 6 pages}}	
+		\subsection{Time Resolution}	
 
 		The time measurements of the DUT and the two MCPs for the sample of tracks selected as described in Section \note{section ref} were used to determine the timing performance of the \textit{MONOLITH} prototype. 
 		The DUT time resolution was studied using the time of arrival (\toa) of the  analog signals acquired by pixel OA0, which was connected to the fastest oscilloscope. The measurement was restricted to events with telescope tracks crossing the area of pixel OA0 inside the two triangles shown in Figure \ref{im:MONO_effmap}, to exclude hits in the inter-pixel region that have the majority of the charge shared with the three non-instrumented pixels adjacent to OA0, and thus should not be associated to pixel OA0. 
@@ -718,19 +720,21 @@ x
 
 	\clearpage
 	\section{Radiation Tolerance of \textit{MONOLITH} Prototypes}
+	In early 2023, a collection of \textit{MONOLITH} prototypes were irradiated at the CYRIC facility \cite{CYRIC_facility} in Japan with \SI{70}{\mega\electronvolt} protons, up to a fluence of \maxflu. In July 2023, these ASICs were tested during a test beam campaign organised at the CERN SPS North Area experimental hall. The beam used to qualify the ASIC was composed of pions with a momentum of \SI{120}{\giga\electronvolt}/c a beam spread of about a few millimetres wide and very straight tracks (almost no beam divergence). The track position on the DUT were reconstructed using the FE-I4 UniGe telescope \cite{telescope} and allowed for a mesure of the detection efficiency and time resolution as a function of the particle position within the pixel. The set-up used was the same as the one described for the testbeam of the non-irradiated \textit{MONOLITH} prototypes with the addition of a thermal chamber, keeping the DUT at low temperatures in order to avoid unwanted annealing. A first characterisation in the laboratory of the prototypes was published in \cite{LabRad_Mono2023}.
+		
+	The results are presented for the prototypes as a function of the power density (\power), as a function of the High Voltage (HV) bias given to the substrate and as a function of the particle's position within the pixel and are compared with the non-irradiated samples. The following section refers to the work published in June 2024 in the Journal of Instrumentation (JINST) \cite{Moretti_irradiated}.
 
-		\subsection{Data samples and experimental set-up}\label{sec:Samples&Setup}
-		Given the limited time availability during the testbeam experiment, data were taken only with four irradiated boards out of the seven characterised in \cite{milanesio2023radiation}. 
-		In addition, data were taken also with the board not irradiated previously characterised in \cite{Zambito_2023}.
-		Table \ref{tab:wp} gives a summary of the power density of the frontend and of the sensor bias voltage of the 18 datasets taken at the testbeam.
-		All boards were operated at a frontend feedback current of 2.0 $\mu$A and, to avoid any unwanted annealing,  stored and operated at a temperature of -10 $^\circ$C. 
+		\subsection{Data samples and experimental set-up}
+		Given the limited time availability during the testbeam experiment, data were taken only with four irradiated boards out of the seven characterised in \cite{LabRad_Mono2023}. 
+		In addition, data were taken also with the board not irradiated previously characterised in \cite{Monolith_20ps}.
+		Table \ref{tab:MONO-IR_wp} gives a summary of the power density of the frontend and of the sensor bias voltage of the 18 datasets taken at the testbeam. All boards were operated at a frontend feedback current of 2.0 $\mu$A and, to avoid any unwanted annealing, stored and operated at a temperature of -10 $^\circ$C. 
 
-		\begin{table}[!htb]
+		\begin{table}[h]
 			\centering
 			\renewcommand{\arraystretch}{1.3}
 			\begin{tabular}{|c|ccc|cccc|}
 			\cline{1-8}
-			\begin{tabular}{c} Proton Fluence \\ \ [1 MeV n$_{\text{eq}}$/cm$^2$] \end{tabular} & \multicolumn{3}{c|}{\pdensity~ [W/cm$^2$]}  & \multicolumn{4}{c|}{High Voltage [V]} \\
+			\begin{tabular}{c} Proton Fluence \\ \ [1 MeV n$_{\text{eq}}$/cm$^2$] \end{tabular} & \multicolumn{3}{c|}{\power~ [W/cm$^2$]}  & \multicolumn{4}{c|}{High Voltage [V]} \\
 			\cline{1-8}
 			0                   & 0.13 & 0.54 & 0.9                                   & \multicolumn{4}{c|}{\multirow{4}{*}{200}} \\ \cline{1-4}
 			$9 \times 10^{13}$  & 0.13 & 0.54 & 0.9                                   & \multicolumn{4}{c|}{} \\ \cline{1-4}
@@ -741,51 +745,52 @@ x
 			\cline{1-8} 
 			\end{tabular}
 			\caption{ Power density and sensor bias voltage of the 18 data samples taken at the CERN SPS testbeam with the four irradiated boards and with the board not irradiated. The proton-fluence values  are reported in the first column in 1 MeV \flu~values.}
-			\label{tab:wp} 
+			\label{tab:MONO-IR_wp} 
 		\end{table}
 
-		The UNIGE FE-I4 telescope \cite{FEI4_telescope} was used to provide external tracking. The device under test (DUT)  was mounted at the center of the telescope as explained in \cite{Zambito_2023}.
-		Two Microchannel Plate Detectors (MCP) were positioned downstream of the telescope and used as time reference.
-		The analog outputs of the two MCP detectors  and of the DUT were read by two fast oscilloscopes. The first one with a sampling rate of 20 GS/s and an analog bandwidth set to 4 GHz for the channels connected to the MCPs and 1 GHz for the channels connected to the pair of single-ended analog output of the pixel used to measure the DUT time resolution. Two other pairs of single-ended output of adjacent pixels were connected to the second oscilloscope with a sampling rate of 10 GS/s and an analog bandwidth set to 1 GHz.
+		The UNIGE FE-I4 telescope \cite{telescope} was used to provide external tracking. The DUT was mounted at the center of the telescope as explained in \cite{Monolith_20ps}.
+		Two MCPs were positioned downstream of the telescope and used as time reference.
+		The analog outputs of the two MCP detectors and of the DUT were read by two fast oscilloscopes. The first one with a sampling rate of 20 GS/s and an analog bandwidth set to 4 GHz for the channels connected to the MCPs and 1 GHz for the channels connected to the pair of single-ended analog output of the pixel used to measure the DUT time resolution. Two other pairs of single-ended output of adjacent pixels were connected to the second oscilloscope with a sampling rate of 10 GS/s and an analog bandwidth set to 1 GHz.
 		The DUT was mounted on a cooling plate and covered by an insulating box to keep the ASIC at a constant temperature of -10 $^\circ$C. 
 
 		The waveforms acquired for the positive and negative single-ended signals of the DUT were subtracted offline, sample point by sample point, to construct differential signals. Throughout the analysis, only the differential signals were used since they provide better signal-to-noise ratio. 
 
 
-		\subsection{Detection efficiency}\label{sec:efficiency}
-
+		\subsection{Detection efficiency}
 		The detection efficiency was computed using pion tracks reconstructed by the FE-I4 telescope that produced hits in the six telescope planes and with a $\chi^2$/NDF $\le$ 1.5.
 
-		Since the number of channels available in the two oscilloscopes allowed recording of the signals from only two out of six neighboring analog pixels, the calculation of the efficiency was restricted to the telescope tracks whose extrapolation on the pixel surface was inside  the region defined by the triangle connecting the center of the three pixels (the pixel under study and the  two adjacent pixels that were read out). This triangle represents in the correct proportions all the areas of a pixel, and provide a result unbiased by the pointing resolution of the telescope which have been observed to show artificial inefficiency at the edge of pixels if the adjacent pixel is not read out~\cite{Zambito_2023}.
-
-		\begin{figure}[!htb]
+		Since the number of channels available in the two oscilloscopes allowed recording of the signals from only two out of six neighbouring analog pixels, the calculation of the efficiency was restricted to the telescope tracks whose extrapolation on the pixel surface was inside the region defined by the triangle connecting the center of the three pixels (the pixel under study and the two adjacent pixels that were read out).
+		\begin{figure}[h]
 			\centering
-			%\includegraphics[width=.85\textwidth]{./Figures/M06_M16}
-			\caption{\label{fig:HV_vs_th} Detection efficiency measured at a power density  \pdensity~= 0.9 W/cm$^2$ as a function of the voltage threshold. The data refer to the board not irradiated operated at HV = 200 V (open red squares), and to the board irradiated at \maxflu~operated at HV = 300 V (full red squares). The voltage threshold is given in units of the voltage noise \sigmav, which is 300 $\mu$V before irradiation and raises to 600 $\mu$V after a fluence of \maxflu, as reported in~\cite{milanesio2023radiation}. The plot reports also the noise-hit rate (values reported on the right-hand-axis scale) measured with the two boards.}
+			\includegraphics[width=.85\textwidth]{files/MONOLITH_Irradiated_paper/M06_M16}
+			\caption{Detection efficiency measured at a power density \power~= 0.9 W/cm$^2$ as a function of the voltage threshold. The data refer to the board not irradiated operated at HV = 200 V (open red squares), and to the board irradiated at \maxflu~operated at HV = 300 V (full red squares). The voltage threshold is given in units of the voltage noise \noise, which is \SI{300}{\micro\volt} before irradiation and raises to \SI{600}{\micro\volt} after a fluence of \maxflu, as reported in~\cite{LabRad_Mono2023}. The plot reports also the noise-hit rate (values reported on the right-hand-axis scale) measured with the two boards.}
+			\label{im:MONO-IR_HV_vs_th} 
 		\end{figure}
-		Figure~\ref{fig:HV_vs_th} shows the efficiency as a function of the voltage noise \sigmav, in the case of the board not irradiated operated at a sensor bias voltage of 200 V, and of the board irradiated at \maxflu~operated at 300 V. 
+		
+		Figure~\ref{im:MONO-IR_HV_vs_th} shows the efficiency as a function of the voltage noise \noise, in the case of the board not irradiated operated at a sensor bias voltage of 200 V, and of the board irradiated at \maxflu~operated at 300 V. 
 		The increase of HV for the irradiated board was necessary to fully deplete the sensor and operate it at very high efficiency after the change in resistivity due to the exposure to radiation.
-		The voltage noise \sigmav~was measured event-by-event using the waveform samplings recorded in a time interval of 200 ns preceding the signal.
-		At the nominal threshold value \vth~= 7 \sigmav, the ASIC not irradiated provides a detection efficiency of (99.96$^{~\!+0.01}_{-0.02}$)\% and, given the large signal-to-noise ratio, it maintains an efficiency at the level of 99.8\% even with a threshold value of 14 \sigmav.
-		On the contrary,  in the case  of the ASIC that was exposed to \maxflu, since the signal-to-noise ratio diminishes, the efficiency was found to depend more on the threshold, and at HV = 300 V varies from 99.7\% at a threshold \vth~= 7 \sigmav~to approximately 97.0\% already at \vth~= 10 \sigmav. 
-		Figure~\ref{fig:HV_vs_th} also reports the noise-hit rate as a function of the threshold. The noise-hit rate  shows the expected  exponential drop. It increases by a factor of approximately five after the ASIC has received a proton fluence of \maxflu.
-		\begin{figure}[!htb]
+		The voltage noise \noise was measured event-by-event using the waveform samplings recorded in a time interval of 200 ns preceding the signal.
+		At the nominal threshold value \vth~= 7 \noise, the ASIC not irradiated provides a detection efficiency of (99.96$^{~\!+0.01}_{-0.02}$)\% and, given the large signal-to-noise ratio, it maintains an efficiency at the level of 99.8\% even with a threshold value of 14 \noise.
+		On the contrary, in the case of the ASIC that was exposed to \maxflu, since the signal-to-noise ratio diminishes, the efficiency was found to depend more on the threshold, and at HV = 300 V varies from 99.7\% at a threshold \vth~= 7 \noise to approximately 97.0\% already at \vth = 10 \noise. 
+		Figure \ref{im:MONO-IR_HV_vs_th} also reports the noise-hit rate as a function of the threshold. The noise-hit rate shows the expected exponential drop. It increases by a factor of approximately five after the ASIC has received a proton fluence of \maxflu.
+		\begin{figure}[h]
 			\centering
-			%\includegraphics[width=.85\textwidth]{./Figures/Voltage_efficiency}
-			\caption{\label{fig:HV_vs_eff} Detection efficiency measured as a function of the sensor bias voltage at a threshold value \vth~= 7 \sigmav. The red dots show the results obtained with the board irradiated at \maxflu, while the blue square that obtained with the board not irradiated, all  operated at \pdensity~= 0.9 W/cm$^2$. The results obtained with the board not irradiated at \pdensity~= 2.7 W/cm$^2$ reported in \cite{Zambito_2023} are superimposed as black open squares.}
+			\includegraphics[width=.75\textwidth]{files/MONOLITH_Irradiated_paper/Voltage_efficiency}
+			\caption{Detection efficiency measured as a function of the sensor bias voltage at a threshold value \vth~= 7 \noise. The red dots show the results obtained with the board irradiated at \maxflu, while the blue square that obtained with the board not irradiated, all  operated at \power~= 0.9 W/cm$^2$. The results obtained with the board not irradiated at \power~= 2.7 W/cm$^2$ reported in \cite{Monolith_20ps} are superimposed as black open squares.}
+			\label{im:MONO-IR_HV_vs_eff} 
 		\end{figure}
 
 
 
 
-		\begin{table}[!htb]
+		\begin{table}[h]
 			\centering
 			\renewcommand{\arraystretch}{1.3}
 			\begin{tabular}{|c|c|c|c|c|}
 			\cline{1-5}
 			\cline{1-5}
 			\cline{1-5}
-			\begin{tabular}{c} Proton Fluence \\ \ [1 MeV n$_{\text{eq}}$/cm$^2$] \end{tabular} & \begin{tabular}{c}\pdensity~ \\ \ [W/cm$^2$] \end{tabular} & \begin{tabular}{c} High \\ Voltage \\ \ [V] \end{tabular} & \begin{tabular}{c}Detection \\ Efficiency \\ \ [\%]\end{tabular} & \begin{tabular}{c}Time \\ Resolution \\  \ [ps]\end{tabular} \\
+			\begin{tabular}{c} Proton Fluence \\ \ [1 MeV n$_{\text{eq}}$/cm$^2$] \end{tabular} & \begin{tabular}{c}\power~ \\ \ [W/cm$^2$] \end{tabular} & \begin{tabular}{c} High \\ Voltage \\ \ [V] \end{tabular} & \begin{tabular}{c}Detection \\ Efficiency \\ \ [\%]\end{tabular} & \begin{tabular}{c}Time \\ Resolution \\  \ [ps]\end{tabular} \\
 			\cline{1-5}
 			\multirow{3}{*}{ 0 }                    & 0.13 & \multirow{3}{*}{200}   & 99.94$^{~\!+0.03}_{-0.05}$ & 31.0 $\pm$ 1.6\\ \cline{2-2} \cline{4-5}
             			                            & 0.54 &                        & 99.96$^{~\!+0.02}_{-0.03}$ & 29.0 $\pm$ 1.3\\ \cline{2-2} \cline{4-5}
@@ -807,107 +812,102 @@ x
                                        				&      & 300                    & 99.69$^{~\!+0.06}_{-0.07}$ & 45.3 $\pm$ 1.6\\ \cline{1-5}
 
 			\end{tabular}
-			\caption{Detection efficiency and time resolution measured for the 18 data samples taken at the CERN SPS testbeam with the four irradiated boards and with the board not irradiated. The values were obtained for a signal amplitude threshold \vth~> 7~\sigmav. }
-			\label{tab:effres} 
+			\caption{Detection efficiency and time resolution measured for the 18 data samples taken at the CERN SPS testbeam with the four irradiated boards and with the board not irradiated. The values were obtained for a signal amplitude threshold \vth~> 7~\noise. }
+			\label{tab:MONO-IR_effres} 
 		\end{table}
 
-		Table~\ref{tab:effres} reports the detection efficiencies obtained at a threshold \vth~= 7 \sigmav~for the 18 datasets listed in table~\ref{tab:wp}.  
+		Table~\ref{tab:MONO-IR_effres} reports the detection efficiencies obtained at a threshold \vth~= 7 \noise for the 18 datasets listed in table \ref{tab:MONO-IR_wp}.  
 
+		Figure \ref{im:MONO-IR_HV_vs_eff} shows the detection efficiency of the ASIC irradiated at \maxflu as a function of the sensor bias voltage. 
+		Only one data set at HV = 200 V was acquired at the testbeam with the board not irradiated. The data taken with the board not irradiated in a previous testbeam \cite{Monolith_20ps} are superimposed in figure \ref{im:MONO-IR_HV_vs_eff} as open black squares for comparison. It should be noted that, in addition to the different power density, the data from \cite{Monolith_20ps} were acquired at feedback current $i_{\it feedback}$ = 0.1 $\mu$A and at a temperature of 20$^\circ$C in contrast with the 2.0 $\mu$A and -10$^\circ$C of the present data. This change in operating conditions results in an increase of the signal-to-noise ratio, that leads to better efficiency and time resolution.
+		The measurement shows that after \maxflu a bias voltage of 300 V is just enough to reach the detection efficiency plateau. This behaviour is completely different from that of the non-irradiated board, for which the efficiency plateau is reached already at HV = 120 V.
 
-		Figure~\ref{fig:HV_vs_eff}  shows the detection efficiency of the ASIC irradiated at \maxflu~as a function of the sensor bias voltage. 
-		Only one data set at HV = 200 V was acquired at the testbeam with the board not irradiated. The data taken with the board not irradiated in a previous testbeam~\cite{Zambito_2023} are superimposed in figure~\ref{fig:HV_vs_eff} as open black squares for comparison\footnote{It should be noted that, in addition to the different power density, the data from \cite{Zambito_2023} were acquired at feedback current $i_{\it feedback}$ = 0.1 $\mu$A and at a temperature of 20$^\circ$C in contrast with the 2.0 $\mu$A and -10$^\circ$C of the present data. This change in operating conditions results in an increase of the signal-to-noise ratio, that leads to better efficiency and time resolution.}.
-		The measurement shows that after \maxflu~a bias voltage of 300 V is just enough to reach the detection efficiency plateau. This behaviour is completely different from that of the unirradiated board, for which the efficiency plateau is reached already at HV = 120 V.
-
-		This measurement, as well as the drop in detection efficiency shown in figure~\ref{fig:HV_vs_th}, could in large part be attributed to the change in resistivity of the silicon bulk, that we estimated to vary from the initial 350 $\Omega$cm to approximately 50 $\Omega$cm extrapolating the data of ~\cite{RadiationDamageBruzzi, DisplacementDamageMoll}.
+		This measurement, as well as the drop in detection efficiency shown in figure \ref{im:MONO-IR_HV_vs_th}, could in large part be attributed to the change in resistivity of the silicon bulk, that we estimated to vary from the initial 350 $\Omega$cm to approximately 50 $\Omega$cm extrapolating the data of \cite{RadiationDamageBruzzi, DisplacementDamageMoll}.
 		At such resistivity, the 50 $\mu$m thick sensor would not be fully depleted.
 		A concurrent radiation damage of the frontend electronics cannot be excluded, and should be measured irradiating the SiGe HBT alone.
 
 
-		\begin{figure}[!htb]
+		\begin{figure}[h]
 			\centering
-			%\includegraphics[width=.85\textwidth]{./Figures/Power_efficiency}
-			\caption{\label{fig:Power_vs_eff}Detection efficiency measured for power density supplied to the preamplifier   between 0.13 and 0.9 W/cm$^2$ for a threshold value of \vth~= 7 \sigmav. The results obtained with the sample  not irradiated  (black empty squares) are presented with those of the four samples irradiated  with fluences between $9 \times 10^{13}$ \flu  and $1 \times 10^{16}$ \flu, all operated with a sensor bias voltage of HV = 200 V. In the case of the board irradiated at \maxflu~the data taken  at sensor bias voltage of 250 and 300 V are also shown. The marker relative to the data point at HV = 300 V (red star) is displayed with a small horizontal offset to avoid  overlapping with other markers.}
+			\includegraphics[width=.75\textwidth]{files/MONOLITH_Irradiated_paper/Power_efficiency}
+			\caption{Detection efficiency measured for power density supplied to the preamplifier   between 0.13 and 0.9 W/cm$^2$ for a threshold value of \vth~= 7 \noise. The results obtained with the sample  not irradiated  (black empty squares) are presented with those of the four samples irradiated with fluences between $9 \times 10^{13}$ \flu  and $1 \times 10^{16}$ \flu, all operated with a sensor bias voltage of HV = 200 V. In the case of the board irradiated at \maxflu~the data taken at sensor bias voltage of 250 and 300 V are also shown. The marker relative to the data point at HV = 300 V (red star) is displayed with a small horizontal offset to avoid  overlapping with other markers.}
+			\label{im:MONO-IR_Power_vs_eff}
 		\end{figure}
 
-		Figure~\ref{fig:Power_vs_eff} shows the impact on the detection efficiency of the power density at which the frontend was operated. 
-		At a sensor bias voltage HV= 200 V, a steady increase of the efficiency is measured as \pdensity~increases. This effect is more pronounced at the highest proton fluences. 
+		Figure \ref{im:MONO-IR_Power_vs_eff} shows the impact on the detection efficiency of the power density at which the frontend was operated. 
+		At a sensor bias voltage HV= 200 V, a steady increase of the efficiency is measured as \power~increases. This effect is more pronounced at the highest proton fluences. 
 
-		In the case of the board irradiated to \maxflu, at HV = 200 V data were taken only at \pdensity~= 0.9 W/cm$^2$, which result in a detection efficiency of (96.2 $\pm$ 0.3)\% (red circle in the figure).
-		For this board the scan in \pdensity~was performed at HV = 250 V, and the results are displayed in figure~\ref{fig:Power_vs_eff} by the red crosses. 
-		At HV = 300 V, only a dataset at \pdensity~= 0.9 W/cm$^2$ was acquired  (red star in the figure), which provides a detection efficiency of (99.69$^{~\!+0.06}_{-0.07}$)\%.
+		In the case of the board irradiated to \maxflu, at HV = 200 V data were taken only at \power~= 0.9 W/cm$^2$, which result in a detection efficiency of (96.2 $\pm$ 0.3)\% (red circle in the figure).
+		For this board the scan in \power~was performed at HV = 250 V, and the results are displayed in figure~\ref{im:MONO-IR_Power_vs_eff} by the red crosses. 
+		At HV = 300 V, only a dataset at \power~= 0.9 W/cm$^2$ was acquired  (red star in the figure), which provides a detection efficiency of (99.69$^{~\!+0.06}_{-0.07}$)\%.
 
-		Finally, the detection efficiency is shown as a function of the distance from the centre of the pixel in figure~\ref{fig:Eff_vs_distance}.
+		Finally, the detection efficiency is shown as a function of the distance from the centre of the pixel in figure~\ref{im:MONO-IR_Eff_vs_distance}.
 		All the data points shown refer to a sensor bias voltage of 200 V, with the exception of the dataset at \maxflu, which was obtained at 300 V.
 		While at no or small irradiation values the efficiency does not depend on the position within the pixel area, starting from a fluence of 6 $\times$ 10$^{14}$ \flu~the efficiency was measured to drop in the inter-pixel area, although an increase of the sensor bias voltage allows recovering of the efficiency far from the pixel center, as the data at HV = 300 V (red stars) show.
 
-		\begin{figure}[!htb]
+		\begin{figure}[h]
 			\centering
-			%\includegraphics[width=.85\textwidth]{./Figures/Radius_efficiency}
-			\caption{\label{fig:Eff_vs_distance}Detection efficiency as a function of the distance from the pixel center. The data refer to power density \pdensity~= 0.9 W/cm$^2$, voltage threshold  \vth~= 7 \sigmav~and sensor bias voltage HV = 200 V, with the exception of the data taken at \maxflu, for which the sensor bias voltage was 300 V. The efficiency was computed in the following bins of distance from the pixel center in microns: $[0-21], [21-30], [30-37], [37-44], [44-51], [51-65]$. In each bin, the data points are plotted at the mean value of the track distance from the pixel center.}
+			\includegraphics[width=.75\textwidth]{files/MONOLITH_Irradiated_paper/Radius_efficiency}
+			\caption{Detection efficiency as a function of the distance from the pixel center. The data refer to power density \power~= 0.9 W/cm$^2$, voltage threshold  \vth~= 7 \noise and sensor bias voltage HV = 200 V, with the exception of the data taken at \maxflu, for which the sensor bias voltage was 300 V. The efficiency was computed in the following bins of distance from the pixel center in microns: $[0-21], [21-30], [30-37], [37-44], [44-51], [51-65]$. In each bin, the data points are plotted at the mean value of the track distance from the pixel center.}
+			\label{im:MONO-IR_Eff_vs_distance}
 		\end{figure}
 
 
 
-		\section{Time resolution}\label{sec:timing}
-
+		\subsection{Time resolution}
 		The time resolution of the DUT was measured using as reference the timestamp of two precise MCP detectors that were located outside the FE-I4 telescope downstream the pion beam. 
-		The sample of telescope tracks used for the measurement of the time resolution was the same used for the detection efficiency, with the only exception that all the tracks within the pixel were considered here, and not exclusively the tracks within the aforementioned triangle defined by the three analog pixel centers. 
+		The sample of telescope tracks used for the measurement of the time resolution was the same used for the detection efficiency, with the only exception that all the tracks within the pixel were considered here, and not exclusively the tracks within the aforementioned triangle defined by the three analog pixel centres. 
 
-		The time of arrival (TOA) was measured for the DUT and the MCPs making offline a linear interpolation between the oscilloscope samplings and taking the time at which the signals reached 50\% of the maximum value of the signal amplitude.
-		The difference in TOA between the three pairs of detectors was then used to extract the time resolution of the DUT, as explained in~\cite{Zambito_2023}. 
+		The ToA was measured for the DUT and the MCPs making offline a linear interpolation between the oscilloscope samplings and taking the time at which the signals reached 50\% of the maximum value of the signal amplitude.
+		The difference in ToA between the three pairs of detectors was then used to extract the time resolution of the DUT, as explained in~\cite{Monolith_20ps}. 
 
-		Taking the TOA at a fixed percentage of the signal amplitude has the advantage to correct for most of the time walk between signals with different amplitudes, under the assumption that signals of all amplitudes have consistent rise times. 
-		It was observed that in our case this method carries the drawback of creating a small distortion of the distribution of the TOA difference, which deviates slightly from a Gaussian distribution and generates a tail at large values of ${\rm TOA}_{\it DUT}$ - ${\rm TOA}_{\it MCP}$, probably from residual time walk not corrected for.
-		\begin{figure}[!htb]
+		Taking the ToA at a fixed percentage of the signal amplitude has the advantage to correct for most of the time walk between signals with different amplitudes, under the assumption that signals of all amplitudes have consistent rise times. 
+		It was observed that in our case this method carries the drawback of creating a small distortion of the distribution of the TOA difference, which deviates slightly from a Gaussian distribution and generates a tail at large values of ${\rm TOA}_{\it DUT}$ - ${\rm TOA}_{\it MCP}$.
+		\begin{figure}[h]
 			\centering 
-			\includegraphics[width=.49\textwidth]{./Figures/M06_fit20.pdf}
-			\includegraphics[width=.49\textwidth]{./Figures/M16_300V_fit20.pdf}
-			\includegraphics[width=.49\textwidth]{./Figures/M06_fullfit.pdf}
-			\includegraphics[width=.49\textwidth]{./Figures/M16_300V_fullfit.pdf}
-			\caption{\label{fig:toa} Difference in TOA between the DUT and one of the MCP detectors used to provide a precise reference time. The left-hand panels show the results for the board not irradiated, while the right-hand panels those for the board irradiated to \maxflu. The top panels show the data with superimposed the Gaussian fits extending to the first bin containing 20\% of the maximum value of the distribution; the bottom panels show the same data with superimposed the Gaussian fits extending to all the bins of the distributions.}
+			\includegraphics[width=.49\textwidth]{files/MONOLITH_Irradiated_paper/M06_fit20.pdf}
+			\includegraphics[width=.49\textwidth]{files/MONOLITH_Irradiated_paper/M16_300V_fit20.pdf}
+			\includegraphics[width=.49\textwidth]{files/MONOLITH_Irradiated_paper/M06_fullfit.pdf}
+			\includegraphics[width=.49\textwidth]{files/MONOLITH_Irradiated_paper/M16_300V_fullfit.pdf}
+			\caption{Difference in ToA between the DUT and one of the MCP detectors used to provide a precise reference time. The left-hand panels show the results for the board not irradiated, while the right-hand panels those for the board irradiated to \maxflu. The top panels show the data with superimposed the Gaussian fits extending to the first bin containing 20\% of the maximum value of the distribution; the bottom panels show the same data with superimposed the Gaussian fits extending to all the bins of the distributions.}
+			\label{im:MONO-IR_toa}
 		\end{figure}
-		This effect is shown in figure~\ref{fig:toa} in the case of the board not irradiated (left panels) and of the board irradiated at \maxflu~(right panels). 
+		This effect is shown in figure \ref{im:MONO-IR_toa} in the case of the board not irradiated (left panels) and of the board irradiated at \maxflu~(right panels). 
 
-		To account for the observed distortion in the TOA difference, the $\sigma$ values from the Gaussian fits obtained using only the bins of the distribution larger than 20\% of the  bin with the highest number of entries (two top panels in the figure~\ref{fig:toa}) were used as central values of the  time resolution.
-		The difference between these values and those obtained by fitting a Gaussian functional form in the entire TOA-difference distributions (bottom panels in figure~\ref{fig:toa}) were used as systematic uncertainty. These uncertainties were summed in quadrature with the statistical uncertainty coming from the Gaussian fits that were used as central values, and are shown as vertical error bars in the  time resolution plots.
+		To account for the observed distortion in the ToA difference, the $\sigma$ values from the Gaussian fits obtained using only the bins of the distribution larger than 20\% of the bin with the highest number of entries (two top panels in the figure \ref{im:MONO-IR_toa}) were used as central values of the time resolution.
+		The difference between these values and those obtained by fitting a Gaussian functional form in the entire ToA-difference distributions (bottom panels in figure \ref{im:MONO-IR_toa}) were used as systematic uncertainty. These uncertainties were summed in quadrature with the statistical uncertainty coming from the Gaussian fits that were used as central values, and are shown as vertical error bars in the time resolution plots.
 
-
-		\begin{figure}[!htb]
+		\begin{figure}[h]
 			\centering
-			%\includegraphics[width=.85\textwidth]{./Figures/Voltage_timeresolution.pdf}
-			\caption{\label{fig:HV_vs_timeres} Time resolution measured as a function of the sensor bias voltage. The results obtained with the board irradiated to \maxflu~at \pdensity~= 0.9 W/cm$^2$ (red circles) are presented together with the result obtained with the board not irradiated at HV = 200 V (blue square). The plot results obtained in a previous testbeam~\cite{Zambito_2023} with the board not irradiated at \pdensity~= 2.7 W/cm$^2$ and  $i_{\it feedback}$ = 0.1 $\mu$A are also superimposed (black open squares).}
+			\includegraphics[width=.75\textwidth]{files/MONOLITH_Irradiated_paper/Voltage_timeresolution.pdf}
+			\caption{Time resolution measured as a function of the sensor bias voltage. The results obtained with the board irradiated to \maxflu~at \power~= 0.9 W/cm$^2$ (red circles) are presented together with the result obtained with the board not irradiated at HV = 200 V (blue square). The plot results obtained in a previous testbeam~\cite{Monolith_20ps} with the board not irradiated at \power~= 2.7 W/cm$^2$ and  $i_{\it feedback}$ = 0.1 $\mu$A are also superimposed (black open squares).}
+			\label{im:MONO-IR_HV_vs_timeres} 
 		\end{figure}
 
+		The last column of table \ref{tab:MONO-IR_effres} reports the time resolution obtained for the 18 datasets acquired at \vth~= 7 \noise.  
 
-
-		The last column of table~\ref{tab:effres} reports the time resolution obtained for the 18 datasets acquired at \vth~= 7 \sigmav.  
-
-
-		Figure~\ref{fig:HV_vs_timeres} shows the time resolution obtained at \pdensity~= 0.9 W/cm$^2$ for the board irradiated to \maxflu~for a sensor bias voltage varying between 150 and 300 V, and the result obtained with the unirradiated board at HV = 200 V.
-		For comparison, the figure reports as well the time resolution measured at \pdensity~= 2.7 W/cm$^2$ with the board not irradiated in  previous testbeam experiment~\cite{Zambito_2023}.
+		Figure \ref{im:MONO-IR_HV_vs_timeres} shows the time resolution obtained at \power~= 0.9 W/cm$^2$ for the board irradiated to \maxflu~for a sensor bias voltage varying between 150 and 300 V, and the result obtained with the non-irradiated board at HV = 200 V. For comparison, the figure reports as well the time resolution measured at \power~= 2.7 W/cm$^2$ with the board not irradiated in previous testbeam experiment \cite{Monolith_20ps}.
 		While the board not irradiated reaches the plateau of time resolution already at HV = 160 V, the time resolution measured with the irradiated board does not seem to have yet reached a plateau value at 300 V.
 
-
-
-		\begin{figure}[!htb]
+		\begin{figure}[h]
 			\centering
-			%\includegraphics[width=.85\textwidth]{./Figures/Power_timeresolution.pdf}
-			\caption{\label{fig:power_vs_timeres}Time resolution measured for three values of the  power density supplied to the preamplifier between 0.13 and 0.9 W/cm$^2$. The plot shows the results obtained at sensor bias voltage HV = 200 V with the five boards which were subject to proton fluence between zero and \maxflu. The data taken with the board most irradiated  at HV = 250 and 300 V are also shown.}
+			\includegraphics[width=.75\textwidth]{files/MONOLITH_Irradiated_paper/Power_timeresolution.pdf}
+			\caption{Time resolution measured for three values of the  power density supplied to the preamplifier between 0.13 and 0.9 W/cm$^2$. The plot shows the results obtained at sensor bias voltage HV = 200 V with the five boards which were subject to proton fluence between zero and \maxflu. The data taken with the board most irradiated  at HV = 250 and 300 V are also shown.}
+			\label{im:MONO-IR_power_vs_timeres}
 		\end{figure}
 
-		The time resolution of the DUT was also measured as a function of the power density supplied to the frontend electronics. The results are presented in figure~\ref{fig:power_vs_timeres} at a sensor bias voltage HV = 200 V  for all the boards, and for the most irradiated board also at HV = 250 and 300 V. 
-		In all cases, the time resolution was found to steadily improve with increasing \pdensity, and degrade with increasing proton fluence. In the \pdensity~range studied, it varies between 30 and 20 ps in the case of the board not irradiated, and between 75 and  50 ps in the case of the board irradiated to \maxflu.
+		The time resolution of the DUT was also measured as a function of the power density supplied to the frontend electronics. The results are presented in figure \ref{im:MONO-IR_power_vs_timeres} at a sensor bias voltage HV = 200 V for all the boards, and for the most irradiated board also at HV = 250 and 300 V. In all cases, the time resolution was found to steadily improve with increasing \power, and degrade with increasing proton fluence. In the \power~range studied, it varies between 30 and 20 ps in the case of the board not irradiated, and between 75 and  50 ps in the case of the board irradiated to \maxflu.
 
-		It should be noted that, for each of the irradiation values studied, the ratio of the time resolutions at \pdensity~= 0.13 and 0.9 W/cm$^2$ is constant, showing a relative improvement of approximately 35\% independently of the fluence, as reported in table~\ref{tab:Power_improvement}.  
+		It should be noted that, for each of the irradiation values studied, the ratio of the time resolutions at \power~= 0.13 and 0.9 W/cm$^2$ is constant, showing a relative improvement of approximately 35\% independently of the fluence, as reported in table~\ref{tab:MONO-IR_Power_improvement}.  
  
 
-		\begin{table}[!htb]
+		\begin{table}[h]
 			\centering
 			\renewcommand{\arraystretch}{1.2}
 			\begin{tabular}{|c|c|c|c|}
 			\cline{1-4}
 			\multirow{2}{*}{\begin{tabular}{c}Fluence \\ \ [1 MeV n$_{\text{eq}}$/cm$^2$]\end{tabular} } & \multicolumn{2}{c|}{\begin{tabular}{c}  Time Resolution [ps] \end{tabular}} & \multirow{2}{*}{\begin{tabular}{c} Ratio  \end{tabular}} \\ \cline{2-3}
-			&\pdensity~ = 0.13 W/cm$^2$&\pdensity~ = 0.9 W/cm$^2$& \\
+			&\power~ = 0.13 W/cm$^2$&\power~ = 0.9 W/cm$^2$& \\
 			\cline{1-4}
 			0                   & 31.0 $\pm$ 1.6 & 20.0 $\pm$ 1.0 & 1.55 $\pm$ 0.15 \\ \hline
 			$9 \times 10^{13}$  & 37.8 $\pm$ 2.8 & 24.7 $\pm$ 1.0 & 1.53 $\pm$ 0.21 \\ \hline
@@ -915,28 +915,31 @@ x
 			$3 \times 10^{15}$  & 75.9 $\pm$ 4.5 & 48.3 $\pm$ 1.9 & 1.57 $\pm$ 0.17 \\ \hline
 			$1 \times 10^{16}$  & 74.0 $\pm$ 5.4 & 50.2 $\pm$ 1.6 & 1.57 $\pm$ 0.19 \\ \hline
 			\end{tabular}
-			\caption{\label{tab:Power_improvement} Time resolution measured with the five boards at \pdensity~= 0.13 and 0.9 W/cm$^2$ and their ratio. The data were taken at sensor bias voltage HV = 200 V for all boards except the board irradiated to \maxflu~for which the sensor bias voltage was 250 V.}
+			\caption{Time resolution measured with the five boards at \power~= 0.13 and 0.9 W/cm$^2$ and their ratio. The data were taken at sensor bias voltage HV = 200 V for all boards except the board irradiated to \maxflu~for which the sensor bias voltage was 250 V.}
+			\label{tab:MONO-IR_Power_improvement} 
 		\end{table}
 
 
 		This is an indication that the dependence of the transition frequency from the collector current, which is observed in \cite{SiGeRadiationDamage} not to change up to 1 $\times$ 10$^{14}$ \flu, might not be affected by radiation damage even at \maxflu. 
 
-		\begin{figure}[!htb]
+		\begin{figure}[h]
 			\centering
-			%\includegraphics[width=.67\textwidth]{./Figures/Fluence_log_timeresolution.pdf}
-			\caption{\label{fig:fluence_vs_timeres} Time resolution as a function of the proton fluence for \pdensity~= 0.9 W/cm$^2$. The blue dots show the results obtained at a sensor bias voltage HV = 200 V, while the red star shows the result obtained at HV = 300 V with the board irradiated to \maxflu. }
+			\includegraphics[width=.67\textwidth]{files/MONOLITH_Irradiated_paper/Fluence_log_timeresolution.pdf}
+			\caption{Time resolution as a function of the proton fluence for \power~= 0.9 W/cm$^2$. The blue dots show the results obtained at a sensor bias voltage HV = 200 V, while the red star shows the result obtained at HV = 300 V with the board irradiated to \maxflu.}
+			\label{im:MONO-IR_fluence_vs_timeres} 
 		\end{figure}
 
-		Figure~\ref{fig:fluence_vs_timeres} shows the time resolutions as a function of the proton fluence at \pdensity~= 0.9 W/cm$^2$. The results obtained with the datasets taken at sensor bias voltage HV = 200 V vary between 20 ps for the board not irradiated and 53 ps for the board irradiated to \maxflu. 
+		Figure \ref{im:MONO-IR_fluence_vs_timeres} shows the time resolutions as a function of the proton fluence at \power~= 0.9 W/cm$^2$. The results obtained with the datasets taken at sensor bias voltage HV = 200 V vary between 20 ps for the board not irradiated and 53 ps for the board irradiated to \maxflu. 
 		For this last board, an increase of the sensor bias voltage to 300 V provides a time resolution of 45 ps, thus improving it by approximately 10\%.
 
 		\begin{figure}[!htb]
 			\centering
-			%\includegraphics[width=.67\textwidth]{./Figures/Radius_timeresolution}
-			\caption{\label{fig:Timeres_vs_distance}Time resolution as a function of the distance from the pixel center. The data refer to \pdensity~= 0.9 W/cm$^2$,  \vth~= 7 \sigmav~and HV = 200 V, with the exception of the data taken at \maxflu, for which the sensor bias voltage was 300 V. The time resolution was computed in the same bins of figure~\ref{fig:Eff_vs_distance}.}
+			\includegraphics[width=.67\textwidth]{files/MONOLITH_Irradiated_paper/Radius_timeresolution}
+			\caption{Time resolution as a function of the distance from the pixel center. The data refer to \power~= 0.9 W/cm$^2$,  \vth~= 7 \noise~and HV = 200 V, with the exception of the data taken at \maxflu, for which the sensor bias voltage was 300 V. The time resolution was computed in the same bins of figure \ref{im:MONO-IR_Eff_vs_distance}.}
+			\label{im:MONO-IR_Timeres_vs_distance}
 		\end{figure}
 
-		The time resolution is shown as a function of the distance from the centre of the pixel in figure~\ref{fig:Timeres_vs_distance}.
+		The time resolution is shown as a function of the distance from the centre of the pixel in figure \ref{im:MONO-IR_Timeres_vs_distance}.
 		All the data refer to a sensor bias voltage of 200 V, with the exception of the dataset at \maxflu, which was acquired at 300 V.
 		For all fluences the time resolution is better in the central region of the pixel than in the inter-pixel region, where it increases approximately 5 ps.
 		
