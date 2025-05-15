@@ -55,8 +55,8 @@
       \strng{authornamehash}{350ae988c85cf1a13c8cc0d38f28d0ee}
       \strng{authorfullhash}{350ae988c85cf1a13c8cc0d38f28d0ee}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{The European Physical Society Conference on High Energy Physics (EPS-HEP 2019)}}
@@ -85,8 +85,8 @@
       \strng{authorbibnamehash}{33e02febd5dce687445220c22abbfdf6}
       \strng{authornamehash}{33e02febd5dce687445220c22abbfdf6}
       \strng{authorfullhash}{33e02febd5dce687445220c22abbfdf6}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{The FASER W-Si High Precision Preshower Technical Proposal}}
@@ -119,8 +119,8 @@
       \strng{authorbibnamehash}{ebfe6052e5f504e4a3579c49c44afe41}
       \strng{authornamehash}{ebfe6052e5f504e4a3579c49c44afe41}
       \strng{authorfullhash}{ebfe6052e5f504e4a3579c49c44afe41}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Letter of Intent for the Phase-II Upgrade of the ATLAS Experiment}}
@@ -152,8 +152,8 @@
       \strng{authorbibnamehash}{edd0c19f34364975cab5f620d5fd2116}
       \strng{authornamehash}{edd0c19f34364975cab5f620d5fd2116}
       \strng{authorfullhash}{edd0c19f34364975cab5f620d5fd2116}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-ex}
@@ -181,8 +181,8 @@
       \strng{authorbibnamehash}{d0442d3a705dd16cac5d956546ead37e}
       \strng{authornamehash}{d0442d3a705dd16cac5d956546ead37e}
       \strng{authorfullhash}{d0442d3a705dd16cac5d956546ead37e}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0920-5632}
@@ -293,8 +293,8 @@
       \strng{authornamehash}{f56a7868b29e2df7c583a4c15a959023}
       \strng{authorfullhash}{bbac108e88ca950db63bffb8dd824cb8}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Instrumentation}
@@ -2161,8 +2161,8 @@
       \strng{authornamehash}{8db2f6034122a9b8310f1eef318c6d6e}
       \strng{authorfullhash}{97b102242611c2f117cbc08c350de1ff}
       \field{extraname}{3}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{9}
@@ -2442,8 +2442,8 @@
       \strng{authorbibnamehash}{103a2c11e857956d19ca5b98bee75754}
       \strng{authornamehash}{103a2c11e857956d19ca5b98bee75754}
       \strng{authorfullhash}{103a2c11e857956d19ca5b98bee75754}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{7}
@@ -3638,8 +3638,8 @@
       \strng{authornamehash}{e75186424113a4ab28ae7972b480cbd6}
       \strng{authorfullhash}{dbf007538ce5427e287db43296750cfe}
       \field{extraname}{1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{3}
@@ -5020,8 +5020,8 @@
       \strng{authorbibnamehash}{9e199f92e7659ce62443ac6154834476}
       \strng{authornamehash}{9e199f92e7659ce62443ac6154834476}
       \strng{authorfullhash}{9e199f92e7659ce62443ac6154834476}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-9814390040}
@@ -5042,8 +5042,8 @@
       \strng{authorbibnamehash}{290807f54157e53b212c1dcd5a0753f1}
       \strng{authornamehash}{290807f54157e53b212c1dcd5a0753f1}
       \strng{authorfullhash}{290807f54157e53b212c1dcd5a0753f1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annalen der Physik}
@@ -5195,8 +5195,8 @@
       \strng{authorbibnamehash}{b31d4c8bed1b75f6551b4be4e45e5f50}
       \strng{authornamehash}{b31d4c8bed1b75f6551b4be4e45e5f50}
       \strng{authorfullhash}{b31d4c8bed1b75f6551b4be4e45e5f50}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Development of particle detectors and related Front End electronics for sub-nanosecond time measurement in high radiation environment.}}
@@ -5222,8 +5222,8 @@
       \strng{authorbibnamehash}{6c70764fb8ae6d7b23a8f3ca87be6745}
       \strng{authornamehash}{6c70764fb8ae6d7b23a8f3ca87be6745}
       \strng{authorfullhash}{6c70764fb8ae6d7b23a8f3ca87be6745}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Semiconductor Science and Technology}
@@ -8340,6 +8340,118 @@
       \verb 10.1109/TNS.2013.2248167
       \endverb
       \keyw{Silicon germanium;Heterojunction bipolar transistors;CMOS integrated circuits;Silicon;Radiation effects;CMOS technology;BiCMOS integrated circuits;Extreme environment electronics;radiation effects;SiGe heterojunction bipolar transistor (HBT);silicon-Germanium (SiGe);single event effects;space electronics;total ionizing dose}
+    \endentry
+    \entry{FASER_proto0}{article}{}
+      \name{author}{9}{}{%
+        {{hash=cdf8e3973b3c8d070eb4f1ab72332c05}{%
+           family={Martinelli},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f37ff17e68b74a1234a7c5836a99c491}{%
+           family={Magliocca},
+           familyi={M\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f36898d641721cb459364df190a2d37c}{%
+           family={Cardella},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f793961a0b76f2797315bc233031b032}{%
+           family={Charbon},
+           familyi={C\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=36fc38c0439e421c95247b10dd1d8b33}{%
+           family={Iacobucci},
+           familyi={I\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d88685814cb9011262750b401d97ec65}{%
+           family={Nessi},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cc6d3aab28cfdad6f6aa0bb12cc39436}{%
+           family={Paolozzi},
+           familyi={P\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=321a518b4f0b598c308ca93578cd1a80}{%
+           family={Rücker},
+           familyi={R\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=fadc38ebaec819382ad82fbf094bf900}{%
+           family={Valerio},
+           familyi={V\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{e0021b21e31b8e437c0b20371fd11d1d}
+      \strng{fullhash}{3fa030d3051f18fdfcb7ab0411ecab29}
+      \strng{bibnamehash}{e0021b21e31b8e437c0b20371fd11d1d}
+      \strng{authorbibnamehash}{e0021b21e31b8e437c0b20371fd11d1d}
+      \strng{authornamehash}{e0021b21e31b8e437c0b20371fd11d1d}
+      \strng{authorfullhash}{3fa030d3051f18fdfcb7ab0411ecab29}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Instrumentation}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Measurements and analysis of different front-end configurations for monolithic SiGe BiCMOS pixel detectors for HEP applications}
+      \field{volume}{16}
+      \field{year}{2021}
+      \field{pages}{P12038}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/16/12/P12038
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1748-0221/16/12/P12038
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1748-0221/16/12/P12038
+      \endverb
+    \endentry
+    \entry{Kotitsa_thesis}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=559fd31804c3f01621840516a336e702}{%
+           family={Collaboration},
+           familyi={C\bibinitperiod},
+           given={FASER},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \strng{namehash}{559fd31804c3f01621840516a336e702}
+      \strng{fullhash}{559fd31804c3f01621840516a336e702}
+      \strng{bibnamehash}{559fd31804c3f01621840516a336e702}
+      \strng{authorbibnamehash}{559fd31804c3f01621840516a336e702}
+      \strng{authornamehash}{559fd31804c3f01621840516a336e702}
+      \strng{authorfullhash}{559fd31804c3f01621840516a336e702}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{CERN-FASER-NOTE-2023-001}
+      \field{number}{CERN-FASER-NOTE-2023-001}
+      \field{title}{{FASER: Detector and Infrastructure Status Report}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2927358
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2927358
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

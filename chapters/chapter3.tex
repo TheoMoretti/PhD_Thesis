@@ -411,49 +411,14 @@ The last part of the discussion in this chapter will present first present the r
 			\label{im:ATTRACT_TOFHV} 
 		\end{figure}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	
 	\clearpage
 	\section{Test Beam Characterisation of \textit{MONOLITH} Prototypes}
 	In October 2022, the \textit{MONOLITH} prototype was tested during a test beam campaign organised at the CERN SPS North Area experimental hall. The beam used to qualify the ASIC was composed of pions with a momentum of \SI{120}{\giga\electronvolt}/c a beam spread of about a few millimetres wide and very straight tracks (almost no beam divergence). The track position on the DUT were reconstructed using the FE-I4 UniGe telescope \cite{telescope} and allowed for a mesure of the detection efficiency and time resolution as a function of the particle position within the pixel. Expecting better time resolution performance compared to the \textit{ATTRACT} prototypes and to extract the time resolution of a single ASIC without having to assume two identical ones, two sub-\SI{10}{\pico\second} time reference were added to the set-up.  
 		
 	The results are presented for the prototype as a function of the power density (\power), as a function of the High Voltage (HV) bias given to the substrate and as a function of the particle's position within the pixel. The following section refers to the work published in early 2023 in the Journal of Instrumentation (JINST) \cite{MONOLITH_proto2_20ps}.
 		
-		\subsection{frontend Calibrations}
+		\subsection{Frontend Calibrations}
 		A radioactive \Fe source was used to characterise the ASIC analog electronics chain, comprising the pixel, the preamplifier and the driver, at five working points corresponding to power density values \power = 0.04, 0.13, 0.36, 0.9 and \SI{2.7}{\watt/\centi\meter^2}. The differential analog output signals were used for this measurement.
 		The ENC of the frontend electronics, reported in Table~\ref{tab:MONO_gain}, was computed as 
 		\begin{equation}
@@ -591,18 +556,6 @@ The last part of the discussion in this chapter will present first present the r
 			\label{im:MONO_eff_radius} 
 		\end{figure}
 
-
-
-
-
-
-
-
-
-
-
-
-
 		\subsection{Time Resolution}	
 
 		The time measurements of the DUT and the two MCPs for the sample of tracks selected as described in Section \note{section ref} were used to determine the timing performance of the \textit{MONOLITH} prototype. 
@@ -703,19 +656,6 @@ The last part of the discussion in this chapter will present first present the r
 
 		All the time resolution measurements are obtained with the \toa computed with a simple threshold setting (that offers the significant advantage of requiring a simple electronics circuitry) and a simple signal-processing method (linear interpolation between consecutive oscilloscope samplings).
 		More complex signal-processing methods (mimicking a low-pass RC filter, a constant-fraction discriminator, or spline interpolation of the oscilloscope signal samplings), which would require a more complex electronics, improve marginally the time resolutions, at most at the 10\% level.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	\clearpage

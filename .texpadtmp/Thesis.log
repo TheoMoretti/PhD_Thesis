@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.17)  13 MAY 2025 15:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.17)  15 MAY 2025 19:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1262,7 +1262,7 @@ File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
 (Font)              using `T1/lmr/m/scsl' instead on input line 113.
 
-<UniGe_Logo.png, id=404, 264.99pt x 256.96pt>
+<UniGe_Logo.png, id=409, 264.99pt x 256.96pt>
 File: UniGe_Logo.png Graphic file (type png)
 <use UniGe_Logo.png>
 Package pdftex.def Info: UniGe_Logo.png  used on input line 121.
@@ -1299,7 +1299,7 @@ l.13 ...r the mass of the particles. \\ \clearpage
 ]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/StandardModel.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/StandardModel.pdf, id=541, 1445.4pt x 813.0375pt>
+<files/StandardModel.pdf, id=546, 1445.4pt x 813.0375pt>
 File: files/StandardModel.pdf Graphic file (type pdf)
 <use files/StandardModel.pdf>
 Package pdftex.def Info: files/StandardModel.pdf  used on input line 17.
@@ -1324,7 +1324,7 @@ Chapter 2.
 ]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/FASER_location.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/FASER_location.pdf, id=604, 1411.2725pt x 589.20125pt>
+<files/FASER_location.pdf, id=608, 1411.2725pt x 589.20125pt>
 File: files/FASER_location.pdf Graphic file (type pdf)
 <use files/FASER_location.pdf>
 Package pdftex.def Info: files/FASER_location.pdf  used on input line 23.
@@ -1332,7 +1332,7 @@ Package pdftex.def Info: files/FASER_location.pdf  used on input line 23.
 [8 <./files/FASER_location.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/Feynman_production_mechanism.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/Feynman_production_mechanism.pdf, id=620, 1513.655pt x 294.09875pt>
+<files/Feynman_production_mechanism.pdf, id=624, 1513.655pt x 294.09875pt>
 File: files/Feynman_production_mechanism.pdf Graphic file (type pdf)
 <use files/Feynman_production_mechanism.pdf>
 Package pdftex.def Info: files/Feynman_production_mechanism.pdf  used on input line 39.
@@ -1340,7 +1340,7 @@ Package pdftex.def Info: files/Feynman_production_mechanism.pdf  used on input l
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/pi0_B_meson_flux.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/pi0_B_meson_flux.pdf, id=623, 1583.9175pt x 684.5575pt>
+<files/pi0_B_meson_flux.pdf, id=627, 1583.9175pt x 684.5575pt>
 File: files/pi0_B_meson_flux.pdf Graphic file (type pdf)
 <use files/pi0_B_meson_flux.pdf>
 Package pdftex.def Info: files/pi0_B_meson_flux.pdf  used on input line 49.
@@ -1353,7 +1353,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
  <./files/Feynman_production_mechanism.pdf>] [10 <./files/pi0_B_meson_flux.pdf>] [11]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/dark_photon_production.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/dark_photon_production.pdf, id=683, 1465.475pt x 603.25375pt>
+<files/dark_photon_production.pdf, id=687, 1465.475pt x 603.25375pt>
 File: files/dark_photon_production.pdf Graphic file (type pdf)
 <use files/dark_photon_production.pdf>
 Package pdftex.def Info: files/dark_photon_production.pdf  used on input line 111.
@@ -1363,7 +1363,7 @@ Package pdftex.def Info: files/dark_photon_production.pdf  used on input line 11
  <./files/dark_photon_production.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/primakoff_prod_TAN.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/primakoff_prod_TAN.pdf, id=697, 1538.74875pt x 512.91624pt>
+<files/primakoff_prod_TAN.pdf, id=701, 1538.74875pt x 512.91624pt>
 File: files/primakoff_prod_TAN.pdf Graphic file (type pdf)
 <use files/primakoff_prod_TAN.pdf>
 Package pdftex.def Info: files/primakoff_prod_TAN.pdf  used on input line 135.
@@ -1371,7 +1371,7 @@ Package pdftex.def Info: files/primakoff_prod_TAN.pdf  used on input line 135.
 [13 <./files/primakoff_prod_TAN.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/ALP_photon_production.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/ALP_photon_production.pdf, id=717, 1576.89125pt x 612.2875pt>
+<files/ALP_photon_production.pdf, id=721, 1576.89125pt x 612.2875pt>
 File: files/ALP_photon_production.pdf Graphic file (type pdf)
 <use files/ALP_photon_production.pdf>
 Package pdftex.def Info: files/ALP_photon_production.pdf  used on input line 158.
@@ -1379,7 +1379,7 @@ Package pdftex.def Info: files/ALP_photon_production.pdf  used on input line 158
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/neutrino_XS.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/neutrino_XS.pdf, id=721, 1538.74875pt x 542.025pt>
+<files/neutrino_XS.pdf, id=724, 1538.74875pt x 542.025pt>
 File: files/neutrino_XS.pdf Graphic file (type pdf)
 <use files/neutrino_XS.pdf>
 Package pdftex.def Info: files/neutrino_XS.pdf  used on input line 187.
@@ -1391,7 +1391,7 @@ Package pdftex.def Info: files/neutrino_XS.pdf  used on input line 187.
 ]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/muon_flux.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/muon_flux.pdf, id=753, 1059.96pt x 587.19376pt>
+<files/muon_flux.pdf, id=756, 1059.96pt x 587.19376pt>
 File: files/muon_flux.pdf Graphic file (type pdf)
 <use files/muon_flux.pdf>
 Package pdftex.def Info: files/muon_flux.pdf  used on input line 215.
@@ -1405,7 +1405,7 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/neutrino_flux.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/neutrino_flux.pdf, id=768, 1031.855pt x 592.2125pt>
+<files/neutrino_flux.pdf, id=771, 1031.855pt x 592.2125pt>
 File: files/neutrino_flux.pdf Graphic file (type pdf)
 <use files/neutrino_flux.pdf>
 Package pdftex.def Info: files/neutrino_flux.pdf  used on input line 233.
@@ -1418,7 +1418,7 @@ Overfull \hbox (7.57002pt too wide) in paragraph at lines 260--261
 [18]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/FASER_layout.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/FASER_layout.pdf, id=794, 1723.43875pt x 830.10126pt>
+<files/FASER_layout.pdf, id=798, 1723.43875pt x 830.10126pt>
 File: files/FASER_layout.pdf Graphic file (type pdf)
 <use files/FASER_layout.pdf>
 Package pdftex.def Info: files/FASER_layout.pdf  used on input line 275.
@@ -1429,7 +1429,7 @@ Underfull \vbox (badness 1418) has occurred while \output is active []
  [19 <./files/FASER_layout.pdf>] [20]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/FASER_TDAQ.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/FASER_TDAQ.pdf, id=828, 769.87625pt x 610.28pt>
+<files/FASER_TDAQ.pdf, id=831, 769.87625pt x 610.28pt>
 File: files/FASER_TDAQ.pdf Graphic file (type pdf)
 <use files/FASER_TDAQ.pdf>
 Package pdftex.def Info: files/FASER_TDAQ.pdf  used on input line 315.
@@ -1440,7 +1440,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [21]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/FASER_DP_signature.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/FASER_DP_signature.pdf, id=841, 8030.0pt x 1529.715pt>
+<files/FASER_DP_signature.pdf, id=843, 8030.0pt x 1529.715pt>
 File: files/FASER_DP_signature.pdf Graphic file (type pdf)
 <use files/FASER_DP_signature.pdf>
 Package pdftex.def Info: files/FASER_DP_signature.pdf  used on input line 328.
@@ -1448,7 +1448,7 @@ Package pdftex.def Info: files/FASER_DP_signature.pdf  used on input line 328.
 [22 <./files/FASER_TDAQ.pdf> <./files/FASER_DP_signature.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/FASER_ALP_signature.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/FASER_ALP_signature.pdf, id=856, 8030.0pt x 1529.715pt>
+<files/FASER_ALP_signature.pdf, id=858, 8030.0pt x 1529.715pt>
 File: files/FASER_ALP_signature.pdf Graphic file (type pdf)
 <use files/FASER_ALP_signature.pdf>
 Package pdftex.def Info: files/FASER_ALP_signature.pdf  used on input line 338.
@@ -1456,7 +1456,7 @@ Package pdftex.def Info: files/FASER_ALP_signature.pdf  used on input line 338.
 [23 <./files/FASER_ALP_signature.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/meson_spectra_MC.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/meson_spectra_MC.pdf, id=874, 6022.5pt x 1697.34125pt>
+<files/meson_spectra_MC.pdf, id=876, 6022.5pt x 1697.34125pt>
 File: files/meson_spectra_MC.pdf Graphic file (type pdf)
 <use files/meson_spectra_MC.pdf>
 Package pdftex.def Info: files/meson_spectra_MC.pdf  used on input line 373.
@@ -1466,7 +1466,7 @@ Package pdftex.def Info: files/meson_spectra_MC.pdf  used on input line 373.
 ] [25 <./files/meson_spectra_MC.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/meson_decay_FCNC.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/meson_decay_FCNC.pdf, id=902, 8030.0pt x 1702.36pt>
+<files/meson_decay_FCNC.pdf, id=904, 8030.0pt x 1702.36pt>
 File: files/meson_decay_FCNC.pdf Graphic file (type pdf)
 <use files/meson_decay_FCNC.pdf>
 Package pdftex.def Info: files/meson_decay_FCNC.pdf  used on input line 396.
@@ -1476,7 +1476,7 @@ Package pdftex.def Info: files/meson_decay_FCNC.pdf  used on input line 396.
  <./files/meson_decay_FCNC.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/ALP_photon_energy.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/ALP_photon_energy.pdf, id=926, 1086.0575pt x 637.38126pt>
+<files/ALP_photon_energy.pdf, id=928, 1086.0575pt x 637.38126pt>
 File: files/ALP_photon_energy.pdf Graphic file (type pdf)
 <use files/ALP_photon_energy.pdf>
 Package pdftex.def Info: files/ALP_photon_energy.pdf  used on input line 453.
@@ -1487,7 +1487,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/ALP_E1E2_energy.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/ALP_E1E2_energy.pdf, id=929, 6020.4925pt x 1598.97375pt>
+<files/ALP_E1E2_energy.pdf, id=931, 6020.4925pt x 1598.97375pt>
 File: files/ALP_E1E2_energy.pdf Graphic file (type pdf)
 <use files/ALP_E1E2_energy.pdf>
 Package pdftex.def Info: files/ALP_E1E2_energy.pdf  used on input line 461.
@@ -1495,7 +1495,7 @@ Package pdftex.def Info: files/ALP_E1E2_energy.pdf  used on input line 461.
 [27]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/reach_plot_ideal.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/reach_plot_ideal.pdf, id=943, 1314.9125pt x 968.61874pt>
+<files/reach_plot_ideal.pdf, id=945, 1314.9125pt x 968.61874pt>
 File: files/reach_plot_ideal.pdf Graphic file (type pdf)
 <use files/reach_plot_ideal.pdf>
 Package pdftex.def Info: files/reach_plot_ideal.pdf  used on input line 470.
@@ -1506,7 +1506,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [28 <./files/ALP_photon_energy.pdf> <./files/ALP_E1E2_energy.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/FASER_DP_signature_newPS.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/FASER_DP_signature_newPS.pdf, id=961, 8030.0pt x 1529.715pt>
+<files/FASER_DP_signature_newPS.pdf, id=963, 8030.0pt x 1529.715pt>
 File: files/FASER_DP_signature_newPS.pdf Graphic file (type pdf)
 <use files/FASER_DP_signature_newPS.pdf>
 Package pdftex.def Info: files/FASER_DP_signature_newPS.pdf  used on input line 485.
@@ -1514,7 +1514,7 @@ Package pdftex.def Info: files/FASER_DP_signature_newPS.pdf  used on input line 
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/FASER_ALP_signature_newPS.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/FASER_ALP_signature_newPS.pdf, id=962, 8030.0pt x 1529.715pt>
+<files/FASER_ALP_signature_newPS.pdf, id=964, 8030.0pt x 1529.715pt>
 File: files/FASER_ALP_signature_newPS.pdf Graphic file (type pdf)
 <use files/FASER_ALP_signature_newPS.pdf>
 Package pdftex.def Info: files/FASER_ALP_signature_newPS.pdf  used on input line 492.
@@ -1522,7 +1522,7 @@ Package pdftex.def Info: files/FASER_ALP_signature_newPS.pdf  used on input line
 [29 <./files/reach_plot_ideal.pdf> <./files/FASER_DP_signature_newPS.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/di-photon_event_GEANT4.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/di-photon_event_GEANT4.pdf, id=981, 966.61125pt x 938.50626pt>
+<files/di-photon_event_GEANT4.pdf, id=983, 966.61125pt x 938.50626pt>
 File: files/di-photon_event_GEANT4.pdf Graphic file (type pdf)
 <use files/di-photon_event_GEANT4.pdf>
 Package pdftex.def Info: files/di-photon_event_GEANT4.pdf  used on input line 503.
@@ -1530,7 +1530,7 @@ Package pdftex.def Info: files/di-photon_event_GEANT4.pdf  used on input line 50
 [30 <./files/FASER_ALP_signature_newPS.pdf> <./files/di-photon_event_GEANT4.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/ALP_E1E2_energy_cut.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/ALP_E1E2_energy_cut.pdf, id=999, 6020.4925pt x 1601.985pt>
+<files/ALP_E1E2_energy_cut.pdf, id=1001, 6020.4925pt x 1601.985pt>
 File: files/ALP_E1E2_energy_cut.pdf Graphic file (type pdf)
 <use files/ALP_E1E2_energy_cut.pdf>
 Package pdftex.def Info: files/ALP_E1E2_energy_cut.pdf  used on input line 514.
@@ -1538,7 +1538,7 @@ Package pdftex.def Info: files/ALP_E1E2_energy_cut.pdf  used on input line 514.
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/reach_plot_detector.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/reach_plot_detector.pdf, id=1005, 5629.03pt x 2007.5pt>
+<files/reach_plot_detector.pdf, id=1007, 5629.03pt x 2007.5pt>
 File: files/reach_plot_detector.pdf Graphic file (type pdf)
 <use files/reach_plot_detector.pdf>
 Package pdftex.def Info: files/reach_plot_detector.pdf  used on input line 524.
@@ -1555,13 +1555,13 @@ Underfull \vbox (badness 5592) has occurred while \output is active []
 
 
 ]
-<files/energybands_insu_semi.jpg, id=1036, 4681.49pt x 3311.37125pt>
+<files/energybands_insu_semi.jpg, id=1038, 4681.49pt x 3311.37125pt>
 File: files/energybands_insu_semi.jpg Graphic file (type jpg)
 <use files/energybands_insu_semi.jpg>
 Package pdftex.def Info: files/energybands_insu_semi.jpg  used on input line 25.
 (pdftex.def)             Requested size: 223.07211pt x 157.7465pt.
  [34 <./files/energybands_insu_semi.jpg>]
-<files/density-fermidirac.jpg, id=1046, 7317.3375pt x 2670.97874pt>
+<files/density-fermidirac.jpg, id=1048, 7317.3375pt x 2670.97874pt>
 File: files/density-fermidirac.jpg Graphic file (type jpg)
 <use files/density-fermidirac.jpg>
 Package pdftex.def Info: files/density-fermidirac.jpg  used on input line 72.
@@ -1571,13 +1571,13 @@ Package pdftex.def Info: files/density-fermidirac.jpg  used on input line 72.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [35]
-<files/band_diagram.jpg, id=1059, 8030.0pt x 3011.25pt>
+<files/band_diagram.jpg, id=1061, 8030.0pt x 3011.25pt>
 File: files/band_diagram.jpg Graphic file (type jpg)
 <use files/band_diagram.jpg>
 Package pdftex.def Info: files/band_diagram.jpg  used on input line 89.
 (pdftex.def)             Requested size: 432.48051pt x 162.15019pt.
  [36 <./files/density-fermidirac.jpg> <./files/band_diagram.jpg>] [37] [38]
-<files/band_structure.jpg, id=1101, 3600.45125pt x 3072.47874pt>
+<files/band_structure.jpg, id=1103, 3600.45125pt x 3072.47874pt>
 File: files/band_structure.jpg Graphic file (type jpg)
 <use files/band_structure.jpg>
 Package pdftex.def Info: files/band_structure.jpg  used on input line 193.
@@ -1585,7 +1585,7 @@ Package pdftex.def Info: files/band_structure.jpg  used on input line 193.
  [39
 
  <./files/band_structure.jpg>]
-<files/pn_external_voltage.jpg, id=1113, 7014.205pt x 3150.77126pt>
+<files/pn_external_voltage.jpg, id=1115, 7014.205pt x 3150.77126pt>
 File: files/pn_external_voltage.jpg Graphic file (type jpg)
 <use files/pn_external_voltage.jpg>
 Package pdftex.def Info: files/pn_external_voltage.jpg  used on input line 252.
@@ -1593,7 +1593,7 @@ Package pdftex.def Info: files/pn_external_voltage.jpg  used on input line 252.
  [40 <./files/pn_external_voltage.jpg>] [41
 
 ]
-<files/CV_silicon.png, id=1135, 811.03pt x 569.12625pt>
+<files/CV_silicon.png, id=1137, 811.03pt x 569.12625pt>
 File: files/CV_silicon.png Graphic file (type png)
 <use files/CV_silicon.png>
 Package pdftex.def Info: files/CV_silicon.png  used on input line 302.
@@ -1603,7 +1603,7 @@ Package pdftex.def Info: files/CV_silicon.png  used on input line 302.
  <./files/CV_silicon.png>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/electron-hole_mobility.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/electron-hole_mobility.pdf, id=1147, 1085.05376pt x 696.6025pt>
+<files/electron-hole_mobility.pdf, id=1149, 1085.05376pt x 696.6025pt>
 File: files/electron-hole_mobility.pdf Graphic file (type pdf)
 <use files/electron-hole_mobility.pdf>
 Package pdftex.def Info: files/electron-hole_mobility.pdf  used on input line 327.
@@ -1613,7 +1613,7 @@ Package pdftex.def Info: files/electron-hole_mobility.pdf  used on input line 32
  <./files/electron-hole_mobility.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/electron-hole_driftvelocity.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/electron-hole_driftvelocity.pdf, id=1161, 978.65625pt x 734.745pt>
+<files/electron-hole_driftvelocity.pdf, id=1163, 978.65625pt x 734.745pt>
 File: files/electron-hole_driftvelocity.pdf Graphic file (type pdf)
 <use files/electron-hole_driftvelocity.pdf>
 Package pdftex.def Info: files/electron-hole_driftvelocity.pdf  used on input line 351.
@@ -1621,7 +1621,7 @@ Package pdftex.def Info: files/electron-hole_driftvelocity.pdf  used on input li
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/two_electrode_shockleyramo.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/two_electrode_shockleyramo.pdf, id=1162, 7026.25pt x 2551.5325pt>
+<files/two_electrode_shockleyramo.pdf, id=1164, 7026.25pt x 2551.5325pt>
 File: files/two_electrode_shockleyramo.pdf Graphic file (type pdf)
 <use files/two_electrode_shockleyramo.pdf>
 Package pdftex.def Info: files/two_electrode_shockleyramo.pdf  used on input line 369.
@@ -1631,7 +1631,7 @@ Package pdftex.def Info: files/two_electrode_shockleyramo.pdf  used on input lin
 ] [48] [49]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/general_electronics.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/general_electronics.pdf, id=1237, 6022.5pt x 2345.76375pt>
+<files/general_electronics.pdf, id=1239, 6022.5pt x 2345.76375pt>
 File: files/general_electronics.pdf Graphic file (type pdf)
 <use files/general_electronics.pdf>
 Package pdftex.def Info: files/general_electronics.pdf  used on input line 535.
@@ -1641,7 +1641,7 @@ Package pdftex.def Info: files/general_electronics.pdf  used on input line 535.
  <./files/general_electronics.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/CSA_block_diagram.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/CSA_block_diagram.pdf, id=1249, 2479.2625pt x 1440.38126pt>
+<files/CSA_block_diagram.pdf, id=1251, 2479.2625pt x 1440.38126pt>
 File: files/CSA_block_diagram.pdf Graphic file (type pdf)
 <use files/CSA_block_diagram.pdf>
 Package pdftex.def Info: files/CSA_block_diagram.pdf  used on input line 553.
@@ -1649,7 +1649,7 @@ Package pdftex.def Info: files/CSA_block_diagram.pdf  used on input line 553.
 [51 <./files/CSA_block_diagram.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/CSA_transfer_function.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/CSA_transfer_function.pdf, id=1264, 6022.5pt x 1772.6225pt>
+<files/CSA_transfer_function.pdf, id=1266, 6022.5pt x 1772.6225pt>
 File: files/CSA_transfer_function.pdf Graphic file (type pdf)
 <use files/CSA_transfer_function.pdf>
 Package pdftex.def Info: files/CSA_transfer_function.pdf  used on input line 595.
@@ -1657,7 +1657,7 @@ Package pdftex.def Info: files/CSA_transfer_function.pdf  used on input line 595
 [52 <./files/CSA_transfer_function.pdf>] [53]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/SiGeBand_Structure.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/SiGeBand_Structure.pdf, id=1289, 6022.5pt x 2953.0325pt>
+<files/SiGeBand_Structure.pdf, id=1291, 6022.5pt x 2953.0325pt>
 File: files/SiGeBand_Structure.pdf Graphic file (type pdf)
 <use files/SiGeBand_Structure.pdf>
 Package pdftex.def Info: files/SiGeBand_Structure.pdf  used on input line 632.
@@ -1665,7 +1665,7 @@ Package pdftex.def Info: files/SiGeBand_Structure.pdf  used on input line 632.
 [54 <./files/SiGeBand_Structure.pdf>] [55]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/hybrid_detector.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/hybrid_detector.pdf, id=1314, 1619.04875pt x 716.6775pt>
+<files/hybrid_detector.pdf, id=1315, 1619.04875pt x 716.6775pt>
 File: files/hybrid_detector.pdf Graphic file (type pdf)
 <use files/hybrid_detector.pdf>
 Package pdftex.def Info: files/hybrid_detector.pdf  used on input line 671.
@@ -1740,7 +1740,7 @@ Package pdftex.def Info: files/waveforms_timeresolution.pdf  used on input line 
  <./files/waveforms_timeresolution.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/bethe_bloch.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/bethe_bloch.pdf, id=1461, 1253.68375pt x 671.50874pt>
+<files/bethe_bloch.pdf, id=1462, 1253.68375pt x 671.50874pt>
 File: files/bethe_bloch.pdf Graphic file (type pdf)
 <use files/bethe_bloch.pdf>
 Package pdftex.def Info: files/bethe_bloch.pdf  used on input line 113.
@@ -1790,7 +1790,7 @@ Package pdftex.def Info: files/ATTRACT_paper/Setup_reprint.pdf  used on input li
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/ATTRACT_paper/Waveform_analysis.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/ATTRACT_paper/Waveform_analysis.pdf, id=1553, 894.834pt x 522.31502pt>
+<files/ATTRACT_paper/Waveform_analysis.pdf, id=1552, 894.834pt x 522.31502pt>
 File: files/ATTRACT_paper/Waveform_analysis.pdf Graphic file (type pdf)
 <use files/ATTRACT_paper/Waveform_analysis.pdf>
 Package pdftex.def Info: files/ATTRACT_paper/Waveform_analysis.pdf  used on input line 274.
@@ -1801,7 +1801,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [75 <./files/ATTRACT_paper/Setup_reprint.pdf>] [76 <./files/ATTRACT_paper/Waveform_analysis.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/ATTRACT_paper/EfficiencyMap_120V_150uA.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/ATTRACT_paper/EfficiencyMap_120V_150uA.pdf, id=1574, 1880.02374pt x 703.62875pt>
+<files/ATTRACT_paper/EfficiencyMap_120V_150uA.pdf, id=1573, 1880.02374pt x 703.62875pt>
 File: files/ATTRACT_paper/EfficiencyMap_120V_150uA.pdf Graphic file (type pdf)
 <use files/ATTRACT_paper/EfficiencyMap_120V_150uA.pdf>
 Package pdftex.def Info: files/ATTRACT_paper/EfficiencyMap_120V_150uA.pdf  used on input line 298.
@@ -1809,7 +1809,7 @@ Package pdftex.def Info: files/ATTRACT_paper/EfficiencyMap_120V_150uA.pdf  used 
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/ATTRACT_paper/eff_vs_power.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/ATTRACT_paper/eff_vs_power.pdf, id=1576, 1091.07625pt x 796.9775pt>
+<files/ATTRACT_paper/eff_vs_power.pdf, id=1575, 1091.07625pt x 796.9775pt>
 File: files/ATTRACT_paper/eff_vs_power.pdf Graphic file (type pdf)
 <use files/ATTRACT_paper/eff_vs_power.pdf>
 Package pdftex.def Info: files/ATTRACT_paper/eff_vs_power.pdf  used on input line 321.
@@ -1828,7 +1828,7 @@ Package pdftex.def Info: files/ATTRACT_paper/EfficiencyScan_120V_150uA.pdf  used
 [78 <./files/ATTRACT_paper/eff_vs_power.pdf> <./files/ATTRACT_paper/EfficiencyScan_120V_150uA.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/ATTRACT_paper/eff_vs_HV.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/ATTRACT_paper/eff_vs_HV.pdf, id=1610, 1091.07625pt x 796.9775pt>
+<files/ATTRACT_paper/eff_vs_HV.pdf, id=1609, 1091.07625pt x 796.9775pt>
 File: files/ATTRACT_paper/eff_vs_HV.pdf Graphic file (type pdf)
 <use files/ATTRACT_paper/eff_vs_HV.pdf>
 Package pdftex.def Info: files/ATTRACT_paper/eff_vs_HV.pdf  used on input line 340.
@@ -1836,7 +1836,7 @@ Package pdftex.def Info: files/ATTRACT_paper/eff_vs_HV.pdf  used on input line 3
 [79 <./files/ATTRACT_paper/eff_vs_HV.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/ATTRACT_paper/TimeRes_WP7_160V.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/ATTRACT_paper/TimeRes_WP7_160V.pdf, id=1624, 1910.13625pt x 610.28pt>
+<files/ATTRACT_paper/TimeRes_WP7_160V.pdf, id=1623, 1910.13625pt x 610.28pt>
 File: files/ATTRACT_paper/TimeRes_WP7_160V.pdf Graphic file (type pdf)
 <use files/ATTRACT_paper/TimeRes_WP7_160V.pdf>
 Package pdftex.def Info: files/ATTRACT_paper/TimeRes_WP7_160V.pdf  used on input line 373.
@@ -1844,7 +1844,7 @@ Package pdftex.def Info: files/ATTRACT_paper/TimeRes_WP7_160V.pdf  used on input
 [80 <./files/ATTRACT_paper/TimeRes_WP7_160V.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/ATTRACT_paper/TimeRes_WP7_160V_Gauss.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/ATTRACT_paper/TimeRes_WP7_160V_Gauss.pdf, id=1639, 591.20876pt x 599.23875pt>
+<files/ATTRACT_paper/TimeRes_WP7_160V_Gauss.pdf, id=1638, 591.20876pt x 599.23875pt>
 File: files/ATTRACT_paper/TimeRes_WP7_160V_Gauss.pdf Graphic file (type pdf)
 <use files/ATTRACT_paper/TimeRes_WP7_160V_Gauss.pdf>
 Package pdftex.def Info: files/ATTRACT_paper/TimeRes_WP7_160V_Gauss.pdf  used on input line 388.
@@ -1852,7 +1852,7 @@ Package pdftex.def Info: files/ATTRACT_paper/TimeRes_WP7_160V_Gauss.pdf  used on
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/ATTRACT_paper/TimeResolution_120V_7uA_Gauss.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/ATTRACT_paper/TimeResolution_120V_7uA_Gauss.pdf, id=1640, 600.2425pt x 603.25375pt>
+<files/ATTRACT_paper/TimeResolution_120V_7uA_Gauss.pdf, id=1639, 600.2425pt x 603.25375pt>
 File: files/ATTRACT_paper/TimeResolution_120V_7uA_Gauss.pdf Graphic file (type pdf)
 <use files/ATTRACT_paper/TimeResolution_120V_7uA_Gauss.pdf>
 Package pdftex.def Info: files/ATTRACT_paper/TimeResolution_120V_7uA_Gauss.pdf  used on input line 390.
@@ -1863,7 +1863,7 @@ LaTeX Warning: Reference `fig:TOF' on page 81 undefined on input line 395.
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/ATTRACT_paper/timeres_vs_HV.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/ATTRACT_paper/timeres_vs_HV.pdf, id=1643, 1091.07625pt x 796.9775pt>
+<files/ATTRACT_paper/timeres_vs_HV.pdf, id=1642, 1091.07625pt x 796.9775pt>
 File: files/ATTRACT_paper/timeres_vs_HV.pdf Graphic file (type pdf)
 <use files/ATTRACT_paper/timeres_vs_HV.pdf>
 Package pdftex.def Info: files/ATTRACT_paper/timeres_vs_HV.pdf  used on input line 407.
@@ -1871,7 +1871,7 @@ Package pdftex.def Info: files/ATTRACT_paper/timeres_vs_HV.pdf  used on input li
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/ATTRACT_paper/timeres_vs_power.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/ATTRACT_paper/timeres_vs_power.pdf, id=1645, 1091.07625pt x 796.9775pt>
+<files/ATTRACT_paper/timeres_vs_power.pdf, id=1644, 1091.07625pt x 796.9775pt>
 File: files/ATTRACT_paper/timeres_vs_power.pdf Graphic file (type pdf)
 <use files/ATTRACT_paper/timeres_vs_power.pdf>
 Package pdftex.def Info: files/ATTRACT_paper/timeres_vs_power.pdf  used on input line 409.
@@ -1882,18 +1882,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [81 <./files/ATTRACT_paper/TimeRes_WP7_160V_Gauss.pdf> <./files/ATTRACT_paper/TimeResolution_120V_7uA_Gauss.pdf>] [82 <./files/ATTRACT_paper/timeres_vs_HV.pdf> <./files/ATTRACT_paper/timeres_vs_power.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/MONOLITH_paper/pcb_mono.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<files/MONOLITH_paper/pcb_mono.pdf, id=1682, 3161.8125pt x 3221.03375pt>
+<files/MONOLITH_paper/pcb_mono.pdf, id=1681, 3161.8125pt x 3221.03375pt>
 File: files/MONOLITH_paper/pcb_mono.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/pcb_mono.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/pcb_mono.pdf  used on input line 491.
+Package pdftex.def Info: files/MONOLITH_paper/pcb_mono.pdf  used on input line 456.
 (pdftex.def)             Requested size: 318.66948pt x 324.62885pt.
 [83
 
 ]
-<files/MONOLITH_paper/telescope.png, id=1690, 1068.99374pt x 405.515pt>
+<files/MONOLITH_paper/telescope.png, id=1689, 1068.99374pt x 405.515pt>
 File: files/MONOLITH_paper/telescope.png Graphic file (type png)
 <use files/MONOLITH_paper/telescope.png>
-Package pdftex.def Info: files/MONOLITH_paper/telescope.png  used on input line 500.
+Package pdftex.def Info: files/MONOLITH_paper/telescope.png  used on input line 465.
 (pdftex.def)             Requested size: 409.71692pt x 155.42145pt.
 
 
@@ -1903,82 +1903,82 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [84 <./files/MONOLITH_paper/pcb_mono.pdf>]
-<files/MONOLITH_paper/waveform_with_bck_region.pdf, id=1704, 845.04686pt x 597.50786pt>
+<files/MONOLITH_paper/waveform_with_bck_region.pdf, id=1702, 845.04686pt x 597.50786pt>
 File: files/MONOLITH_paper/waveform_with_bck_region.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/waveform_with_bck_region.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/waveform_with_bck_region.pdf  used on input line 515.
+Package pdftex.def Info: files/MONOLITH_paper/waveform_with_bck_region.pdf  used on input line 480.
 (pdftex.def)             Requested size: 223.07211pt x 157.72797pt.
-<files/MONOLITH_paper/amplitude.pdf, id=1705, 569.12625pt x 385.44pt>
+<files/MONOLITH_paper/amplitude.pdf, id=1703, 569.12625pt x 385.44pt>
 File: files/MONOLITH_paper/amplitude.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/amplitude.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/amplitude.pdf  used on input line 516.
+Package pdftex.def Info: files/MONOLITH_paper/amplitude.pdf  used on input line 481.
 (pdftex.def)             Requested size: 223.07211pt x 151.0738pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [85 <./files/MONOLITH_paper/telescope.png> <./files/MONOLITH_paper/waveform_with_bck_region.pdf> <./files/MONOLITH_paper/amplitude.pdf, page is rotated 90 degrees>]
-<files/MONOLITH_paper/WP1_HV200V_efficiency_map.pdf, id=1787, 785.93625pt x 785.93625pt>
+<files/MONOLITH_paper/WP1_HV200V_efficiency_map.pdf, id=1785, 785.93625pt x 785.93625pt>
 File: files/MONOLITH_paper/WP1_HV200V_efficiency_map.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/WP1_HV200V_efficiency_map.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/WP1_HV200V_efficiency_map.pdf  used on input line 531.
+Package pdftex.def Info: files/MONOLITH_paper/WP1_HV200V_efficiency_map.pdf  used on input line 496.
 (pdftex.def)             Requested size: 223.07211pt x 223.07074pt.
-<files/MONOLITH_paper/WP1_HV200V_triangles_map.pdf, id=1788, 785.93625pt x 785.93625pt>
+<files/MONOLITH_paper/WP1_HV200V_triangles_map.pdf, id=1786, 785.93625pt x 785.93625pt>
 File: files/MONOLITH_paper/WP1_HV200V_triangles_map.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/WP1_HV200V_triangles_map.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/WP1_HV200V_triangles_map.pdf  used on input line 532.
+Package pdftex.def Info: files/MONOLITH_paper/WP1_HV200V_triangles_map.pdf  used on input line 497.
 (pdftex.def)             Requested size: 223.07211pt x 223.07074pt.
  [86 <./files/MONOLITH_paper/WP1_HV200V_efficiency_map.pdf> <./files/MONOLITH_paper/WP1_HV200V_triangles_map.pdf>]
-<files/MONOLITH_paper/eff_fhr_vs_thr.pdf, id=1834, 569.12625pt x 387.4475pt>
+<files/MONOLITH_paper/eff_fhr_vs_thr.pdf, id=1831, 569.12625pt x 387.4475pt>
 File: files/MONOLITH_paper/eff_fhr_vs_thr.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/eff_fhr_vs_thr.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/eff_fhr_vs_thr.pdf  used on input line 565.
+Package pdftex.def Info: files/MONOLITH_paper/eff_fhr_vs_thr.pdf  used on input line 530.
 (pdftex.def)             Requested size: 305.01271pt x 207.65186pt.
  [87 <./files/MONOLITH_paper/eff_fhr_vs_thr.pdf, page is rotated 90 degrees>]
 
-LaTeX Warning: Reference `tab:eff_ipream_HV_pscan' on page 88 undefined on input line 574.
+LaTeX Warning: Reference `tab:eff_ipream_HV_pscan' on page 88 undefined on input line 539.
 
 
-LaTeX Warning: Reference `fig:eff_ipream_HV_pscan' on page 88 undefined on input line 574.
+LaTeX Warning: Reference `fig:eff_ipream_HV_pscan' on page 88 undefined on input line 539.
 
 
-LaTeX Warning: Reference `fig:eff_radius' on page 88 undefined on input line 576.
+LaTeX Warning: Reference `fig:eff_radius' on page 88 undefined on input line 541.
 
-<files/MONOLITH_paper/eff_HV.pdf, id=1888, 569.12625pt x 547.04375pt>
+<files/MONOLITH_paper/eff_HV.pdf, id=1884, 569.12625pt x 547.04375pt>
 File: files/MONOLITH_paper/eff_HV.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/eff_HV.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/eff_HV.pdf  used on input line 580.
+Package pdftex.def Info: files/MONOLITH_paper/eff_HV.pdf  used on input line 545.
 (pdftex.def)             Requested size: 223.07211pt x 214.41464pt.
-<files/MONOLITH_paper/eff_power.pdf, id=1889, 569.12625pt x 547.04375pt>
+<files/MONOLITH_paper/eff_power.pdf, id=1885, 569.12625pt x 547.04375pt>
 File: files/MONOLITH_paper/eff_power.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/eff_power.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/eff_power.pdf  used on input line 581.
+Package pdftex.def Info: files/MONOLITH_paper/eff_power.pdf  used on input line 546.
 (pdftex.def)             Requested size: 223.07211pt x 214.41464pt.
-<files/MONOLITH_paper/eff_vs_radius_HV.pdf, id=1892, 569.12625pt x 547.04375pt>
+<files/MONOLITH_paper/eff_vs_radius_HV.pdf, id=1887, 569.12625pt x 547.04375pt>
 File: files/MONOLITH_paper/eff_vs_radius_HV.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/eff_vs_radius_HV.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/eff_vs_radius_HV.pdf  used on input line 588.
+Package pdftex.def Info: files/MONOLITH_paper/eff_vs_radius_HV.pdf  used on input line 553.
 (pdftex.def)             Requested size: 223.07211pt x 214.41464pt.
-<files/MONOLITH_paper/eff_vs_radius_power.pdf, id=1893, 569.12625pt x 547.04375pt>
+<files/MONOLITH_paper/eff_vs_radius_power.pdf, id=1888, 569.12625pt x 547.04375pt>
 File: files/MONOLITH_paper/eff_vs_radius_power.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/eff_vs_radius_power.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/eff_vs_radius_power.pdf  used on input line 589.
+Package pdftex.def Info: files/MONOLITH_paper/eff_vs_radius_power.pdf  used on input line 554.
 (pdftex.def)             Requested size: 223.07211pt x 214.41464pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [88 <./files/MONOLITH_paper/eff_HV.pdf, page is rotated 90 degrees> <./files/MONOLITH_paper/eff_power.pdf, page is rotated 90 degrees>]
 
-LaTeX Warning: Reference `im:MONO_twcorr' on page 89 undefined on input line 615.
+LaTeX Warning: Reference `im:MONO_twcorr' on page 89 undefined on input line 568.
 
-<files/MONOLITH_paper/TOF_1_vsAmp_1.pdf, id=1990, 569.12625pt x 546.04pt>
+<files/MONOLITH_paper/TOF_1_vsAmp_1.pdf, id=1984, 569.12625pt x 546.04pt>
 File: files/MONOLITH_paper/TOF_1_vsAmp_1.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/TOF_1_vsAmp_1.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/TOF_1_vsAmp_1.pdf  used on input line 619.
+Package pdftex.def Info: files/MONOLITH_paper/TOF_1_vsAmp_1.pdf  used on input line 572.
 (pdftex.def)             Requested size: 223.07211pt x 214.02122pt.
-<files/MONOLITH_paper/TOF_1_vsAmp_2.pdf, id=1991, 569.12625pt x 546.04pt>
+<files/MONOLITH_paper/TOF_1_vsAmp_2.pdf, id=1985, 569.12625pt x 546.04pt>
 File: files/MONOLITH_paper/TOF_1_vsAmp_2.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/TOF_1_vsAmp_2.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/TOF_1_vsAmp_2.pdf  used on input line 620.
+Package pdftex.def Info: files/MONOLITH_paper/TOF_1_vsAmp_2.pdf  used on input line 573.
 (pdftex.def)             Requested size: 223.07211pt x 214.02122pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1987,46 +1987,46 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 629.
+(amsmath)                 on input line 582.
 
-<files/MONOLITH_paper/TOF_1.pdf, id=2085, 569.12625pt x 546.04pt>
+<files/MONOLITH_paper/TOF_1.pdf, id=2079, 569.12625pt x 546.04pt>
 File: files/MONOLITH_paper/TOF_1.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/TOF_1.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/TOF_1.pdf  used on input line 642.
+Package pdftex.def Info: files/MONOLITH_paper/TOF_1.pdf  used on input line 595.
 (pdftex.def)             Requested size: 150.23138pt x 152.34708pt.
-<files/MONOLITH_paper/TOF_2.pdf, id=2086, 569.12625pt x 546.04pt>
+<files/MONOLITH_paper/TOF_2.pdf, id=2080, 569.12625pt x 546.04pt>
 File: files/MONOLITH_paper/TOF_2.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/TOF_2.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/TOF_2.pdf  used on input line 643.
+Package pdftex.def Info: files/MONOLITH_paper/TOF_2.pdf  used on input line 596.
 (pdftex.def)             Requested size: 150.23138pt x 152.34708pt.
-<files/MONOLITH_paper/TOF_3.pdf, id=2087, 569.12625pt x 546.04pt>
+<files/MONOLITH_paper/TOF_3.pdf, id=2081, 569.12625pt x 546.04pt>
 File: files/MONOLITH_paper/TOF_3.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/TOF_3.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/TOF_3.pdf  used on input line 644.
+Package pdftex.def Info: files/MONOLITH_paper/TOF_3.pdf  used on input line 597.
 (pdftex.def)             Requested size: 150.23138pt x 152.34708pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [90 <./files/MONOLITH_paper/TOF_1_vsAmp_1.pdf, page is rotated 90 degrees> <./files/MONOLITH_paper/TOF_1_vsAmp_2.pdf, page is rotated 90 degrees>] [91 <./files/MONOLITH_paper/TOF_1.pdf, page is rotated 90 degrees> <./files/MONOLITH_paper/TOF_2.pdf, page is rotated 90 degrees> <./files/MONOLITH_paper/TOF_3.pdf, page is rotated 90 degrees>]
-<files/MONOLITH_paper/timeres_vs_power.pdf, id=2327, 569.12625pt x 547.04375pt>
+<files/MONOLITH_paper/timeres_vs_power.pdf, id=2320, 569.12625pt x 547.04375pt>
 File: files/MONOLITH_paper/timeres_vs_power.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/timeres_vs_power.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/timeres_vs_power.pdf  used on input line 687.
+Package pdftex.def Info: files/MONOLITH_paper/timeres_vs_power.pdf  used on input line 640.
 (pdftex.def)             Requested size: 223.07211pt x 214.41464pt.
-<files/MONOLITH_paper/timeres_vs_HV.pdf, id=2328, 569.12625pt x 547.04375pt>
+<files/MONOLITH_paper/timeres_vs_HV.pdf, id=2321, 569.12625pt x 547.04375pt>
 File: files/MONOLITH_paper/timeres_vs_HV.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/timeres_vs_HV.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/timeres_vs_HV.pdf  used on input line 688.
+Package pdftex.def Info: files/MONOLITH_paper/timeres_vs_HV.pdf  used on input line 641.
 (pdftex.def)             Requested size: 223.07211pt x 214.41464pt.
-<files/MONOLITH_paper/timeres_vs_radius_allWP.pdf, id=2329, 569.12625pt x 547.04375pt>
+<files/MONOLITH_paper/timeres_vs_radius_allWP.pdf, id=2322, 569.12625pt x 547.04375pt>
 File: files/MONOLITH_paper/timeres_vs_radius_allWP.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/timeres_vs_radius_allWP.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/timeres_vs_radius_allWP.pdf  used on input line 695.
+Package pdftex.def Info: files/MONOLITH_paper/timeres_vs_radius_allWP.pdf  used on input line 648.
 (pdftex.def)             Requested size: 223.07211pt x 214.41464pt.
-<files/MONOLITH_paper/timeres_vs_radius_allHV.pdf, id=2330, 569.12625pt x 547.04375pt>
+<files/MONOLITH_paper/timeres_vs_radius_allHV.pdf, id=2323, 569.12625pt x 547.04375pt>
 File: files/MONOLITH_paper/timeres_vs_radius_allHV.pdf Graphic file (type pdf)
 <use files/MONOLITH_paper/timeres_vs_radius_allHV.pdf>
-Package pdftex.def Info: files/MONOLITH_paper/timeres_vs_radius_allHV.pdf  used on input line 696.
+Package pdftex.def Info: files/MONOLITH_paper/timeres_vs_radius_allHV.pdf  used on input line 649.
 (pdftex.def)             Requested size: 223.07211pt x 214.41464pt.
 
 
@@ -2035,33 +2035,33 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [92 <./files/MONOLITH_paper/timeres_vs_power.pdf, page is rotated 90 degrees> <./files/MONOLITH_paper/timeres_vs_HV.pdf, page is rotated 90 degrees>] [93 <./files/MONOLITH_paper/timeres_vs_radius_allWP.pdf, page is rotated 90 degrees> <./files/MONOLITH_paper/timeres_vs_radius_allHV.pdf, page is rotated 90 degrees>] [94
 
 ]
-<files/MONOLITH_Irradiated_paper/M06_M16.pdf, id=2532, 569.12625pt x 388.45125pt>
+<files/MONOLITH_Irradiated_paper/M06_M16.pdf, id=2525, 569.12625pt x 388.45125pt>
 File: files/MONOLITH_Irradiated_paper/M06_M16.pdf Graphic file (type pdf)
 <use files/MONOLITH_Irradiated_paper/M06_M16.pdf>
-Package pdftex.def Info: files/MONOLITH_Irradiated_paper/M06_M16.pdf  used on input line 765.
+Package pdftex.def Info: files/MONOLITH_Irradiated_paper/M06_M16.pdf  used on input line 705.
 (pdftex.def)             Requested size: 386.96027pt x 264.12556pt.
-<files/MONOLITH_Irradiated_paper/Voltage_efficiency.pdf, id=2537, 569.12625pt x 410.53375pt>
+<files/MONOLITH_Irradiated_paper/Voltage_efficiency.pdf, id=2529, 569.12625pt x 410.53375pt>
 File: files/MONOLITH_Irradiated_paper/Voltage_efficiency.pdf Graphic file (type pdf)
 <use files/MONOLITH_Irradiated_paper/Voltage_efficiency.pdf>
-Package pdftex.def Info: files/MONOLITH_Irradiated_paper/Voltage_efficiency.pdf  used on input line 778.
+Package pdftex.def Info: files/MONOLITH_Irradiated_paper/Voltage_efficiency.pdf  used on input line 718.
 (pdftex.def)             Requested size: 341.43307pt x 246.29709pt.
  [95 <./files/MONOLITH_Irradiated_paper/M06_M16.pdf, page is rotated 90 degrees>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<files/MONOLITH_Irradiated_paper/Power_efficiency.pdf, id=2597, 569.12625pt x 410.53375pt>
+<files/MONOLITH_Irradiated_paper/Power_efficiency.pdf, id=2588, 569.12625pt x 410.53375pt>
 File: files/MONOLITH_Irradiated_paper/Power_efficiency.pdf Graphic file (type pdf)
 <use files/MONOLITH_Irradiated_paper/Power_efficiency.pdf>
-Package pdftex.def Info: files/MONOLITH_Irradiated_paper/Power_efficiency.pdf  used on input line 832.
+Package pdftex.def Info: files/MONOLITH_Irradiated_paper/Power_efficiency.pdf  used on input line 772.
 (pdftex.def)             Requested size: 341.43307pt x 246.29709pt.
 [96 <./files/MONOLITH_Irradiated_paper/Voltage_efficiency.pdf, page is rotated 90 degrees>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<files/MONOLITH_Irradiated_paper/Radius_efficiency.pdf, id=2653, 569.12625pt x 410.53375pt>
+<files/MONOLITH_Irradiated_paper/Radius_efficiency.pdf, id=2644, 569.12625pt x 410.53375pt>
 File: files/MONOLITH_Irradiated_paper/Radius_efficiency.pdf Graphic file (type pdf)
 <use files/MONOLITH_Irradiated_paper/Radius_efficiency.pdf>
-Package pdftex.def Info: files/MONOLITH_Irradiated_paper/Radius_efficiency.pdf  used on input line 850.
+Package pdftex.def Info: files/MONOLITH_Irradiated_paper/Radius_efficiency.pdf  used on input line 790.
 (pdftex.def)             Requested size: 341.43307pt x 246.29709pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2070,95 +2070,128 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 4556) has occurred while \output is active []
 
  [97]
-<files/MONOLITH_Irradiated_paper/M06_fit20.pdf, id=2661, 562.84619pt x 518.29652pt>
+<files/MONOLITH_Irradiated_paper/M06_fit20.pdf, id=2652, 562.84619pt x 518.29652pt>
 File: files/MONOLITH_Irradiated_paper/M06_fit20.pdf Graphic file (type pdf)
 <use files/MONOLITH_Irradiated_paper/M06_fit20.pdf>
-Package pdftex.def Info: files/MONOLITH_Irradiated_paper/M06_fit20.pdf  used on input line 868.
+Package pdftex.def Info: files/MONOLITH_Irradiated_paper/M06_fit20.pdf  used on input line 808.
 (pdftex.def)             Requested size: 223.07211pt x 205.40897pt.
-<files/MONOLITH_Irradiated_paper/M16_300V_fit20.pdf, id=2662, 565.48495pt x 519.43701pt>
+<files/MONOLITH_Irradiated_paper/M16_300V_fit20.pdf, id=2653, 565.48495pt x 519.43701pt>
 File: files/MONOLITH_Irradiated_paper/M16_300V_fit20.pdf Graphic file (type pdf)
 <use files/MONOLITH_Irradiated_paper/M16_300V_fit20.pdf>
-Package pdftex.def Info: files/MONOLITH_Irradiated_paper/M16_300V_fit20.pdf  used on input line 869.
+Package pdftex.def Info: files/MONOLITH_Irradiated_paper/M16_300V_fit20.pdf  used on input line 809.
 (pdftex.def)             Requested size: 223.07211pt x 204.90984pt.
-<files/MONOLITH_Irradiated_paper/M06_fullfit.pdf, id=2663, 558.4241pt x 517.84734pt>
+<files/MONOLITH_Irradiated_paper/M06_fullfit.pdf, id=2654, 558.4241pt x 517.84734pt>
 File: files/MONOLITH_Irradiated_paper/M06_fullfit.pdf Graphic file (type pdf)
 <use files/MONOLITH_Irradiated_paper/M06_fullfit.pdf>
-Package pdftex.def Info: files/MONOLITH_Irradiated_paper/M06_fullfit.pdf  used on input line 870.
+Package pdftex.def Info: files/MONOLITH_Irradiated_paper/M06_fullfit.pdf  used on input line 810.
 (pdftex.def)             Requested size: 223.07211pt x 206.8587pt.
-<files/MONOLITH_Irradiated_paper/M16_300V_fullfit.pdf, id=2664, 559.89095pt x 524.59563pt>
+<files/MONOLITH_Irradiated_paper/M16_300V_fullfit.pdf, id=2655, 559.89095pt x 524.59563pt>
 File: files/MONOLITH_Irradiated_paper/M16_300V_fullfit.pdf Graphic file (type pdf)
 <use files/MONOLITH_Irradiated_paper/M16_300V_fullfit.pdf>
-Package pdftex.def Info: files/MONOLITH_Irradiated_paper/M16_300V_fullfit.pdf  used on input line 871.
+Package pdftex.def Info: files/MONOLITH_Irradiated_paper/M16_300V_fullfit.pdf  used on input line 811.
 (pdftex.def)             Requested size: 223.07211pt x 209.01004pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [98 <./files/MONOLITH_Irradiated_paper/Power_efficiency.pdf, page is rotated 90 degrees>]
-<files/MONOLITH_Irradiated_paper/Voltage_timeresolution.pdf, id=2716, 569.12625pt x 410.53375pt>
+<files/MONOLITH_Irradiated_paper/Voltage_timeresolution.pdf, id=2707, 569.12625pt x 410.53375pt>
 File: files/MONOLITH_Irradiated_paper/Voltage_timeresolution.pdf Graphic file (type pdf)
 <use files/MONOLITH_Irradiated_paper/Voltage_timeresolution.pdf>
-Package pdftex.def Info: files/MONOLITH_Irradiated_paper/Voltage_timeresolution.pdf  used on input line 882.
+Package pdftex.def Info: files/MONOLITH_Irradiated_paper/Voltage_timeresolution.pdf  used on input line 822.
 (pdftex.def)             Requested size: 341.43307pt x 246.29709pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<files/MONOLITH_Irradiated_paper/Power_timeresolution.pdf, id=2722, 569.12625pt x 410.53375pt>
+<files/MONOLITH_Irradiated_paper/Power_timeresolution.pdf, id=2712, 569.12625pt x 410.53375pt>
 File: files/MONOLITH_Irradiated_paper/Power_timeresolution.pdf Graphic file (type pdf)
 <use files/MONOLITH_Irradiated_paper/Power_timeresolution.pdf>
-Package pdftex.def Info: files/MONOLITH_Irradiated_paper/Power_timeresolution.pdf  used on input line 894.
+Package pdftex.def Info: files/MONOLITH_Irradiated_paper/Power_timeresolution.pdf  used on input line 834.
 (pdftex.def)             Requested size: 341.43307pt x 246.29709pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [99 <./files/MONOLITH_Irradiated_paper/Radius_efficiency.pdf, page is rotated 90 degrees>]
-<files/MONOLITH_Irradiated_paper/Fluence_log_timeresolution.pdf, id=2776, 507.82242pt x 395.47113pt>
+<files/MONOLITH_Irradiated_paper/Fluence_log_timeresolution.pdf, id=2767, 507.82242pt x 395.47113pt>
 File: files/MONOLITH_Irradiated_paper/Fluence_log_timeresolution.pdf Graphic file (type pdf)
 <use files/MONOLITH_Irradiated_paper/Fluence_log_timeresolution.pdf>
-Package pdftex.def Info: files/MONOLITH_Irradiated_paper/Fluence_log_timeresolution.pdf  used on input line 927.
+Package pdftex.def Info: files/MONOLITH_Irradiated_paper/Fluence_log_timeresolution.pdf  used on input line 867.
 (pdftex.def)             Requested size: 305.01271pt x 237.5319pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<files/MONOLITH_Irradiated_paper/Radius_timeresolution.pdf, id=2778, 526.96918pt x 403.88966pt>
+<files/MONOLITH_Irradiated_paper/Radius_timeresolution.pdf, id=2769, 526.96918pt x 403.88966pt>
 File: files/MONOLITH_Irradiated_paper/Radius_timeresolution.pdf Graphic file (type pdf)
 <use files/MONOLITH_Irradiated_paper/Radius_timeresolution.pdf>
-Package pdftex.def Info: files/MONOLITH_Irradiated_paper/Radius_timeresolution.pdf  used on input line 937.
+Package pdftex.def Info: files/MONOLITH_Irradiated_paper/Radius_timeresolution.pdf  used on input line 877.
 (pdftex.def)             Requested size: 305.01271pt x 233.78162pt.
 ) [100] [101 <./files/MONOLITH_Irradiated_paper/M06_fit20.pdf, page is rotated 90 degrees> <./files/MONOLITH_Irradiated_paper/M16_300V_fit20.pdf, page is rotated 90 degrees> <./files/MONOLITH_Irradiated_paper/M06_fullfit.pdf, page is rotated 90 degrees> <./files/MONOLITH_Irradiated_paper/M16_300V_fullfit.pdf, page is rotated 90 degrees>] [102 <./files/MONOLITH_Irradiated_paper/Voltage_timeresolution.pdf, page is rotated 90 degrees> <./files/MONOLITH_Irradiated_paper/Power_timeresolution.pdf, page is rotated 90 degrees>] [103 <./files/MONOLITH_Irradiated_paper/Fluence_log_timeresolution.pdf, page is rotated 90 degrees> <./files/MONOLITH_Irradiated_paper/Radius_timeresolution.pdf, page is rotated 90 degrees>] (./chapters/chapter6.tex
 Chapter 5.
-) [104
+[104
 
+
+] [105
+
+]
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/FASER_prod_wafer.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<files/FASER_prod_wafer.pdf, id=3150, 2276.505pt x 1974.87813pt>
+File: files/FASER_prod_wafer.pdf Graphic file (type pdf)
+<use files/FASER_prod_wafer.pdf>
+Package pdftex.def Info: files/FASER_prod_wafer.pdf  used on input line 38.
+(pdftex.def)             Requested size: 409.71692pt x 355.43259pt.
+[106 <./files/FASER_prod_wafer.pdf>]
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/charge_per_plane_FASER.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<files/charge_per_plane_FASER.pdf, id=3164, 1400.23125pt x 762.85pt>
+File: files/charge_per_plane_FASER.pdf Graphic file (type pdf)
+<use files/charge_per_plane_FASER.pdf>
+Package pdftex.def Info: files/charge_per_plane_FASER.pdf  used on input line 51.
+(pdftex.def)             Requested size: 409.71692pt x 223.2113pt.
+[107 <./files/charge_per_plane_FASER.pdf>]
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./files/readout_data_size.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<files/readout_data_size.pdf, id=3179, 1001.7425pt x 979.66pt>
+File: files/readout_data_size.pdf Graphic file (type pdf)
+<use files/readout_data_size.pdf>
+Package pdftex.def Info: files/readout_data_size.pdf  used on input line 65.
+(pdftex.def)             Requested size: 318.66948pt x 311.64401pt.
+[108 <./files/readout_data_size.pdf>] [109] [110
+
+]) [111
 
 ] (./chapters/chapter4.tex) (./chapters/chapter7.tex
 Chapter 6.
-) [105
+) [112
 
 
 
 ] (./chapters/chapter8.tex
 Chapter 7.
-) [106
+) [113
 
 
-] [107
+] [114
 
 
-] [108] [109]
-Overfull \hbox (15.60942pt too wide) in paragraph at lines 191--191
+] [115] [116]
+Overfull \hbox (15.60942pt too wide) in paragraph at lines 192--192
 []\T1/lmr/m/n/10.95 Norbert Wer-mes. \T1/lmr/m/it/10.95 Pixel Ver-tex De-tec-tors\T1/lmr/m/n/10.95 . 2006. arXiv: []$\T1/lmtt/m/n/10.95 physics / 0611075$ [physics.ins-det][]\T1/lmr/m/n/10.95 .
  []
 
-[110]
-Overfull \hbox (19.44896pt too wide) in paragraph at lines 191--191
+[117]
+Overfull \hbox (19.44896pt too wide) in paragraph at lines 192--192
 \T1/lmr/m/n/10.95 and the CLIC ver-tex de-tec-tor^^Q. PhD the-sis. https://www.unige.ch/dpnc/en/master-phd/phd/:
  []
 
-[111] 
+[118] 
 AED: lastpage setting LastPage
-[112] (/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.aux)
+[119] (/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2166,24 +2199,24 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D8D25230EBD00FABC35CCFB4D19DC4D9;22600.
+(rerunfilecheck)             Checksum: 8668EFF76F6A74D1C333739A378C5478;23006.
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44876 strings out of 478994
- 892658 string characters out of 5858184
- 1699261 words of memory out of 5000000
- 60979 multiletter control sequences out of 15000+600000
+ 44923 strings out of 478994
+ 893851 string characters out of 5858184
+ 1703098 words of memory out of 5000000
+ 61006 multiletter control sequences out of 15000+600000
  523811 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,21n,102p,1389b,2449s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsco10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.pdf" (116 pages, 69274048 bytes).
+Output written on "/Users/theo/Desktop/University of Geneva/PhD/PhD_Thesis/.texpadtmp/Thesis.pdf" (123 pages, 75559105 bytes).
 PDF statistics:
- 3541 PDF objects out of 3580 (max. 8388607)
- 2454 compressed objects within 25 object streams
- 505 named destinations out of 1000 (max. 500000)
- 1277 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3598 PDF objects out of 4296 (max. 8388607)
+ 2510 compressed objects within 26 object streams
+ 522 named destinations out of 1000 (max. 500000)
+ 1300 words of extra memory for PDF output out of 10000 (max. 10000000)
 
