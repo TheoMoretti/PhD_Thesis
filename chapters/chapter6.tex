@@ -18,7 +18,7 @@ In the final part of the chapter, the focus shifts to the readout and control in
 
 Overall, this chapter aims to provide a comprehensive understanding of the design, functionality, and integration of the new Pre-Shower detector, a necessary upgrade of the initial FASER detector layout to enhance and reinforce its discovery potential.
 	\clearpage 
-	\section{Production ASIC Description  \textcolor{blue}{ 6 pages}}
+	\section{Production ASIC Description }
 	The development of the FASER Pre-Shower ASIC started in 2020 when a first 1.7$\times$2.6 mm$^2$ prototype with a matrix of 64 elongated hexagonal pixels with a footprint of 200$\times$50 $\mu$m$^2$, subdivided into five smaller matrices with different levels of integration of the frontend electronics as explained in \cite{FASER_proto0}. This ASIC was designed and produced in order to support the Pre-Shower upgrade proposal . In early 2021 the ASIC was tested and showed very satisfactory results in terms of gain and ENC. This studies confirmed the feasibility of integration of front-end elements inside the sensitive area, still complying with requirements imposed. The results were published in the Journal of Instrumentation in late 2021 and can be found in \cite{FASER_proto0}. \\
 	
 	A second iteration prior to design and production of the final ASIC leading to a prototype of 15$\times$5.75 mm$^2$ with a matrix of 48$\times$128 (1536 total) pixels of regular hexagonal shape wit a \SI{65}{\micro\meter} side resulting in a pixel pitch of roughly \SI{100}{\micro\meter}. The pixel matrix is subdivided in three 16$\times$128 pixels Super-Columns (SCs) each subdivided into 8$\times$8 pixels Super-Pixels (SPs), each composed of 64 pixels. This architecture choice will later be discuss in section \note{section ref}. The purpose of this \textit{pre-production} prototype was to confirm the functionality of the front-end and digital electronics circuitry for the final ASIC, as well as studying the reliability of the power distribution over a large area ASIC and extract the production yield to infer what it would be for the larger \textit{production} ASIC. 
@@ -27,7 +27,7 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 	
 	Finally, the design of the \textit{production} ASIC was completed in May 2023 and and delivered in the laboratories on the University of Geneva after the wafers were thinned, back-processed and diced in collaboration with Micro-Packs, in July 2024. In the following section, a description of the requirements of the ASIC performances accompanied by a detailed description of the production ASIC. 
 	
-		\subsection{Requirements and Specifications \textcolor{red}{ 2 pages}}
+		\subsection{Requirements and Specifications}
 		The design requirements on the FASER Pre-Shower \textit{production} ASIC are driven by the Monte Carlo studies performed on the production of ALPs and the topology of di-photon signals combined with simulations of the entire Pre-Shower detector in different layout configurations. The different requirements can often push the design choices in different direction and an overall robustness and design simplicity often dictates the direction of development. Some other specifications of the ASIC meet requirements also because of the previously acquired knowledge and widely tested structures in other projects by the design group of the University of Geneva. 
 		
 		\subsubsection{ASIC footprint}
@@ -35,20 +35,20 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.9\textwidth]{files/FASER_prod_wafer}
+			\includegraphics[width=0.9\textwidth]{files/ASIC_microscope}
 			\caption{Microscope stitched image of the FASER \textit{production} ASIC. The sub-structures of the ASIC can be identified such as the digital peripheries or contact metallic pads (rectangular grey pad on the top and bottom edge). The 13 vertical lines are the digital columns.}
-			\label{im:FASER_prod_wafer}
+			\label{im:ASIC_microscope}
 		\end{figure}
 		
 		The \textit{production} ASIC has a total footprint of 22.15$\times$15.35 mm$^2$ with an active area covering 21.61$\times$14.36 mm$^2$ for a total of roughly 91\% of the ASIC area being active, hence resulting in 9\% of so-called "dead-area" mostly composed of the ASIC periphery. In addition, the dead area is also composed by 13 thin column going across the ASIC small side, also called the digital column. This structure has a pitch of roughly half the pixels pitch (\SI{60}{\micro\meter}) and contributes at the level of 3\% to the dead-area. A thoughtful assembly of ASICs together to pave the aperture of the magnet has to be made, it will be discussed in \note{ref to section on plane.} 
-		The choice in size of the pixels composing the 208$\times$128 matrix was mainly driven by the already existing pixel design with hexagonal pixels wit a side of \SI{65}{\micro\meter} for a pitch on both direction of roughly \SI{100}{\micro\meter}. The ALP Monte Carlo simulation exhibited a clear dependence on the rate of di-photon signals as a function of the required separation between showers initiated by the two photons, hence reducing the sensitivity reach. At first order, one can distinguish two different shower cores if there is at least one pixel separating the pixel containing the core of the showers, this leads to a separation between the photons of at least \SI{200}{\micro\meter}, for which the sensitivity reach is given as the second outermost line in figure \ref{im:reach_plot_detector}. The many different design challenges associated to a reduced pixel pitch did not justify a sufficient improvment of the performances in terms of sensitivity reach. 
+		The choice in size of the pixels composing the matrix was mainly driven by the already existing pixel design with hexagonal pixels wit a side of \SI{65}{\micro\meter} for a pitch on both direction of roughly \SI{100}{\micro\meter}. The ALP Monte Carlo simulation exhibited a clear dependence on the rate of di-photon signals as a function of the required separation between showers initiated by the two photons, hence reducing the sensitivity reach. At first order, one can distinguish two different shower cores if there is at least one pixel separating the pixel containing the core of the showers, this leads to a separation between the photons of at least \SI{200}{\micro\meter}, for which the sensitivity reach is given as the second outermost line in figure \ref{im:reach_plot_detector}. The many different design challenges associated to a reduced pixel pitch did not justify a sufficient improvment of the performances in terms of sensitivity reach. 
 		
 		\subsubsection{High dynamic range}
 		The performance of the new Pre-Shower lies in its ability to distinguish the cores of the electromagnetic showers produced by two close-by photons. As the photons have significant boost due to their very high energy, the core of the shower will remain narrow while the shower spread, depending mostly on secondaries with higher transverse momentum, will remain the same as it only depends on the amount of radiation length crossed and the critical energy in the medium in which the showers develops \cite{PDG}. In order to quantify the range of deposited charge in a single pixel, Monte Carlo simulations of incident photons with energies sampled from the ALP production simulations were realised. The studies are presented in \cite{Kotitsa_thesis} and an interesting result is adapted in figure \ref{im:charge_per_plane_FASER}. The figure displays the distribution of the maximum charge recorded in a pixel (corresponding roughly to the charge of the core of the shower) for each plane in the FASER Pre-Shower.
 		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.9\textwidth]{files/charge_per_plane_FASER}
+			\includegraphics[width=0.8\textwidth]{files/charge_per_plane_FASER}
 			\caption{Distribution of the maximum charge deposited in a single pixel across all the Pre-Shower detection planes for a total of 10k simulated events with two photons of \SI{1}{\tera\electronvolt} with a separation of \SI{500}{\micro\meter}. The maximum charge for all but the first plane roughly saturate between 60 and \SI{80}{\femto\coulomb} with very rare events reaching more than \SI{100}{\femto\coulomb}}
 			\label{im:charge_per_plane_FASER}
 		\end{figure}
@@ -78,11 +78,144 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 		The requirements on the ASIC architecture and performance have been defined through the study of the topology of di-photon events, the study of characteristics in terms of occupancy and deposited charge for photon events, but also by the study of muon background. The diverse constraints at the level of production design and services complemented the requirements in defining the specifications of the FASER Pre-Shower \textit{production} ASIC.   
 		
 		
-		\subsection{Architecture \textcolor{red}{ 4 pages}}
+		\subsection{ASIC Architecture}
+		The FASER Pre-Shower \textit{production} ASIC has an active area composed of a total of 26624 pixels arranged in a matrix of 208 columns and 128 rows. The ASIC is designed as a repetition of multiple substructures, going from the smallest to the largest (in size) one can identify the Pixel-Rows, the Super-Pixels and Super-Columns. Figure \ref{im:prodASIC_floorplan} shows the different elements and their arrangement in the ASIC. 
 		
-		Va falloir te bouger dude 
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=1.0\textwidth]{files/floorplan}
+			\caption{Microscope image of the FASER Pre-Shower \textit{production} ASIC with overlayed position of substructures. Super-pixels are shown only for one Super-Column but they all have the same structure. Similarly, the structure of a single Super-Pixel is show but the structure is identical for all Super-Pixels.}
+			\label{im:prodASIC_floorplan}
+		\end{figure}
+		 
+			\subsubsection{Pixel-Row}
+			The Pixel-Row (PR) is the smallest building block of the ASIC after the smallest element, the pixel. The PR is composed of 8 pixels, each having their own front-end electronics inside the active area. The circuitry is composed of a biasing circuit, a test-pulse capacitor, the amplifier, a comparator for signal discrimination and an analog memory for storing the information relative to the amount of deposited charge. The PR is also composed of the masking logic together with the memory control and the FAST-OR logic, located in the digital column. Figure \ref{im:pixel-row_logic} shows a conceptual diagram of the Pixel-Row architecture and routing. 
+			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.8\textwidth]{files/Pixel-row_logic}
+				\caption{Conceptual diagram of the Pixel-Row logic, highlighting the components located in the pixel active area and in the digital column.}
+				\label{im:pixel-row_logic}
+			\end{figure}
+			
+			The pixels can be individually masked after the discrimination stage thanks to a single mask-control bit. The injection of the test-pulse into the test-pulse capacitor is also controlled by the mask-control bit and allows for the test-pulse distribution. The masking operation is performed at the level of the Super-Column by a long shift register mapped in the digital periphery as 128 arrays of 16 bits each, hence handling two Pixel-Rows per array. The masking map is given for a single row (made of two Pixel-Rows) for an odd-type and even-type SC in table \ref{tab:masking_map}.
+			\begin{table}[h]
+				\centering
+				\renewcommand{\arraystretch}{1.2}
+				\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\cline{1-17}
+				\multicolumn{17}{|c|}{Masking map for odd-type SC} \\ 
+				\cline{1-17}
+				15 & 14 & 13 & 12 & 11 & 10 & 9 & 8 & \hspace{4mm} & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 \\
+				\cline{1-17}
+				\end{tabular}
+				
+				\vspace{4mm}
+				\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\cline{1-17}
+				\multicolumn{17}{|c|}{Masking map for even-type SC} \\ 
+				\cline{1-17}
+				8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & \hspace{4mm} & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7  \\
+				\cline{1-17}
+				\end{tabular}
+				\caption{Mapping of the mask-control bit for masking control. The number corresponds to their position in the shift register while the location in the row is the physical position in the ASIC}
+				\label{tab:masking_map} 
+			\end{table}
+			
+			The mapping shows as the number the index of the bit in the shift register and the position within the row corresponds to the physical position in the ASIC. The mapping of the test-pulse injection is different ans is presented for a single row in table \ref{tab:testpulse_map}.
+			
+			\begin{table}[h]
+				\centering
+				\renewcommand{\arraystretch}{1.2}
+				\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\cline{1-17}
+				\multicolumn{17}{|c|}{Masking map for odd-type SC} \\ 
+				\cline{1-17}
+				15 & 11 & 13 & 9 & 11 & 13 & 9 & 15 & \hspace{4mm} & 0 & 6 & 2 & 4 & 6 & 2 & 4 & 0 \\
+				\cline{1-17}
+				\end{tabular}
+				
+				\vspace{4mm}
+				\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\cline{1-17}
+				\multicolumn{17}{|c|}{Masking map for even-type SC} \\ 
+				\cline{1-17}
+				8 & 14 & 10 & 12 & 14 & 10 & 12 & 8 & \hspace{4mm} & 7 & 3 & 5 & 1 & 3 & 5 & 1 & 7  \\
+				\cline{1-17}
+				\end{tabular}
+				\caption{Mapping of the mask-control bit for test-pulse control. The number corresponds to their position in the shift register while the location in the row is the physical position in the ASIC}
+				\label{tab:masking_map} 
+			\end{table}
+			
+			Not all the mask-control bits control the injection of the test-pulse. Only one out of two is used, resulting in every bit controlling simultaneously the injection in two non adjacent pixels. While testing a wise combination of the mask-control bits nevertheless enabling testing the pixel's response to test-pulse one-by-one. 
+				
+			\subsubsection{Super-Pixel} 
+			Every Super-Column is subdivided into 8 Super-Pixels, all identical and numbered from 0 to 7 from bottom to top of the ASIC. Each SP is composed of 256 pixels arranged in a matrix of 16 rows and 16 columns of pixels and represent the basic block of the readout logic. Super Pixels have their own bias generation circuit to avoid mismatch due to voltage drop over the power supplies. The circuitry for the measurement of the charge deposited in every pixel is also defined at the SP level and is composed of a 256:1 multiplexer (MUX) and a 4-bit flash Analog to Digital Converter (flash-ADC) made of 15 comparators referred to equally spaced and increasing thresholds. Figure \ref{im:SuperPixel_logic} presents a conceptual diagram for the architecture and routing of the Super-Pixel. 
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=1.0\textwidth]{files/SuperPixel_logic}
+				\caption{Conceptual diagram of the Super-Pixel logic. The FAST-OR connections are referred to those of an even-type SC. }
+				\label{im:SuperPixel_logic}
+			\end{figure}
+			
+			 The FAST-OR generation is also located at the SP level and is then sent to the digital periphery for triggering the readout but also to 3 TDC channels associated to each line for time digitisation. The FAST-OR mapping is cyclic every 3 pixel rows and is the same for any SP within a SC. Figure \ref{im:FastOR_map} shows the mapping for 3 pixels rows for both SC types. 
+			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=1.0\textwidth]{files/FastOr_map}
+				\caption{Mapping of the FAST-OR lines for 3 consecutive pixel rows for an odd-type SC (left) and an even-type SC (right). Each colour represents a FAST-OR line. At the level of the SP, all the lines from each pixel of the same colour is put in OR and the resulting signal is sent to the digital periphery for triggering and to the TDCs for precise time digitisation.}
+				\label{im:FastOR_map}
+			\end{figure}
+			
+			
+			\subsubsection{Super Column} 
+			The ASIC is composed of 13 Super Columns (SC), which can further be divided into two subgroups: the odd-type and even-type SCs. The SC numbering start from the left hand side of the ASIC (see figure \ref{im:prodASIC_floorplan}) with the leftmost one being an odd-type SC. The distinction between odd-type and even-type is essential as the routing of the pixels is different, meaning that one has to keep in mind how pixels are geographically mapped to their respective configuration and readout lines in each case. \note{Only for the odd/even convention the numbering start from 1, when identifying the SC in the matrix the number starts from 0.} Each SC is an independent building block of the ASIC, their configuration and readout is done separately and are all connected to the digital periphery. Nevertheless, they all share the same alimentations in terms of low voltages. 
+				
+			The SC is made of 2048 pixels arranged in a matrix of 128 rows and 16 columns of pixels and is split in half by the digital column, a \SI{60}{\micro\meter} wide non active part going from top to bottom of the SC representing roughly 3\% of the total area of the SC. This portion of the SC is dedicated to the various lines needed for powering, configuration of the pixels and readout.
+				Each SC possesses its own time digitisation block composed of a 24-channel Time to Digital Converters (TDC). The TDCs are composed of a 7-block ring oscillator and 24 counters, all latched separately. The counters corresponds to the 24 channels mentioned previously and are composed of a 7-bit fractional data, given by the status of the ring oscillator, and a 11-bit counter data. The TDC also possesses a reference channel with a 7-bit fractional data and 6-bit counter data, used to measure the period between two clock cycles. 
+
+			\begin{table}[h]
+    			\centering
+        		\begin{tabular}{|c|c|c|c|c|}
+        		\hline
+        		\textbf{TDC} & \multicolumn{2}{c|}{\textbf{Odd-type SC}} & \multicolumn{2}{c|}{\textbf{Even-type SC}} \\ \cline{2-5}
+        		\textbf{Channel} & \begin{tabular}{c} FAST-OR \\ ID \end{tabular} & \begin{tabular}{c} Super \\ Pixel ID \end{tabular} & \begin{tabular}{c} FAST-OR \\ ID \end{tabular} & \begin{tabular}{c} Super \\ Pixel ID \end{tabular} \\
+        		\hline
+        		0  & 2 & 0 & 2 & 0 \\ \hline
+        		1  & 3 & 1 & 1 & 1 \\ \hline
+        		2  & 1 & 1 & 3 & 1 \\ \hline
+        		3  & 2 & 2 & 2 & 2 \\ \hline
+        		4  & 3 & 3 & 3 & 3 \\ \hline
+        		5  & 1 & 3 & 3 & 3 \\ \hline
+        		6  & 2 & 4 & 2 & 4 \\ \hline
+        		7  & 3 & 5 & 1 & 5 \\ \hline
+        		8  & 1 & 5 & 3 & 5 \\ \hline
+        		9  & 2 & 6 & 2 & 6 \\ \hline
+        		10 & 3 & 7 & 1 & 7 \\ \hline
+        		11 & 1 & 7 & 3 & 7 \\ \hline
+        		12 & 2 & 7 & 2 & 7 \\ \hline
+        		13 & 1 & 6 & 3 & 6 \\ \hline
+        		14 & 3 & 6 & 2 & 6 \\ \hline
+        		15 & 2 & 5 & 1 & 5 \\ \hline
+        		16 & 1 & 4 & 3 & 4 \\ \hline
+        		17 & 3 & 4 & 1 & 4 \\ \hline
+        		18 & 2 & 3 & 2 & 3 \\ \hline
+        		19 & 1 & 2 & 3 & 2 \\ \hline
+        		20 & 3 & 2 & 1 & 2 \\ \hline
+        		21 & 2 & 1 & 2 & 1 \\ \hline
+        		22 & 1 & 0 & 3 & 0 \\ \hline
+        		23 & 3 & 0 & 1 & 0 \\ \hline
+    		\end{tabular}
+    		\caption{Mapping between TDC channels, FAST-OR ID inputs, and super pixel IDs for odd- and even-type SCs.}
+    		\label{tab:tdc_fastor_map}
+		\end{table}
 		
-		
+		\subsection{Readout Operation}
+		Explain step by step what happens in the ASIC (WITHOUT REDOING THE SCHEMATICS) and then show how this is translated into the bitstream and hot it is structured. 		
+
+
+
+
 		
 		
 		
