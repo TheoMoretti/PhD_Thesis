@@ -126,12 +126,12 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 			
 			\begin{table}[h]
 				\centering
-				\renewcommand{\arraystretch}{1.2}
+				\setlength{\tabcolsep}{4pt}
 				\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
 				\cline{1-17}
 				\multicolumn{17}{|c|}{Masking map for odd-type SC} \\ 
 				\cline{1-17}
-				15 & 11 & 13 & 9 & 11 & 13 & 9 & 15 & \hspace{4mm} & 0 & 6 & 2 & 4 & 6 & 2 & 4 & 0 \\
+				15 & 11 & 13 & ~9 & 11 & 13 & ~9 & 15 & \cellcolor{darkred} & ~0 & ~6 & ~2 & ~4 & ~6 & ~2 & ~4 & ~0 \\
 				\cline{1-17}
 				\end{tabular}
 				
@@ -140,10 +140,10 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 				\cline{1-17}
 				\multicolumn{17}{|c|}{Masking map for even-type SC} \\ 
 				\cline{1-17}
-				8 & 14 & 10 & 12 & 14 & 10 & 12 & 8 & \hspace{4mm} & 7 & 3 & 5 & 1 & 3 & 5 & 1 & 7  \\
+				~8 & 14 & 10 & 12 & 14 & 10 & 12 & ~8 &\cellcolor{darkred} & ~7 & ~3 & ~5 & ~1 & ~3 & ~5 & ~1 & ~7  \\
 				\cline{1-17}
 				\end{tabular}
-				\caption{Mapping of the mask-control bit for test-pulse control. The number corresponds to their position in the shift register while the location in the row is the physical position in the ASIC}
+				\caption{Mapping of the mask-control bit for test-pulse control. The number corresponds to their position in the shift register while the location in the row is the physical position in the ASIC. The central separation shows the digital column.}
 				\label{tab:masking_map} 
 			\end{table}
 			
@@ -172,46 +172,203 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 			The ASIC is composed of 13 Super Columns (SC), which can further be divided into two subgroups: the odd-type and even-type SCs. The SC numbering start from the left hand side of the ASIC (see figure \ref{im:prodASIC_floorplan}) with the leftmost one being an odd-type SC. The distinction between odd-type and even-type is essential as the routing of the pixels is different, meaning that one has to keep in mind how pixels are geographically mapped to their respective configuration and readout lines in each case. \note{Only for the odd/even convention the numbering start from 1, when identifying the SC in the matrix the number starts from 0.} Each SC is an independent building block of the ASIC, their configuration and readout is done separately and are all connected to the digital periphery. Nevertheless, they all share the same alimentations in terms of low voltages. 
 				
 			The SC is made of 2048 pixels arranged in a matrix of 128 rows and 16 columns of pixels and is split in half by the digital column, a \SI{60}{\micro\meter} wide non active part going from top to bottom of the SC representing roughly 3\% of the total area of the SC. This portion of the SC is dedicated to the various lines needed for powering, configuration of the pixels and readout.
-				Each SC possesses its own time digitisation block composed of a 24-channel Time to Digital Converters (TDC). The TDCs are composed of a 7-block ring oscillator and 24 counters, all latched separately. The counters corresponds to the 24 channels mentioned previously and are composed of a 7-bit fractional data, given by the status of the ring oscillator, and a 11-bit counter data. The TDC also possesses a reference channel with a 7-bit fractional data and 6-bit counter data, used to measure the period between two clock cycles. 
-
+			Each SC possesses its own time digitisation block composed of a 24-channel Time to Digital Converters (TDC). The mapping of the TDC channels to the FAST-ORs of each SP is different for odd-type and even-type SC and is given by table \ref{tab:tdc_fastor_map}
+	
 			\begin{table}[h]
+				\definecolor{fo1}{HTML}{F28B82} 
+				\definecolor{fo3}{HTML}{FFCD38} 
+				\definecolor{fo2}{HTML}{AECBFA} 
     			\centering
-        		\begin{tabular}{|c|c|c|c|c|}
-        		\hline
-        		\textbf{TDC} & \multicolumn{2}{c|}{\textbf{Odd-type SC}} & \multicolumn{2}{c|}{\textbf{Even-type SC}} \\ \cline{2-5}
-        		\textbf{Channel} & \begin{tabular}{c} FAST-OR \\ ID \end{tabular} & \begin{tabular}{c} Super \\ Pixel ID \end{tabular} & \begin{tabular}{c} FAST-OR \\ ID \end{tabular} & \begin{tabular}{c} Super \\ Pixel ID \end{tabular} \\
-        		\hline
-        		0  & 2 & 0 & 2 & 0 \\ \hline
-        		1  & 3 & 1 & 1 & 1 \\ \hline
-        		2  & 1 & 1 & 3 & 1 \\ \hline
-        		3  & 2 & 2 & 2 & 2 \\ \hline
-        		4  & 3 & 3 & 3 & 3 \\ \hline
-        		5  & 1 & 3 & 3 & 3 \\ \hline
-        		6  & 2 & 4 & 2 & 4 \\ \hline
-        		7  & 3 & 5 & 1 & 5 \\ \hline
-        		8  & 1 & 5 & 3 & 5 \\ \hline
-        		9  & 2 & 6 & 2 & 6 \\ \hline
-        		10 & 3 & 7 & 1 & 7 \\ \hline
-        		11 & 1 & 7 & 3 & 7 \\ \hline
-        		12 & 2 & 7 & 2 & 7 \\ \hline
-        		13 & 1 & 6 & 3 & 6 \\ \hline
-        		14 & 3 & 6 & 2 & 6 \\ \hline
-        		15 & 2 & 5 & 1 & 5 \\ \hline
-        		16 & 1 & 4 & 3 & 4 \\ \hline
-        		17 & 3 & 4 & 1 & 4 \\ \hline
-        		18 & 2 & 3 & 2 & 3 \\ \hline
-        		19 & 1 & 2 & 3 & 2 \\ \hline
-        		20 & 3 & 2 & 1 & 2 \\ \hline
-        		21 & 2 & 1 & 2 & 1 \\ \hline
-        		22 & 1 & 0 & 3 & 0 \\ \hline
-        		23 & 3 & 0 & 1 & 0 \\ \hline
-    		\end{tabular}
-    		\caption{Mapping between TDC channels, FAST-OR ID inputs, and super pixel IDs for odd- and even-type SCs.}
-    		\label{tab:tdc_fastor_map}
+    			\setlength{\tabcolsep}{4pt}
+    			\scriptsize
+    			\begin{tabular}{|c|*{24}{c|}}
+    				\hline 
+    				\multicolumn{25}{|c|}{\textbf{Mapping for even-type SC}} \\
+       			 	\hline
+        			\textbf{TDC Channel} 
+        			& 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 
+        			& 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\
+        			\hline
+        			\textbf{FAST-OR ID} 
+        			& \cellcolor{fo2}2 & \cellcolor{fo1}1 & \cellcolor{fo3}3 & \cellcolor{fo2}2 & \cellcolor{fo3}3 & \cellcolor{fo3}3 & \cellcolor{fo2}2 & \cellcolor{fo1}1 & \cellcolor{fo3}3 & \cellcolor{fo2}2 & \cellcolor{fo1}1 & \cellcolor{fo3}3 
+        			& \cellcolor{fo2}2 & \cellcolor{fo3}3 & \cellcolor{fo2}2 & \cellcolor{fo1}1 & \cellcolor{fo3}3 & \cellcolor{fo1}1 & \cellcolor{fo2}2 & \cellcolor{fo3}3 & \cellcolor{fo1}1 & \cellcolor{fo2}2 & \cellcolor{fo3}3 & \cellcolor{fo1}1 \\
+        			\hline
+        			\textbf{Super Pixel ID} 
+       			 	& 0 & 1 & 1 & 2 & 3 & 3 & 4 & 5 & 5 & 6 & 7 & 7 
+       				& 7 & 6 & 6 & 5 & 4 & 4 & 3 & 2 & 2 & 1 & 0 & 0 \\
+        			\hline
+    			\end{tabular}
+    
+    			\vspace{4mm}
+    
+    			\begin{tabular}{|c|*{24}{c|}}
+       				\hline 
+    				\multicolumn{25}{|c|}{\textbf{Mapping for odd-type SC}} \\
+    				\hline
+        			\textbf{TDC Channel} 
+        			& 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 
+        			& 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\
+        			\hline
+        			\textbf{FAST-OR ID} 
+        			& \cellcolor{fo2}2 & \cellcolor{fo3}3 & \cellcolor{fo1}1 & \cellcolor{fo2}2 & \cellcolor{fo3}3 & \cellcolor{fo1}1 & \cellcolor{fo2}2 & \cellcolor{fo3}3 & \cellcolor{fo1}1 & \cellcolor{fo2}2 & \cellcolor{fo3}3 & \cellcolor{fo1}1 
+        			& \cellcolor{fo2}2 & \cellcolor{fo1}1 & \cellcolor{fo3}3 & \cellcolor{fo2}2 & \cellcolor{fo1}1 & \cellcolor{fo3}3 & \cellcolor{fo2}2 & \cellcolor{fo1}1 & \cellcolor{fo3}3 & \cellcolor{fo2}2 & \cellcolor{fo1}1 & \cellcolor{fo3}3 \\
+        			\hline
+        			\textbf{Super Pixel ID} 
+        			& 0 & 1 & 1 & 2 & 3 & 3 & 4 & 5 & 5 & 6 & 7 & 7 
+        			& 7 & 6 & 6 & 5 & 4 & 4 & 3 & 2 & 2 & 1 & 0 & 0 \\
+        			\hline
+    			\end{tabular}
+    			\caption{Mapping between TDC channels, FAST-OR ID inputs, and Super-Pixel IDs for even-type (top) and odd-type (bottom) SCs.}
+    			\label{tab:tdc_fastor_map}
+			\end{table}
+			
+			The TDCs are composed of a 7-block ring oscillator and 24 counters, all latched separately. The counters corresponds to the 24 channels mentioned previously and are composed of a 7-bit fractional data, given by the status of the ring oscillator, and a 11-bit counter data. The TDC also possesses a reference channel with a 7-bit fractional data and 6-bit counter data, used to measure the period between two clock cycles.
+			Next to the TDC block is located, before the digital periphery, the End-Of-Column (EOC) logic block responsible for communication between the pixel matrix and the periphery, it handles both communication and configuration for the entire SC.   
+		
+		\subsection{Signal Digitisation and Readout}
+		From the moment a particle crosses the active area of a pixel and deposits a sufficient amount of charge such that the level at output of the amplifier is higher than the threshold level in the discriminator, a sequence of operations is performed by the ASIC in order to digitise the information relative to the detection of that particle. The information regarding the position, time and charge deposited is then formatted into a binary bitstream in output of the ASIC. In the following section, a presentation of the ASIC operations followed by the description of the structure of the bitstream will be presented. 
+		
+			\subsubsection{Digitisation}
+			A conceptual description of the circuitry responsible for the digitisation of the information relative to the passage of the particle in a pixel. The different steps can be listed as follows: 
+			\begin{enumerate} [1.]
+				\item The discriminator, located inside the comparator block, outputs a digital signal whose length in time is proportional to the logarithm of the charge deposited in the pixel. This signal is compared to the value of the mask-control bit for that pixel.
+				\item If the pixel in un-masked, two copies of the signals are generated. 
+				\begin{enumerate}[(i)]
+					\item A first copy asynchronously goes to the FAST-ORs, which are then connected to the TDCs at the end of the SC. This signal will latch the corresponding TDC channel, resulting in the measure of the time of arrival. 
+					\item A second copy is sent to the memory control block which charges the analog memory with a constant (configurable) current for a time proportional to the duration of the digital signal, i.e. the ToT of the output of the amplifier. The information relative to the charge deposited in the pixel's active area is now stored as a charge on a capacitor, the analog memory.   
+				\end{enumerate}
+				
+				The readout process is initiated when the output of the OR is also sent as a trigger signal to the EOC which sends it to the digital periphery. At the same time, any other occurence in the trigger from any SC is masked so that any particle crossing the ASIC while in its readout phase will be lost. 
+			
+				\item The first phase of the readout consists in waiting enough time for the analog memories to be fully charged. The waiting time is configurable such that if corresponds to $ 4 \times readout\_config + 2 \textit{ clock cycle}$, where $readout\_config$ is an 8-bit register delaying the start of the readout in units of 2 clock cycles. In parallel, a calibration and reference signal is sent to the TDC. Once the waiting time is finished, the digital periphery starts polling the data from the SC sequentially. 
+				\item If a SC has a hit, the EOC will send the ADC and TDC data.
+				\begin{enumerate}[(i)]
+					\item The SC sets the address in the MUX so it connects to the pixel with ID 0 in every Super-Pixel. 
+					\item A waiting time know as $pause\_ADC$ configurable through the last 3 bits of an 8-bit register named $config\_global$, is given to the MUX to change address and for flash-ADC to measure the charge of the analog memory. The SC reads the ADC value and transmit it (if there is any) for every SP. 
+					\item The SC set the address of the MUX so it connects to the pixel with ID 1 in every Super-Pixel.
+					\item The sequence is repeated until the address of the MUX is set so it connects to pixel 255.    
+				\end{enumerate}
+			
+				\item The SC gets the TDC data and sends it to the digital periphery. 
+				\item This sequence is repeated until all of the SC with at least one pixel firing are read. 
+				\item Once the last SC was readout, a waiting time corresponding to 100 clock cycles is imposed before unmasking the trigger signals from columns, a reset to the analog memories is sent for a time equivalent to 20 clock cycles. The ASIC is ready for the next readout phase. 
+			\end{enumerate}
+		
+			One could realise that both the time and charge information has been digitised and sent in output of the ASIC, but it is nowhere specified how the information relative to the position has been digitised. This information is actually encoded in the order in which the pixels are read. Since the MUX probes every pixel in a specific order it is possible to build a map of the physical position of the pixel inside the matrix as a function of the order of the pixel information in the output data. The mapping is different for an odd-type and even-type SC and is presented in table \ref{tab:output_pixels_map} for the pixel row the closest to the digital periphery. 
+		
+		
+			\begin{table}[h]
+				\centering
+				\setlength{\tabcolsep}{3pt}
+				\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\cline{1-17}
+				\multicolumn{17}{|c|}{Output map for odd-type SC} \\ 
+				\cline{1-17}
+				~56~ & ~48~ & ~40~ & ~32~ & ~24~ & ~16~ & ~~8~ & ~~0~ & \cellcolor{darkred} & 1024 & 1032 & 1040 & 1048 & 1056 & 1064 & 1072 & 1080 \\
+				\cline{1-17}
+				\end{tabular}
+			
+				\vspace{4mm}
+				\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\cline{1-17}
+				\multicolumn{17}{|c|}{Output map for even-type SC} \\ 
+				\cline{1-17}
+				~~0~ & ~~8~ & ~16~ & ~24~ & ~32~ & ~40~ & ~48~ & ~56~ & \cellcolor{darkred} & 1080 & 1072 & 1064 & 1056 & 1048 & 1040 & 1032 & 1024  \\
+				\cline{1-17}
+				\end{tabular}
+				\caption{Mapping of order in which pixel information is readout and sent in output of the ASIC. The number corresponds to their position in the output data while the location in the row is the physical position in the ASIC. The central separation shows the digital column.}
+				\label{tab:output_pixels_map} 
+			\end{table}	
+		
+			In order to obtain the missing 15 rows within the super pixel, one has to remember that because of the 8 SP and 8 pixel per Pixel-Row, the periodicity of this pattern is 64. For the second closest SP to the digital periphery, one can simply use the map for the closest SP and shift every value by 1 index. The position of the pixel hit, is then encoded in the position of the data of the pixel in the output data. 
+		
+			\subsubsection{Readout and Bitstream Structure}
+		
+			The digital logic was designed to operate at a clock frequency of \SI{200}{\mega\hertz} so that each LVDS output provides a bandwidth of 200 Mbps. As a consequence of the different steps presented above, the ASIC will compose a bitstream, collecting and arranging in a structured manner all of the digitised data mentioned previously. Some additional bits are also present, such as so-called flags, indicating whether or not certains entities had a pixel firing or not. Moreover, since the ASIC continuously sends the data, the waiting time also represent part of the bitstream, at the exception of the initial and final waiting time, respectively before starting readout and once it is finished. The most comprehensive presentation of the structure of the bitstream is given in figure \ref{im:bitstream_structure}.
+			\clearpage
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.95\textwidth]{files/bitstream_structure}
+				\caption{Expected bitstream from the readout of the FASER Pre-Shower \textit{production} ASIC. The schematic representation shows the internal loops over SCs, SPs, pixels and TDC channels. The bits in red are used as references to identify the different steps in the readout. After the end of column flag, some possibles zeroes could be added by the ASIC but are to be ignored. }
+				\label{im:bitstream_structure}
+			\end{figure}
+			\clearpage
+			This sequence is used as a reference for implementing the data decoding routines to transform the encoded data into usable variables such as pixel hit position in the matrix, charge associated to the hits and time of arrival. More details about the data conversion procedure will be given in \note{section ref}. 
+
+		\subsection{Configuration and Slow Control}
+		The Slow Control of the ASIC for configuration relies on an SPI-like protocol with four single-ended lines: SPI$\_$clk for the clock signal, only sent during configuration and 0 polarity, SPI$\_$CS for the Chip Select, active low, SPI$\_$MOSI for sending commands and SPI$\_$MISO for reading back the data from the registers. The configuration commands are always 20-bit long. The SPI$\_$CS line allows for configuration of multiple ASICs in parallel but the command also incorporates a chip ID to address a specific ASIC. The SPI$\_$clk runs at a frequency of \SI{20}{\mega\hertz}. The commands structure is given in figure \ref{im:command_structure}. 
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.95\textwidth]{files/command_structure}
+			\caption{Command structure for the configuration of ASIC parameters through the SPI interface. Data are sent from left to right, Most Significant Bit (MSB) first.}
+			\label{im:command_structure}
+		\end{figure}
+		
+		The command is composed of: 
+		\begin{enumerate}
+			\item \textbf{S1}: Used for different types of commands: [00] writes data through SPI, the value in DATA[7:0] is written in the register located at ADDRESS[5:0], [11] is a reset, [10] is to push the masking configuration to the SC and [01] to read on the SPI$\_$MISO the content of the register written by SPI$\_$MOSI. 
+			\item \textbf{ADDRESS}: The address pointing to the position of the register.
+			\item \textbf{CHIP ID}: A value that is hard-coded by wire-bonds on the ASIC, if the hard-coded value does not correspond to the value in the command, this later is ignored. 
+			\item \textbf{S2}: This bit, associated to the 3 Least Significant Bits (LSBs) of ADDRESS[5:0] are used to build the SC ID. When writing in registers, these are the same for every SC and so this feature is not used. Vice versa, when sending the masking command, the control is at the level of the SC, there is no register address and so the 6-bit address can be used as described.
+			\item \textbf{DATA}: The content to be written in the registers. 
+		\end{enumerate}
+		
+		The performance of the ASIC in terms of deposited charge sensitivity and dynamic range of the charge measurement are controlled through a set of registers. Som other registers are used to configure the digital periphery. The ASIC has a total of 16 programmable 8-bit registers whose names and address and collect in table \ref{tab:SPI_parameters}
+		
+		\begin{table}[h!]
+			\centering
+			\begin{minipage}[t]{0.48\textwidth}
+			\centering
+				\begin{tabular}{|c|l|}
+					\hline
+					\textbf{Address} & \textbf{Register} \\ \hline
+					000101 & bias\_preamp \\ \hline
+					000110 & bias\_feedback \\ \hline
+					000111 & bias\_disc \\ \hline
+					001000 & bias\_idle \\ \hline
+					001001 & bias\_LVDS \\ \hline
+					001010 & bias\_load \\ \hline
+					001011 & bandgap\_config \\ \hline
+					001100 & bias\_testpulse \\ \hline
+				\end{tabular}
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{0.48\textwidth}
+			\centering
+				\begin{tabular}{|c|l|}
+					\hline
+					\textbf{Address} & \textbf{Register} \\ \hline
+					001101 & threshold\_set \\ \hline
+					011101 & threshold\_offset \\ \hline
+					010011 & bias\_pixel \\ \hline
+					110010 & testpulse\_delay \\ \hline
+					011110 & config\_global \\ \hline
+					011111 & readout\_config \\ \hline
+					000010 & programming\_word \\ \hline
+					000011 & TDC\_config \\ \hline
+				\end{tabular}
+			\end{minipage}
+
+			\caption{5-bit address of the registers and their name for reference.}
+			\label{tab:SPI_parameters}
 		\end{table}
 		
-		\subsection{Readout Operation}
-		Explain step by step what happens in the ASIC (WITHOUT REDOING THE SCHEMATICS) and then show how this is translated into the bitstream and hot it is structured. 		
+	List the registers by features ? Explain what all of them do ? A bit useless for all but some are really important for future discussion especially preamp feedback threshold testpulse load etc  
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
