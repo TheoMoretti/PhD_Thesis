@@ -2519,7 +2519,13 @@
     <bcf:citekey order="169">Kotitsa_thesis</bcf:citekey>
     <bcf:citekey order="170">PreShower_TP</bcf:citekey>
     <bcf:citekey order="171">PreShower_TP</bcf:citekey>
-    <bcf:citekey order="172">PreShower_TP</bcf:citekey>
+    <bcf:citekey order="172">Martinelli_thesis</bcf:citekey>
+    <bcf:citekey order="173">PreShower_TP</bcf:citekey>
+    <bcf:citekey order="174">PreShower_TP</bcf:citekey>
+    <bcf:citekey order="175">PreShower_TP</bcf:citekey>
+    <bcf:citekey order="176">PreShower_TP</bcf:citekey>
+    <bcf:citekey order="177">PreShower_TP</bcf:citekey>
+    <bcf:citekey order="178">PreShower_TP</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

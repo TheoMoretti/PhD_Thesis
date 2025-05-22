@@ -8453,6 +8453,37 @@
       \verb https://cds.cern.ch/record/2927358
       \endverb
     \endentry
+    \entry{Martinelli_thesis}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=4526b1adacd1423b851d1f9a21f3f5e9}{%
+           family={Martinelli},
+           familyi={M\bibinitperiod},
+           given={Fulvio},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {École polytechnique fédérale de Lausanne}%
+      }
+      \strng{namehash}{4526b1adacd1423b851d1f9a21f3f5e9}
+      \strng{fullhash}{4526b1adacd1423b851d1f9a21f3f5e9}
+      \strng{bibnamehash}{4526b1adacd1423b851d1f9a21f3f5e9}
+      \strng{authorbibnamehash}{4526b1adacd1423b851d1f9a21f3f5e9}
+      \strng{authornamehash}{4526b1adacd1423b851d1f9a21f3f5e9}
+      \strng{authorfullhash}{4526b1adacd1423b851d1f9a21f3f5e9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{SiGe Time Resolving Pixel Detectors for High Energy Physics and Medical Imaging}
+      \field{type}{PhD Thesis}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://infoscience.epfl.ch/entities/publication/cf3dbf34-b3ad-4896-829c-2ad26cfdf7e9
+      \endverb
+      \verb{url}
+      \verb https://infoscience.epfl.ch/entities/publication/cf3dbf34-b3ad-4896-829c-2ad26cfdf7e9
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

@@ -99,44 +99,41 @@
 \contentsline {section}{\numberline {5.1}Production ASIC Description }{105}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Requirements and Specifications}{105}{subsection.5.1.1}%
 \contentsline {subsubsection}{ASIC footprint}{105}{section*.120}%
-\contentsline {subsubsection}{High dynamic range}{107}{section*.122}%
+\contentsline {subsubsection}{High dynamic range}{106}{section*.122}%
 \contentsline {subsubsection}{Fast Readout Time}{107}{section*.124}%
-\contentsline {subsubsection}{Low Power Operation and Thermal management}{109}{section*.126}%
+\contentsline {subsubsection}{Low Power Operation and Thermal Management}{108}{section*.126}%
 \contentsline {subsection}{\numberline {5.1.2}ASIC Architecture}{109}{subsection.5.1.2}%
-\contentsline {subsubsection}{Pixel-Row}{110}{section*.128}%
-\contentsline {subsubsection}{Super-Pixel}{111}{section*.132}%
+\contentsline {subsubsection}{Pixel-Row}{109}{section*.128}%
+\contentsline {subsubsection}{Super-Pixel}{110}{section*.132}%
 \contentsline {subsubsection}{Super Column}{112}{section*.135}%
 \contentsline {subsection}{\numberline {5.1.3}Signal Digitisation and Readout}{113}{subsection.5.1.3}%
 \contentsline {subsubsection}{Digitisation}{113}{section*.137}%
 \contentsline {subsubsection}{Readout and Bitstream Structure}{114}{section*.139}%
 \contentsline {subsection}{\numberline {5.1.4}Configuration and Slow Control}{116}{subsection.5.1.4}%
-\contentsline {section}{\numberline {5.2}Detector Design \leavevmode {\color {blue} 6 pages}}{118}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Modules \leavevmode {\color {red} 4 pages}}{118}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Planes \leavevmode {\color {red} 4 pages}}{118}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Layout of the Pre-Shower \leavevmode {\color {red} 2 pages}}{118}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Readout and Detector Control \leavevmode {\color {blue} 4 pages}}{119}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Readout \leavevmode {\color {red} 2 pages}}{119}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Logic Board and APP \leavevmode {\color {red} 2 pages}}{119}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}PIM and Interlock \leavevmode {\color {red} 2 pages}}{119}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Thermal Cooling}{119}{subsection.5.3.4}%
-\contentsline {chapter}{\numberline {6}Development of the new FASER Pre-shower detector (37 pages)}{120}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Pre-Production ASIC characterization \leavevmode {\color {blue} 6 pages}}{120}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}ASIC description \leavevmode {\color {red} 3 pages}}{120}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Time-Over-Threshold mismatch \leavevmode {\color {red} 3 pages}}{120}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Detector qualification and commissioning \leavevmode {\color {blue} 19 pages}}{121}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Module assembly \leavevmode {\color {red} 3 pages}}{121}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Characterization set-up \leavevmode {\color {red} 3 pages}}{121}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Front-End working points \leavevmode {\color {red} 2 pages}}{121}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Threshold and Noise scans \leavevmode {\color {red} 4 pages}}{121}{subsection.6.2.4}%
-\contentsline {subsection}{\numberline {6.2.5}Load scan and Charge calibration \leavevmode {\color {red} 4 pages}}{121}{subsection.6.2.5}%
-\contentsline {subsection}{\numberline {6.2.6}Plane assembly \leavevmode {\color {red} 3 pages}}{121}{subsection.6.2.6}%
-\contentsline {section}{\numberline {6.3}Trigger and Data Acquisition: TDAQ \leavevmode {\color {blue} 9 pages}}{122}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Slow-Control and ASIC configuration \leavevmode {\color {red} 3 pages}}{122}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Readout \leavevmode {\color {red} 2 pages}}{122}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Data conversion \leavevmode {\color {red} 3 pages}}{122}{subsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.3.4}Data corruption and solutions \leavevmode {\color {red} 3 pages}}{122}{subsection.6.3.4}%
-\contentsline {section}{\numberline {6.4}Testbeam campaign for detector commissioning}{123}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Layout, powering and readout}{123}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Meaningful results}{123}{subsection.6.4.2}%
-\contentsline {chapter}{\numberline {7}Outlook and conclusion (4 pages)}{124}{chapter.7}%
-\contentsline {chapter}{Bibliography}{130}{chapter*.143}%
+\contentsline {section}{\numberline {5.2}Detector Design \leavevmode {\color {blue} 6 pages}}{119}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Modules}{119}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Detector Planes \leavevmode {\color {red} 1 pages}}{121}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Logic Board and Active Patch Panel}{123}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Layout of the Pre-Shower \leavevmode {\color {red} 2 pages}}{123}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Readout and Detector Control \leavevmode {\color {blue} 4 pages}}{124}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Readout \leavevmode {\color {red} 2 pages}}{124}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Logic Board and APP \leavevmode {\color {red} 2 pages}}{124}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}PIM and Interlock \leavevmode {\color {red} 2 pages}}{124}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Thermal Cooling}{124}{subsection.5.3.4}%
+\contentsline {chapter}{\numberline {6}Development of the new FASER Pre-shower detector (37 pages)}{125}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Detector qualification and commissioning \leavevmode {\color {blue} 19 pages}}{125}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Module assembly \leavevmode {\color {red} 3 pages}}{125}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Characterization set-up \leavevmode {\color {red} 3 pages}}{125}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Front-End working points \leavevmode {\color {red} 2 pages}}{125}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Threshold and Noise scans \leavevmode {\color {red} 4 pages}}{125}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Load scan and Charge calibration \leavevmode {\color {red} 4 pages}}{125}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}Plane assembly \leavevmode {\color {red} 3 pages}}{125}{subsection.6.1.6}%
+\contentsline {section}{\numberline {6.2}Trigger and Data Acquisition: TDAQ \leavevmode {\color {blue} 9 pages}}{126}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Readout () \leavevmode {\color {red} 2 pages}}{126}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Data conversion \leavevmode {\color {red} 3 pages}}{126}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Data corruption and solutions \leavevmode {\color {red} 3 pages}}{126}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Testbeam campaign for detector commissioning}{127}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Layout, powering and readout}{127}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Meaningful results}{127}{subsection.6.3.2}%
+\contentsline {chapter}{\numberline {7}Outlook and conclusion (4 pages)}{128}{chapter.7}%
+\contentsline {chapter}{Bibliography}{134}{chapter*.148}%
