@@ -371,7 +371,7 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
  
 		\subsection{Modules}
 		
-		The FASER Pre-Shower modules constitute a substructure of the full detector, assembling six ASICs into a three by two array. The module size, extrapolated from the ASIC dimensions will be 31$\times$67 mm$^2$ with a minimised dead-area located at the center of the module as large as the guard-ring width located at the top of \ref{im:ASIC_microscope}. The module is composed as a succession of layers, easily visualisable in the exploded CAD view presented in figure \ref{im:module_CAD} taken from \cite{PreShower_TP}.
+		The FASER Pre-Shower modules constitute a substructure of the full detector, assembling six ASICs into a three by two array. The module size, extrapolated from the ASIC dimensions will be 31$\times$67 mm$^2$ with a minimised dead-area located at the center of the module as large as the guard-ring width located at the top of figure \ref{im:ASIC_microscope}. The module is composed as a succession of layers, easily visualisable in the exploded CAD view presented in figure \ref{im:module_CAD} taken from \cite{PreShower_TP}.
 		
 		\begin{figure}[h]
 			\centering
@@ -399,51 +399,126 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 				\label{im:module_microscope}
 			\end{figure} 
 		
-			 Each ASICs requires 134 wire-bonds connection to be made between its metallic pads and the metallic lines on the module flex. The module flex has a zero-insertion force connector for the digital signal and a separate pigtail for power lines. The module will drive two low voltages lines, $V_{ccA}$ for the analog part of the ASIC and $V_{dd,dig}$ for the digital part of the ASIC, and a High Voltage line for depletion of the sensor\cite{PreShower_TP}. In order to protect the very sensible wire-bonds, a plastic protection cap is glue on the module flex, giving little clearance for the wire-bonds while protecting them from. A bent wire-bond could create a short and if irreparable or un-noticed, it could compromise an entire module and damage its ASICs. The protection cap will also allow for the powering and communication cables to be laid on top of the modules without damaging the wire-bonds.  
+			 Each ASICs requires 134 wire-bonds connection to be made between its metallic pads and the metallic lines on the module flex. The module flex has a zero-insertion force connector for the digital signal and a separate pigtail for power lines. The module will drive two low voltages lines, $V_{\text{ccA}}$ for the analog part of the ASIC and $V_{\text{dd,dig}}$ for the digital part of the ASIC, and a High Voltage line for depletion of the sensor\cite{PreShower_TP}. In order to protect the very sensible wire-bonds, a plastic protection cap is glue on the module flex, giving little clearance for the wire-bonds while protecting them from. A bent wire-bond could create a short and if irreparable or un-noticed, it could compromise an entire module and damage its ASICs. The protection cap will also allow for the power and communication cables to be laid on top of the modules without damaging the wire-bonds.  
 		\end{enumerate} 
 		
 		The assembly procedure of modules will further be described in \note{section ref}, showing the diverse iterations leading to a more robust and refined procedure. Once 12 modules are assembled, one can build a detector plane. 
 		
+		
+		
+		
+		
+		
 		\subsection{Detector Planes \textcolor{red}{ 1 pages}}
-		The FASER Pre-Shower detector planes consist in an arrangement of two columns and six rows for a total of twelve modules per plane. As anticipated before, there exist two sub-categories of module according to the thickness of the base-plate. Since modules are built such that the largest dead-area region of the ASICs is located on the top and bottom edges, an overlap between modules of \SI{2}{\milli\meter} is used to minimise the dead-area at the level of the entire plane. This is doable only thanks of the \SI{4}{\milli\meter} in height different between low-profile and high-profile base-plates. A side view of the CAD model of the plane with 12 modules mounted on the cooling plate is shown in figure \ref{im:plane_CAD}.
+		
+		The FASER Pre-Shower detector planes are composed of a 270$\times$270 mm$^2$ aluminium frame hosting the active elements, the modules, mounted on the cooling plate and a 335$\times$270 mm$^2$ aluminium support hosting the two Active Patch Panel (APP) boards, commonly referred to as Patch Panel Board (PPB) and Logic Board (LB). The active area of the plane is made of a two by six arrangement of modules for a total of 12 modules covering 13.4$\times$17.5 cm$^2$. An image of an entire plane with all twelve modules mounted on the cooling plate, the communication and power pigtails, the Active Patch Panel boards is shown in figure \ref{im:plane_full}.
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.8\textwidth]{files/plane_CAD}
-			\caption{CAD image of the 12 modules mounted on the cooling plate of the plane. The modules are arranged in two columns of six rows and within a column the low-profile and high-profile modules are alternated with overlap of \SI{2}{\milli\meter}, showing the clearance obtained for the wire-bonds and the protection cap.}
-			\label{im:plane_CAD}
-		\end{figure}
-		
-		The active area of the plane, accounting for the overlap of modules, totals 13.4$\times$17.5 cm$^2$. The aperture of the magnets used in the tracking spectrometer represent an area defined by a \SI{10}{\centi\meter} radius circle, the overlap of the activera area and the aperture represent a coverage of 73.2\% from the Pre-Shower. \\
-		
-		The modules are mounted on a cooling plate used to dissipate the heat produced by the ASICs. The systems is designed to operate at room temperature, which will require a good thermal path between the ASIC and the cooling plate to maintain a temperature below $\sim$ \SI{30}{\celsius}. The tracking stations are already cooled using water as coolant fluid, kept at a temperature of \SI{15}{\celsius} and could hence be used to cool the Pre-Shower planes as well. 
-		
-		A mock-up set-up was realised to confirm the design, the power transferred to the cooling plate was over-estimated by a 30\%, showing for a a wide range of coolant flows, a temperature increase of not more than \SI{3}{\celsius}. As a result, the planes could be connected in series to each other and the entire Pre-Shower would be connected in series to the tracking stations. For an hypothetical Pre-Shower composed of six detector planes, this would mean a difference in temperature of not more than \SI{4}{\celsius} between the first and sixth plane \cite{PreShower_TP}.
-		
-		When mounted on the cooling plate, the modules are aligned using precisely drilled holes at the bottom of the base-plates. A metrology survey will be performed after assembly, using precise reference point at the edges of the ASICs, to reconstruct precisely the position of each ASIC, hence each pixel in the Pre-Shower. The coordinates will serve as a basis for the geometry of the reconstruction software but will be fine tuned using track data \cite{PreShower_TP}.
-		
-		The layers of tungsten radiators are directly integrated in the planes and are located on the opposite side of the cooling plate. Once assembled, the structure is loaded in an aluminium frame serving both for assembly of planes together ans as support for mounting the frame containing the Active Patch Panel (APP) and Logic Board (LB). The volume of the aluminium frame gives enough clearance for the communication and power pigtails to be mounted on top of the modules, running towards the APPs. Each plane is composed of two APPs and two LBs so that each connected to a column of 6 modules in the plane. Figure \ref{im:plane_full} shows the assembly of a Pre-Shower plane with all of the components, including the twelve modules, their communication and powering pigtails, the two APPs and LBs and the humidity and temperature sensors.
-		
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=0.85\textwidth]{files/plane_full}
-			\caption{Full Pre-Shower plane assembly. On the left are located the twelve modules, mounted on the cooling plate. The communication pigtail (flat orange) and the powering pigtail (twisted red and white) are connected from the modules to the APP. The right-most module is connected with the shortest pigtails on the left-most slot on the APP and vice versa. A humidity and temperature sensor are located on the bottom right corner of the cooling plate and connected on one of the APPs.}
+			\includegraphics[width=0.9\textwidth]{files/plane_full}
+			\caption{Image of a fully assembled detector plane. The twelve modules are mounted on the cooling plate, itself hosted inside the aluminium frame (left side). The APP is mounted on its aluminium support frame (right side). The communication pigtail (flat orange) and the power pigtail (twisted red and white) are connected from the modules to the PPB. The right-most module is connected with the shortest pigtails on the left-most slot on the PPB and vice versa. A humidity and temperature sensor are located on the bottom right corner of the cooling plate and connected on one of the PPBs.}
 			\label{im:plane_full}
 		\end{figure}
+
+		The detector planes is a complex system but a breakdown into its main components provide a more comprehensive description of its architecture: 
+%		\begin{enumerate}[i)]
+%			\item \textbf{The modules}: The aperture of the magnets used in the tracking spectrometer represent an area defined by a \SI{10}{\centi\meter} radius circle, the overlap of the activera area of the plane and the aperture represent a coverage of 73.2\%. As anticipated before, there are two sub-categories of modules according to the thickness of the base-plate on which the ASICs are glued. Since modules were intentionally design to have the largest dead-area region of the ASICs located on the top and bottom edges, an overlap between modules of \SI{2}{\milli\meter} is used to minimise the dead-area at the level of the entire plane. This is doable only thanks of the \SI{4}{\milli\meter} difference in height between low-profile and high-profile base-plates. A cross section of the CAD model shows the assembly of the modules onto the cooling plate and highlights the overlap of modules.
+%				\begin{figure}[h]
+%					\centering
+%					\includegraphics[width=0.9\textwidth]{files/CAD_plane_XS}
+%					\caption{Cross section view of the module assembly on the cooling plate. The alternation in module's base-plate height allows for a \SI{2}{\milli\meter} overlap, so that the dead-area is minimised at the level of the entire plane. The difference in height is primordial so that the wire-bonds and their protection cap for the low-profile modules can fit below the edge of the high-profile module.}
+%					\label{im:CAD_plane_XS}
+%				\end{figure}
+%				
+%			\item \textbf{Cooling plate}: A close-up CAD image of the modules mounted on the cooling plate and inserted in the aluminium frame, with some elements in transparency provides a better understanding of the assembly of the different elements together and is presented in figure \ref{im:CAD_plane_full_zoom}
+%				\begin{figure}[h]
+%					\centering
+%					\includegraphics[width=0.9\textwidth]{files/CAD_plane_full_zoom}
+%					\caption{Close-up view of the aluminium frame holding the cooling plate on which modules are mounted. The cooling plate (in dark blue) is put in transparency so that its internal elements such as the cooling circuit and fixation elements for modules can be seen.}
+%					\label{im:CAD_plane_full_zoom}
+%				\end{figure}
+%			
+%				The modules are mounted on a cooling plate used to dissipate the heat produced by the ASICs while in operation. The inlet and outlet are respectively located at the bottom and at the top of the plane and the path followed by the coolant fluid inside the cooling plate can be seen in figure \ref{im:CAD_plane_full_zoom} and \ref{im:CAD_plane_XS}. The entire system is designed to operate at room temperature, which will require a good thermal path between the ASICs and the cooling plate to maintain a temperature below $\sim$ \SI{30}{\celsius} \cite{PreShower_TP}.A mock-up set-up was realised to confirm the design, the power transferred to the cooling plate was over-estimated by a 30\%, showing for a a wide range of coolant flows, a temperature increase of not more than \SI{3}{\celsius}. The FASER tracking stations are already cooled using water as coolant fluid, kept at a temperature of \SI{15}{\celsius} and could hence be used to cool the Pre-Shower planes as well. As a result, the planes could be connected in series to each other and the entire Pre-Shower would be connected in series to the tracking stations. For an hypothetical Pre-Shower composed of six detector planes, this would mean a difference in temperature of not more than \SI{4}{\celsius} between the first and sixth plane \cite{PreShower_TP}, having almost not effect on the ASIC operation.
+%				
+%				The cooling plates are machined with drilled holes matching those on the module base-plates. Precise alignment of the modules is achieved through the use of dowel pins inserted into these corresponding holes, ensuring accurate positioning and mechanical stability of the assembly. A metrology survey will be performed after assembly, using reference points at the edges of the ASICs, to reconstruct precisely the position of each ASIC, hence each pixel in the Pre-Shower. The coordinates will serve as a basis for the geometry of the reconstruction software but will be fine tuned using track data \cite{PreShower_TP}.
+%				
+%				\item \textbf{Power and communication pigtails}: The volume of the aluminium frame gives enough clearance for the communication and power pigtails running towards the APP boards, to be mounted on top of the modules as shows in figure \ref{im:CAD_plane_XS}. The power pigtails are missing on the CAD model but occupy quite some volume as it can be seen in figure \ref{im:plane_side} showing a side view of an assembled plane. 
+%					\begin{figure}[h]
+%						\centering
+%						\includegraphics[width=0.75\textwidth]{files/plane_side-view}
+%						\caption{Side view image of modules assembled on a plane. The power and communication pigtails are connected on the modules. The wise connection scheme of modules on the APP boards slots allows for a compact assembly of the communication pigtails. The power pigtails occupy more volume and have to carefully be arranged in the frame. A protection plastic piece was added on the left side of the modules to that cables from the power pigtails wouldn't damage wire-bonds on the side of the modules. }
+%						\label{im:plane_side-view}
+%					\end{figure}
+%					Using figure \ref{im:plane_full} as visual reference, the innermost module is connect to the innermost slot on the APP board and the outermost module is connected to the outermost APP board slot. This connection scheme allows for a compact and clean assembly procedure. The power pigtails provide the analog low voltage ($V_{\text{ccA}}$), the digital low voltage ($V_{\text{dd,dig}}$) and the high voltage ($HV$) for each module. The communication pigtail is responsible for programming and readout of the ASIC. 
+%				
+%				
+%				\item \textbf{Active Patch Panel}: Each plane is instrumented with two PPBs and LBs, each connected to a column of six modules in the plane as shown in figure \ref{im:plane_full}. A humidity and temperature sensor are installed at the bottom right corner of the cooling plate on figure \ref{im:plane_full} and are connected to one of the two APP. 
+%			
+%					The LB is instrumented with a Cyclone 5 FPGA, able to merge the data of a half-plane (36 ASICs) into a single bitstream to be sent to the higher Pre-Shower Readout Board (PRB). It will essentially be able to read the 36 FIFOs, concatenate, deserialise and sen the data through a 100 Mbps link, sufficient to handle the half plane average data throughput of 225 kbps while maintaining a large safety factor for operation during HL-LHC for instance \cite{PreShower_TP}. The LB also handles the slow control communication with the modules for configuration and calibration from coming from the higher level PRB. 
+%					The PPB takes part into the slow control configuration of the modules by distributing the 10 Mbps SPI data lines as well as the \SI{20}{\mega\hertz} SPI clock lines towards the modules and doesn't generate them like the LB does. The readout is also handled by the PPB as it also sends to the modules the \SI{200}{\mega\hertz} readout clock, terminated with \SI{100}{\ohm} resistors, and drives the 200 Mbps data output from the modules to the LB. \note{insert schema from readout specs in page 17 ?}. In addition, the PPB also powers the modules, it is connected through a single connector to three separate \SI{12}{\volt} lines, each generating for a pair of modules, the required low voltages through DC-DC converters and a single High Voltage line distributed to all six modules. More details can be found in \note{cite technical doc for readout}.   
+%				
+%				\item \textbf{Radiator material}: The radiator material is directly included in the planes rather than as a separate entity when assembling the entire Pre-Shower detector. The cross section view in figure \ref{im:CAD_plane_XS}, shows at the bottom three layers of radiator material in pink. The thickness of each unit of radiator material plane is \SI{2}{\milli\meter}, hence allowing for planes configurations with up to \SI{6}{\milli\meter} of radiator material.   
+%		\end{enumerate}
+%		
+%		The comprehensive description of the FASER Pre-Shower detector planes is completed and more details on the assembly of planes together will be given in \note{section ref}.
+%		\clearpage
+
+
+			\subsubsection{The modules} 
+			The aperture of the magnets used in the tracking spectrometer represent an area defined by a \SI{10}{\centi\meter} radius circle, the overlap of the activera area of the plane and the aperture represent a coverage of 73.2\%. As anticipated before, there are two sub-categories of modules according to the thickness of the base-plate on which the ASICs are glued. Since modules were intentionally design to have the largest dead-area region of the ASICs located on the top and bottom edges, an overlap between modules of \SI{2}{\milli\meter} is used to minimise the dead-area at the level of the entire plane. This is doable only thanks of the \SI{4}{\milli\meter} difference in height between low-profile and high-profile base-plates. A cross section of the CAD model shows the assembly of the modules onto the cooling plate and highlights the overlap of modules.
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=0.9\textwidth]{files/CAD_plane_XS}
+					\caption{Cross section view of the module assembly on the cooling plate. The alternation in module's base-plate height allows for a \SI{2}{\milli\meter} overlap, so that the dead-area is minimised at the level of the entire plane. The difference in height is primordial so that the wire-bonds and their protection cap for the low-profile modules can fit below the edge of the high-profile module.}
+					\label{im:CAD_plane_XS}
+				\end{figure}
+				
+			\subsubsection{Cooling plate}
+			A close-up CAD image of the modules mounted on the cooling plate and inserted in the aluminium frame, with some elements in transparency provides a better understanding of the assembly of the different elements together and is presented in figure \ref{im:CAD_plane_full_zoom}
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=0.9\textwidth]{files/CAD_plane_full_zoom}
+					\caption{Close-up view of the aluminium frame holding the cooling plate on which modules are mounted. The cooling plate (in dark blue) is put in transparency so that its internal elements such as the cooling circuit and fixation elements for modules can be seen.}
+					\label{im:CAD_plane_full_zoom}
+				\end{figure}
+			
+				The modules are mounted on a cooling plate used to dissipate the heat produced by the ASICs while in operation. The inlet and outlet are respectively located at the bottom and at the top of the plane and the path followed by the coolant fluid inside the cooling plate can be seen in figure \ref{im:CAD_plane_full_zoom} and \ref{im:CAD_plane_XS}. The entire system is designed to operate at room temperature, which will require a good thermal path between the ASICs and the cooling plate to maintain a temperature below $\sim$ \SI{30}{\celsius} \cite{PreShower_TP}.A mock-up set-up was realised to confirm the design, the power transferred to the cooling plate was over-estimated by a 30\%, showing for a a wide range of coolant flows, a temperature increase of not more than \SI{3}{\celsius}. The FASER tracking stations are already cooled using water as coolant fluid, kept at a temperature of \SI{15}{\celsius} and could hence be used to cool the Pre-Shower planes as well. As a result, the planes could be connected in series to each other and the entire Pre-Shower would be connected in series to the tracking stations. For an hypothetical Pre-Shower composed of six detector planes, this would mean a difference in temperature of not more than \SI{4}{\celsius} between the first and sixth plane \cite{PreShower_TP}, having almost not effect on the ASIC operation.
+				
+				The cooling plates are machined with drilled holes matching those on the module base-plates. Precise alignment of the modules is achieved through the use of dowel pins inserted into these corresponding holes, ensuring accurate positioning and mechanical stability of the assembly. A metrology survey will be performed after assembly, using reference points at the edges of the ASICs, to reconstruct precisely the position of each ASIC, hence each pixel in the Pre-Shower. The coordinates will serve as a basis for the geometry of the reconstruction software but will be fine tuned using track data \cite{PreShower_TP}.
+				
+				\subsubsection{Power and communication pigtails} 
+				The volume of the aluminium frame gives enough clearance for the communication and power pigtails running towards the APP boards, to be mounted on top of the modules as shows in figure \ref{im:CAD_plane_XS}. The power pigtails are missing on the CAD model but occupy quite some volume as it can be seen in figure \ref{im:plane_side} showing a side view of an assembled plane. 
+					\begin{figure}[h]
+						\centering
+						\includegraphics[width=0.75\textwidth]{files/plane_side-view}
+						\caption{Side view image of modules assembled on a plane. The power and communication pigtails are connected on the modules. The wise connection scheme of modules on the APP boards slots allows for a compact assembly of the communication pigtails. The power pigtails occupy more volume and have to carefully be arranged in the frame. A protection plastic piece was added on the left side of the modules to that cables from the power pigtails wouldn't damage wire-bonds on the side of the modules. }
+						\label{im:plane_side-view}
+					\end{figure}
+					Using figure \ref{im:plane_full} as visual reference, the innermost module is connect to the innermost slot on the APP board and the outermost module is connected to the outermost APP board slot. This connection scheme allows for a compact and clean assembly procedure. The power pigtails provide the analog low voltage ($V_{\text{ccA}}$), the digital low voltage ($V_{\text{dd,dig}}$) and the high voltage ($HV$) for each module. The communication pigtail is responsible for programming and readout of the ASIC. 
+				
+				
+				\subsubsection{Active Patch Panel} 
+				Each plane is instrumented with two PPBs and LBs, each connected to a column of six modules in the plane as shown in figure \ref{im:plane_full}. A humidity and temperature sensor are installed at the bottom right corner of the cooling plate on figure \ref{im:plane_full} and are connected to one of the two APP. 
+			
+					The LB is instrumented with a Cyclone 5 FPGA, able to merge the data of a half-plane (36 ASICs) into a single bitstream to be sent to the higher Pre-Shower Readout Board (PRB). It will essentially be able to read the 36 FIFOs, concatenate, deserialise and sen the data through a 100 Mbps link, sufficient to handle the half plane average data throughput of 225 kbps while maintaining a large safety factor for operation during HL-LHC for instance \cite{PreShower_TP}. The LB also handles the slow control communication with the modules for configuration and calibration from coming from the higher level PRB. 
+					The PPB takes part into the slow control configuration of the modules by distributing the 10 Mbps SPI data lines as well as the \SI{20}{\mega\hertz} SPI clock lines towards the modules and doesn't generate them like the LB does. The readout is also handled by the PPB as it also sends to the modules the \SI{200}{\mega\hertz} readout clock, terminated with \SI{100}{\ohm} resistors, and drives the 200 Mbps data output from the modules to the LB. \note{insert schema from readout specs in page 17 ?}. In addition, the PPB also powers the modules, it is connected through a single connector to three separate \SI{12}{\volt} lines, each generating for a pair of modules, the required low voltages through DC-DC converters and a single High Voltage line distributed to all six modules. More details can be found in \note{cite technical doc for readout}.   
+				
+				\subsubsection{Radiator material}
+				The radiator material is directly included in the planes rather than as a separate entity when assembling the entire Pre-Shower detector. The cross section view in figure \ref{im:CAD_plane_XS}, shows at the bottom three layers of radiator material in pink. The thickness of each unit of radiator material plane is \SI{2}{\milli\meter}, hence allowing for planes configurations with up to \SI{6}{\milli\meter} of radiator material.   
+		
+		The comprehensive description of the FASER Pre-Shower detector planes is completed and more details on the assembly of planes together will be given in \note{section ref}.
+		\clearpage
+		
+				
+				
 		
 		
 		
 		
 		
-		 
 		
-		\subsection{Logic Board and Active Patch Panel}
-		
-		
-		
-		
-		
-		
-		\subsection{Layout of the Pre-Shower  \textcolor{red}{ 2 pages}}
+	\section{Layout of the Pre-Shower  \textcolor{red}{ 2 pages}}
+	
+	
 % TODO CH5: insert the image of the development of the shower across different detector planes as usually shown in conference. There should be a version in perspective made for the DPNC poster somewhere
 		
 		
@@ -485,7 +560,5 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 		
 	\clearpage	
 	\section{Readout and Detector Control  \textcolor{blue}{ 4 pages}}
-		\subsection{Readout \textcolor{red}{ 2 pages}}
-		\subsection{Logic Board and APP \textcolor{red}{ 2 pages}}
+		\subsection{Readout Architecture\textcolor{red}{ 2 pages}}
 		\subsection{PIM and Interlock \textcolor{red}{ 2 pages}}
-		\subsection{Thermal Cooling}
