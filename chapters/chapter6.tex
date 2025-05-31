@@ -1,10 +1,10 @@
-\chapter{The new FASER Pre-Shower detector (14 pages)}
+\chapter{The New High-Granularity FASER Pre-Shower Detector}
 
 The motivation for the development of a completely new Pre-Shower detector for the FASER experiment at CERN has been outlined in \note{section ref}. This upgrade is driven by the need to enhance sensitivity to photonic final states, in particular to enable the detection of long-lived particles such as ALPs decaying into two photons. In addition to extending the reach of the FASER physics program, the new detector design could improve the discrimination power against background events and reinforce the robustness and reach of existing measurements. \\
 
 This chapter presents a detailed description of the new Pre-Shower detector, from its smallest components to its integration into the full FASER detector. The discussion begins with a description of the ASIC, whose design is based on the knowledge acquired over the years at the University of Geneva by prototyping monolithic silicon pixel detectors for diverse applications. The ASIC is the smallest yet most essential piece of the detector as it digitises the position, time of passage and deposited charge of the traversing particle into a binary stream of data. The performance requirements for the ASIC are first presented, followed by a technical description of its architecture and the design choices made to satisfy the demanding constraints of the experiment. The data processing inside the ASIC is presented to highlight how the aforementioned parameters are extracted and digitised.  
 
-The description then progresses to higher levels of integration. The Pre-Shower modules, each composed of six ASICs mounted on a single support structure, are introduced. These modules represent the basic building blocks of the system. A full detector plane is then formed by assembling twelve such modules, creating a scalable and modular structure. The mechanical layout of the full detector, including the positioning of the Pre-Shower planes and the absorber slabs used to initiate electromagnetic showers, is discussed and justified by the results of Monte Carlo simulations performed in \note{Cite Chiara's thesis} .
+The description then progresses to higher levels of integration. The Pre-Shower modules, each composed of six ASICs mounted on a single support structure, are introduced. These modules represent the basic building blocks of the system. A full detector plane is then formed by assembling twelve such modules, creating a scalable and modular structure. The mechanical layout of the full detector, including the positioning of the Pre-Shower planes and the absorber slabs used to initiate EM showers, is discussed and justified by the results of Monte Carlo simulations performed in \note{Cite Chiara's thesis} .
 
 In the final part of the chapter, the focus shifts to the readout and control infrastructure. The architecture of the data acquisition chain is described, starting from the formatting of the digitised data and continuing through the transmission and processing of the data by the Logic Board (LB) and the Active Patch Panel (APP). The Pre-shower Interlock and Monitoring (PIM) module is introduced, and its functions are described.
 
@@ -13,7 +13,7 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 	\section{Production ASIC Description }
 	The development of the FASER Pre-Shower ASIC started in 2020 when a first 1.7$\times$2.6 mm$^2$ prototype with a matrix of 64 elongated hexagonal pixels with a footprint of 200$\times$50 $\mu$m$^2$, subdivided into five smaller matrices with different levels of integration of the frontend electronics as explained in \cite{FASER_proto0}. This ASIC was designed and produced in order to support the Pre-Shower upgrade proposal. In early 2021, the ASIC was tested and showed very satisfactory results in terms of gain and ENC. This study confirmed the feasibility of the integration of front-end elements inside the sensitive area, still complying with the requirements imposed. The results were published in the Journal of Instrumentation in late 2021 and can be found in \cite{FASER_proto0}. \\
 	
-	A second iteration before design and production of the final ASIC leading to a prototype of 15$\times$5.75 mm$^2$ with a matrix of 48$\times$128 (1536 total) pixels of regular hexagonal shape wit a \SI{65}{\micro\meter} side resulting in a pixel pitch of roughly \SI{100}{\micro\meter}. The pixel matrix is subdivided into three 16$\times$128 pixels Super-Columns (SCs), each subdivided into 8$\times$8 pixels Super-Pixels (SPs), each composed of 64 pixels. This architecture choice will later be discussed in section \note{section ref}. The purpose of this \textit{pre-production} prototype was to confirm the functionality of the front-end and digital electronics circuitry for the final ASIC, as well as studying the reliability of the power distribution over a large area ASIC and extract the production yield to infer what it would be for the larger \textit{production} ASIC. 
+	A second iteration in 2021 before design and production of the final ASIC leading to a prototype of 15$\times$5.75 mm$^2$ with a matrix of 48$\times$128 (1536 total) pixels of regular hexagonal shape wit a \SI{65}{\micro\meter} side resulting in a pixel pitch of roughly \SI{100}{\micro\meter}. The pixel matrix is subdivided into three 16$\times$128 pixels Super-Columns (SCs), each subdivided into 8$\times$8 pixels Super-Pixels (SPs), each composed of 64 pixels. This architecture choice will later be discussed in section \note{section ref}. The purpose of this \textit{pre-production} prototype was to confirm the functionality of the front-end and digital electronics circuitry for the final ASIC, as well as studying the reliability of the power distribution over a large area ASIC and extract the production yield to infer what it would be for the larger \textit{production} ASIC. 
 	
 	The studies of this prototype have been published in \note{cite pre-prod paper} and helped refine the design of many components of the front-end circuitry, exhibiting large mismatches between pixel responses and current leakage, degrading the measurement of deposited. Additionally, the functionality of the ASIC readout was verified, and the production yield was estimated to be below 70\% and every ASIC exhibits a below 1\% % proportion of problematic pixels, more than acceptable from the imposed requirements. More details on the characteristics and testing of the \textit{pre-production} ASIC will be given in \note{section ref (if done)}. \\
 	
@@ -32,11 +32,11 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 			\label{im:ASIC_microscope}
 		\end{figure}
 		
-		The \textit{production} ASIC has a total footprint of 22.15$\times$15.35 mm$^2$ with an active area covering 21.61$\times$14.36 mm$^2$ for a total of roughly 91\% of the ASIC area being active, hence resulting in 9\% of so-called "dead-area" mostly composed of the ASIC periphery. In addition, the dead area is also composed of 13 thin columns going across the ASIC's small side, also called the digital column. This structure has a pitch of roughly half the pixel pitch (\SI{60}{\micro\meter}) and contributes at the level of 3\% to the dead-area. A thoughtful assembly of ASICs together to pave the aperture of the magnet has to be made, it will be discussed in \note{ref to section on plane.} 
+		The \textit{production} ASIC is a \SI{150}{\micro\meter}-thick monolithic silicon detector with a total size of 22.15$\times$15.35 mm$^2$ and an active area covering 21.61$\times$14.36 mm$^2$ for a total of roughly 91\% of the ASIC area being active This results in 9\% of so-called "dead-area" mostly constituted by the ASIC periphery. In addition, the dead area is also composed of 13 thin columns going across the ASIC's small side, also called the digital column. This structure has a pitch of roughly half the pixel pitch (\SI{60}{\micro\meter}) and contributes at the level of 3\% to the dead-area. A thoughtful assembly of ASICs together to pave the aperture of the magnet has to be made, it will be discussed in \note{ref to section on plane.} 
 		The choice in size of the pixels composing the matrix was mainly driven by the already existing pixel design with hexagonal pixels with a side of \SI{65}{\micro\meter} for a pitch in both directions of roughly \SI{100}{\micro\meter}. The ALP Monte Carlo simulation exhibited a clear dependence on the rate of di-photon signals as a function of the required separation between showers initiated by the two photons, hence reducing the sensitivity reach. At first order, one can distinguish two different shower cores if there is at least one pixel separating the pixel containing the core of the showers, this leads to a separation between the photons of at least \SI{200}{\micro\meter}, for which the sensitivity reach is given as the second outermost line in figure \ref{im:reach_plot_detector}. The many different design challenges associated with a reduced pixel pitch did not justify a sufficient improvement of the performance in terms of sensitivity reach. 
 		
 		\subsubsection{High dynamic range}
-		The performance of the new Pre-Shower lies in its ability to distinguish the cores of the electromagnetic showers produced by two close-by photons. As the photons have significant boost due to their very high energy, the core of the shower will remain narrow while the shower spread, depending mostly on secondaries with higher transverse momentum, will remain the same as it only depends on the amount of radiation length crossed and the critical energy in the medium in which the showers develops \cite{PDG}. In order to quantify the range of deposited charge in a single pixel, Monte Carlo simulations of incident photons with energies sampled from the ALP production simulations were realised. The studies are presented in \cite{Kotitsa_thesis}, and an interesting result is adapted in figure \ref{im:charge_per_plane_FASER}. The figure displays the distribution of the maximum charge recorded in a pixel (corresponding roughly to the charge of the core of the shower) for each plane in the FASER Pre-Shower.
+		The performance of the new Pre-Shower lies in its ability to distinguish the cores of the EM showers produced by two close-by photons. As the photons have significant boost due to their very high energy, the core of the shower will remain narrow while the shower spread, depending mostly on secondaries with higher transverse momentum, will remain the same as it only depends on the amount of radiation length crossed and the critical energy in the medium in which the showers develops \cite{PDG}. In order to quantify the range of deposited charge in a single pixel, Monte Carlo simulations of incident photons with energies sampled from the ALP production simulations were realised. The studies are presented in \cite{Kotitsa_thesis}, and an interesting result is adapted in figure \ref{im:charge_per_plane_FASER}. The figure displays the distribution of the maximum charge recorded in a pixel (corresponding roughly to the charge of the core of the shower) for each plane in the FASER Pre-Shower.
 		
 		\begin{figure}[h]
 			\centering
@@ -362,7 +362,7 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 		Some other registers such as \textit{bias$\_$pixel} and \textit{bias$\_$LVDS} are used respectively for biasing the pixel well and powering the Low Voltage Differential Signalling (LVDS) drivers. Moreover, registers such as \textit{bandgap$\_$config} have other bits than the LSB contributing, such as the \textit{bandgap$\_$config}[1] for enabling and disabling of the bandgap, which effectively turns on and off all of the biases of the ASIC or \textit{bandgap$\_$config}[3] for a reset of the testpulse. The \textit{config$\_$global} also has the bits located at \textit{config$\_$global}[4:1] controlling the override of the TDC, producing a power gating in measure mode to reduce power consumption. \\
 		
 	\clearpage
-	\section{Detector Design \textcolor{blue}{ 6 pages}}
+	\section{Pre-Shower Detector Design}
  	After a thorough description of the ASIC specifications,  attention is now turned to how the smallest building block of the FASER Pre-Shower detectors are assembled together. To that end, the structure and assembly of the second smallest unit, the modules, are first described, followed by a description of the planes, an assembly of modules interconnected with readout and powering PCBs and constituting the largest sub-components of the full detector. 
  	The layout of the Pre-Shower, with alternate layers of radiator and active volume, the planes, will be presented.
  	
@@ -371,7 +371,7 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
  
 		\subsection{Modules}
 		
-		The FASER Pre-Shower modules constitute a substructure of the full detector, assembling six ASICs into a three by two array. The module size, extrapolated from the ASIC dimensions will be 31$\times$67 mm$^2$ with a minimised dead-area located at the center of the module as large as the guard-ring width located at the top of figure \ref{im:ASIC_microscope}. The module is composed as a succession of layers, easily visualisable in the exploded CAD view presented in figure \ref{im:module_CAD} taken from \cite{PreShower_TP}.
+		The FASER Pre-Shower modules constitute a substructure of the full detector, assembling six ASICs into a 3 by 2 array. The module size, extrapolated from the ASIC dimensions will be 31$\times$67 mm$^2$ with a minimised dead-area located at the center of the module as large as the guard-ring width located at the top of figure \ref{im:ASIC_microscope}. The module is composed as a succession of layers, easily visualisable in the exploded CAD view presented in figure \ref{im:module_CAD} taken from \cite{PreShower_TP}.
 		
 		\begin{figure}[h]
 			\centering
@@ -383,7 +383,7 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 		The modules are essentially composed of three distinctives pieces: 
 		\begin{enumerate}[i)]
 			\item \textbf{The base-plate}: This piece is the back-bone of the ASICs as it mechanical connects them to the rest of the detector. The base-plate is made of aluminium as it provides high thermal conductivity. A thermal interface between the base-plate and the cooling plate as well as thermal glue for the glueing of the ASIC, will be used to ensure a sufficiently good thermal coupling between the cooling plate and the ASICs. The base-plate also receives an electrolytic passivation treatment for electrical surface insulation \cite{PreShower_TP}. \\ There are two types of base-plates, commonly referred to as low-profile and high-profile base-plates, respectively with height of \SI{4}{\milli\meter} and \SI{8}{\milli\meter}. 
-			\item \textbf{The ASICs}: They are arranged in a three by two array and are arranged in a specific pattern such that the largest non active periphery part and I/O and powering pads (located at the bottom of Figures \ref{im:ASIC_microscope} and highlighted in \ref{im:prodASIC_floorplan}), are positioned on the edges of the modules. A wise assembly of the modules with a \SI{2}{\milli\meter} overlap, allowed by an alternation of low-profile and high-profile base-plate, provides a reduction of the dead-area at the level of the plane assembly. Figure \ref{im:module_ASIC_only} presents an intermediate step in the assembly of a module (ELECT03) after the ASICs were glued to their base-plate.
+			\item \textbf{The ASICs}: They are arranged in a 3 by 2 array and are arranged in a specific pattern such that the largest non active periphery part and I/O and powering pads (located at the bottom of Figures \ref{im:ASIC_microscope} and highlighted in \ref{im:prodASIC_floorplan}), are positioned on the edges of the modules. A wise assembly of the modules with a \SI{2}{\milli\meter} overlap, allowed by an alternation of low-profile and high-profile base-plate, provides a reduction of the dead-area at the level of the plane assembly. Figure \ref{im:module_ASIC_only} presents an intermediate step in the assembly of a module (ELECT03) after the ASICs were glued to their base-plate.
 			\begin{figure}[h]
 				\centering
 				\includegraphics[width=0.8\textwidth]{files/module_ASIC_only}
@@ -409,9 +409,9 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 		
 		
 		
-		\subsection{Detector Planes \textcolor{red}{ 1 pages}}
+		\subsection{Detector Planes}
 		
-		The FASER Pre-Shower detector planes are composed of a 270$\times$270 mm$^2$ aluminium frame hosting the active elements, the modules, mounted on the cooling plate and a 335$\times$270 mm$^2$ aluminium support hosting the two Active Patch Panel (APP) boards, commonly referred to as Patch Panel Board (PPB) and Logic Board (LB). The active area of the plane is made of a two by six arrangement of modules for a total of 12 modules covering 13.4$\times$17.5 cm$^2$. An image of an entire plane with all twelve modules mounted on the cooling plate, the communication and power pigtails, the Active Patch Panel boards is shown in figure \ref{im:plane_full}.
+		The FASER Pre-Shower detector planes are composed of a 270$\times$270$\times$33 mm$^3$ aluminium frame hosting the active elements, the modules, mounted on the cooling plate and a 335$\times$270 mm$^2$ aluminium support hosting the two Active Patch Panel (APP) boards, commonly referred to as Patch Panel Board (PPB) and Logic Board (LB). The active area of the plane is made of a 2 by 6 arrangement of modules for a total of 12 modules covering 13.4$\times$17.5 cm$^2$. An image of an entire plane with all twelve modules mounted on the cooling plate, the communication and power pigtails, the Active Patch Panel boards is shown in figure \ref{im:plane_full}.
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=0.9\textwidth]{files/plane_full}
@@ -419,49 +419,7 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 			\label{im:plane_full}
 		\end{figure}
 
-		The detector planes is a complex system but a breakdown into its main components provide a more comprehensive description of its architecture: 
-%		\begin{enumerate}[i)]
-%			\item \textbf{The modules}: The aperture of the magnets used in the tracking spectrometer represent an area defined by a \SI{10}{\centi\meter} radius circle, the overlap of the activera area of the plane and the aperture represent a coverage of 73.2\%. As anticipated before, there are two sub-categories of modules according to the thickness of the base-plate on which the ASICs are glued. Since modules were intentionally design to have the largest dead-area region of the ASICs located on the top and bottom edges, an overlap between modules of \SI{2}{\milli\meter} is used to minimise the dead-area at the level of the entire plane. This is doable only thanks of the \SI{4}{\milli\meter} difference in height between low-profile and high-profile base-plates. A cross section of the CAD model shows the assembly of the modules onto the cooling plate and highlights the overlap of modules.
-%				\begin{figure}[h]
-%					\centering
-%					\includegraphics[width=0.9\textwidth]{files/CAD_plane_XS}
-%					\caption{Cross section view of the module assembly on the cooling plate. The alternation in module's base-plate height allows for a \SI{2}{\milli\meter} overlap, so that the dead-area is minimised at the level of the entire plane. The difference in height is primordial so that the wire-bonds and their protection cap for the low-profile modules can fit below the edge of the high-profile module.}
-%					\label{im:CAD_plane_XS}
-%				\end{figure}
-%				
-%			\item \textbf{Cooling plate}: A close-up CAD image of the modules mounted on the cooling plate and inserted in the aluminium frame, with some elements in transparency provides a better understanding of the assembly of the different elements together and is presented in figure \ref{im:CAD_plane_full_zoom}
-%				\begin{figure}[h]
-%					\centering
-%					\includegraphics[width=0.9\textwidth]{files/CAD_plane_full_zoom}
-%					\caption{Close-up view of the aluminium frame holding the cooling plate on which modules are mounted. The cooling plate (in dark blue) is put in transparency so that its internal elements such as the cooling circuit and fixation elements for modules can be seen.}
-%					\label{im:CAD_plane_full_zoom}
-%				\end{figure}
-%			
-%				The modules are mounted on a cooling plate used to dissipate the heat produced by the ASICs while in operation. The inlet and outlet are respectively located at the bottom and at the top of the plane and the path followed by the coolant fluid inside the cooling plate can be seen in figure \ref{im:CAD_plane_full_zoom} and \ref{im:CAD_plane_XS}. The entire system is designed to operate at room temperature, which will require a good thermal path between the ASICs and the cooling plate to maintain a temperature below $\sim$ \SI{30}{\celsius} \cite{PreShower_TP}.A mock-up set-up was realised to confirm the design, the power transferred to the cooling plate was over-estimated by a 30\%, showing for a a wide range of coolant flows, a temperature increase of not more than \SI{3}{\celsius}. The FASER tracking stations are already cooled using water as coolant fluid, kept at a temperature of \SI{15}{\celsius} and could hence be used to cool the Pre-Shower planes as well. As a result, the planes could be connected in series to each other and the entire Pre-Shower would be connected in series to the tracking stations. For an hypothetical Pre-Shower composed of six detector planes, this would mean a difference in temperature of not more than \SI{4}{\celsius} between the first and sixth plane \cite{PreShower_TP}, having almost not effect on the ASIC operation.
-%				
-%				The cooling plates are machined with drilled holes matching those on the module base-plates. Precise alignment of the modules is achieved through the use of dowel pins inserted into these corresponding holes, ensuring accurate positioning and mechanical stability of the assembly. A metrology survey will be performed after assembly, using reference points at the edges of the ASICs, to reconstruct precisely the position of each ASIC, hence each pixel in the Pre-Shower. The coordinates will serve as a basis for the geometry of the reconstruction software but will be fine tuned using track data \cite{PreShower_TP}.
-%				
-%				\item \textbf{Power and communication pigtails}: The volume of the aluminium frame gives enough clearance for the communication and power pigtails running towards the APP boards, to be mounted on top of the modules as shows in figure \ref{im:CAD_plane_XS}. The power pigtails are missing on the CAD model but occupy quite some volume as it can be seen in figure \ref{im:plane_side} showing a side view of an assembled plane. 
-%					\begin{figure}[h]
-%						\centering
-%						\includegraphics[width=0.75\textwidth]{files/plane_side-view}
-%						\caption{Side view image of modules assembled on a plane. The power and communication pigtails are connected on the modules. The wise connection scheme of modules on the APP boards slots allows for a compact assembly of the communication pigtails. The power pigtails occupy more volume and have to carefully be arranged in the frame. A protection plastic piece was added on the left side of the modules to that cables from the power pigtails wouldn't damage wire-bonds on the side of the modules. }
-%						\label{im:plane_side-view}
-%					\end{figure}
-%					Using figure \ref{im:plane_full} as visual reference, the innermost module is connect to the innermost slot on the APP board and the outermost module is connected to the outermost APP board slot. This connection scheme allows for a compact and clean assembly procedure. The power pigtails provide the analog low voltage ($V_{\text{ccA}}$), the digital low voltage ($V_{\text{dd,dig}}$) and the high voltage ($HV$) for each module. The communication pigtail is responsible for programming and readout of the ASIC. 
-%				
-%				
-%				\item \textbf{Active Patch Panel}: Each plane is instrumented with two PPBs and LBs, each connected to a column of six modules in the plane as shown in figure \ref{im:plane_full}. A humidity and temperature sensor are installed at the bottom right corner of the cooling plate on figure \ref{im:plane_full} and are connected to one of the two APP. 
-%			
-%					The LB is instrumented with a Cyclone 5 FPGA, able to merge the data of a half-plane (36 ASICs) into a single bitstream to be sent to the higher Pre-Shower Readout Board (PRB). It will essentially be able to read the 36 FIFOs, concatenate, deserialise and sen the data through a 100 Mbps link, sufficient to handle the half plane average data throughput of 225 kbps while maintaining a large safety factor for operation during HL-LHC for instance \cite{PreShower_TP}. The LB also handles the slow control communication with the modules for configuration and calibration from coming from the higher level PRB. 
-%					The PPB takes part into the slow control configuration of the modules by distributing the 10 Mbps SPI data lines as well as the \SI{20}{\mega\hertz} SPI clock lines towards the modules and doesn't generate them like the LB does. The readout is also handled by the PPB as it also sends to the modules the \SI{200}{\mega\hertz} readout clock, terminated with \SI{100}{\ohm} resistors, and drives the 200 Mbps data output from the modules to the LB. \note{insert schema from readout specs in page 17 ?}. In addition, the PPB also powers the modules, it is connected through a single connector to three separate \SI{12}{\volt} lines, each generating for a pair of modules, the required low voltages through DC-DC converters and a single High Voltage line distributed to all six modules. More details can be found in \note{cite technical doc for readout}.   
-%				
-%				\item \textbf{Radiator material}: The radiator material is directly included in the planes rather than as a separate entity when assembling the entire Pre-Shower detector. The cross section view in figure \ref{im:CAD_plane_XS}, shows at the bottom three layers of radiator material in pink. The thickness of each unit of radiator material plane is \SI{2}{\milli\meter}, hence allowing for planes configurations with up to \SI{6}{\milli\meter} of radiator material.   
-%		\end{enumerate}
-%		
-%		The comprehensive description of the FASER Pre-Shower detector planes is completed and more details on the assembly of planes together will be given in \note{section ref}.
-%		\clearpage
-
+		The detector planes is a complex system but a breakdown into its main components provide a more comprehensive description of its architecture. 
 
 			\subsubsection{The modules} 
 			The aperture of the magnets used in the tracking spectrometer represent an area defined by a \SI{10}{\centi\meter} radius circle, the overlap of the activera area of the plane and the aperture represent a coverage of 73.2\%. As anticipated before, there are two sub-categories of modules according to the thickness of the base-plate on which the ASICs are glued. Since modules were intentionally design to have the largest dead-area region of the ASICs located on the top and bottom edges, an overlap between modules of \SI{2}{\milli\meter} is used to minimise the dead-area at the level of the entire plane. This is doable only thanks of the \SI{4}{\milli\meter} difference in height between low-profile and high-profile base-plates. A cross section of the CAD model shows the assembly of the modules onto the cooling plate and highlights the overlap of modules.
@@ -500,26 +458,70 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 				Each plane is instrumented with two PPBs and LBs, each connected to a column of six modules in the plane as shown in figure \ref{im:plane_full}. A humidity and temperature sensor are installed at the bottom right corner of the cooling plate on figure \ref{im:plane_full} and are connected to one of the two APP. 
 			
 					The LB is instrumented with a Cyclone 5 FPGA, able to merge the data of a half-plane (36 ASICs) into a single bitstream to be sent to the higher Pre-Shower Readout Board (PRB). It will essentially be able to read the 36 FIFOs, concatenate, deserialise and sen the data through a 100 Mbps link, sufficient to handle the half plane average data throughput of 225 kbps while maintaining a large safety factor for operation during HL-LHC for instance \cite{PreShower_TP}. The LB also handles the slow control communication with the modules for configuration and calibration from coming from the higher level PRB. 
-					The PPB takes part into the slow control configuration of the modules by distributing the 10 Mbps SPI data lines as well as the \SI{20}{\mega\hertz} SPI clock lines towards the modules and doesn't generate them like the LB does. The readout is also handled by the PPB as it also sends to the modules the \SI{200}{\mega\hertz} readout clock, terminated with \SI{100}{\ohm} resistors, and drives the 200 Mbps data output from the modules to the LB. \note{insert schema from readout specs in page 17 ?}. In addition, the PPB also powers the modules, it is connected through a single connector to three separate \SI{12}{\volt} lines, each generating for a pair of modules, the required low voltages through DC-DC converters and a single High Voltage line distributed to all six modules. More details can be found in \note{cite technical doc for readout}.   
+					The PPB takes part into the slow control configuration of the modules by distributing the 10 Mbps SPI data lines as well as the \SI{20}{\mega\hertz} SPI clock lines towards the modules and doesn't generate them like the LB does. The readout is also handled by the PPB as it also sends to the modules the \SI{200}{\mega\hertz} readout clock, terminated with \SI{100}{\ohm} resistors, and drives the 200 Mbps differential data output sub-LVDS lines, also terminated for each polarity with a \SI{100}{\ohm} resistor, from the modules to the LB. \note{insert schema from readout specs in page 17 ?}. In addition, the PPB also powers the modules, it is connected through a single connector to three separate \SI{12}{\volt} lines, each generating for a pair of modules, the required low voltages through DC-DC converters and a single High Voltage line distributed to all six modules. More details can be found in \note{cite technical doc for readout}.   
 				
 				\subsubsection{Radiator material}
 				The radiator material is directly included in the planes rather than as a separate entity when assembling the entire Pre-Shower detector. The cross section view in figure \ref{im:CAD_plane_XS}, shows at the bottom three layers of radiator material in pink. The thickness of each unit of radiator material plane is \SI{2}{\milli\meter}, hence allowing for planes configurations with up to \SI{6}{\milli\meter} of radiator material.   
 		
-		The comprehensive description of the FASER Pre-Shower detector planes is completed and more details on the assembly of planes together will be given in \note{section ref}.
+		The comprehensive description of the FASER Pre-Shower detector planes is completed and more details on the assembly of planes with one another will be given in \note{section ref}. In order to optimise the performance of the Pre-Shower detector for di-photon EM showers, a thoughtful combination of number of detection plane and amount of interleaved radiator material in front of each is mandatory. This will be the subject of the upcoming discussion.    
 		\clearpage
 		
 				
 				
+		\subsection{Layout of the Pre-Shower}
+		
+		The new high-granularity FASER Pre-Shower detector is intended to replace the already existing pre-shower station previously described in \note{section ref}. The detector will hence be installed in-between the third tracking station and the calorimeter station. The previous preshower station will not completely be removed as the two scintillators will be placed at the front and at the back of the new Pre-Shower detector to respectively veto backsplash from the radiator material into the third tracking station and backsplash from the calorimeter into the Pre-Shower. The available longitudinal space is \SI{280}{\milli\meter} and is constrained by the frame holding the other sub-detectors and the amount of material is too as it could degrade the performance in terms of energy resolution of the calorimeters placed at the back of the Pre-Shower. 
+		
+		\subsubsection{Initial design}
+		During the feasibility studies of the installation of a new Pre-Shower detector providing a high granularity \cite{PreShower_TP}, different detector layouts implementing from 4 to 6 detector planes and from 4 to 6 radiation length ($X_0$) of radiator material over the whole detector, positioned in different configurations. The leading layout at the time of the studies was composed of 6 detector planes, having each 1 $X_0$ of radiator material in front of the silicon plane. 
+		
+		The material chosen for the radiator material was tungsten as it offers due to its high atomic number, a rather short radiation length of $X_0$ = \SI{0.35}{\centi\meter} and a rather small lateral spread of the EM shower. These two parameters are essential as the longitudinal clearance allowed is small and as photons can be very close-by, a smaller lateral spread means that the core of the showers are less likely to mix and overlap, hence easing the distinction of the two shower cores. The amount of tungsten composing the detector has to be wisely chosen as it needs to balance good photon conversion probability in order to maximise the number of detector planes sampling the EM showers and energy resolution of the calorimeter. The amount of silicon and aluminum material for the sensing and structure are neglected as they are longitudinally thin and have a low atomic number and consequently a large radiation length compared to tungsten. The conversion probability for a single photon and di-photon event as a function of the amount of radiation length is presented together with a simulation of the effect material in the Pre-Shower detector on the calorimeter energy resolution in figure \ref{im:photon-conv_calo-reso}.
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=1.0\textwidth]{files/photon-conv_calo-reso}
+			\caption{Conversion probability for a single photon (blue dots) and two photons (red squares) as a function of the amount of radiation length in the Pre-Shower (left). Simulations of the energy resolution of the calorimeter (right) with the 6 $X_0$ of tungsten in front of the calorimeter (light blue squares), using the full Pre-Shower information (green dots), using the Pre-Shower information with a charge threshold of \SI{1}{\femto\coulomb} per pixel (red dots) and the calorimeter alone (black triangles), courtesy of Jorge Sabater Iglesias.}
+			\label{im:photon-conv_calo-reso}
+		\end{figure}
+		
+		 While 6 $X_0$ of tungsten provides a very good conversion probability, using the information on deposited charge in the silicon planes of the Pre-Showers, shows, even with the nominal charge threshold, very little impact on the energy resolution. This studies hence define the amount of tungsten needed to be distributed within the entire Pre-Shower detector.
+		 
+		 The number of detection planes has to be determined as a balance between cost, available longitudinal space and redundancy of the sampling of the EM shower. Indeed, since the identification of EM showers relies on the interpolation of the position of the shower core across detector planes, the more planes contribute to the interpolation and the more accurate the measurement is. Although, the limited space and budget for the installation of the new Pre-Shower can't be ignored, making the layout convert towards six detector planes. 
+		 
+		 \subsubsection{Refined design}
+		 Once the specifications on the number of detector planes and radiator material were fixed, a more refined study of the possible arrangements thicknesses of radiator material was performed in \cite{Kotitsa_thesis}. This simulation relied and a more realistic description of the entire Pre-Shower, including the design characteristics for the ASIC, the geometries of the modules and planes, and the material of the mechanical structures. Three different configurations were investigated:
+		 
+		 \begin{itemize}
+		 	\item \textbf{Layout n°1}: 2$\times$(\SI{6}{\milli\meter} W + Si) + 4$\times$(\SI{2}{\milli\meter} W + Si).
+		 	\item \textbf{Layout n°2}: 6$\times$(\SI{3.5}{\milli\meter} W + Si); same as initial design.
+		 	\item \textbf{Layout n°3}: 1$\times$(\SI{6}{\milli\meter} W + Si) + 5$\times$(\SI{3}{\milli\meter} W + Si).
+		 \end{itemize} 
+		 
+		 The results of the simulations of 1000 photons pairs with an energy of \SI{1}{\tera\electronvolt} traversing the three different Pre-Shower configurations are presented in figure \ref{im:conversion_plane} and is adapted from \cite{Kotitsa_thesis}. 
+		 
+		 \begin{figure}[h]
+			\centering
+			\includegraphics[width=0.65\textwidth]{files/conversion_plane}
+			\caption{Comparison of the conversion detector plane for the three difference configurations of the Pre-shower detector under study. A sample consisting of 1000 photon of \SI{1}{\tera\electronvolt} were used. The results are given respectively for the three layout as blue circles, red squares and green triangles.}
+			\label{im:conversion_plane}
+		\end{figure}
+		
+		It is interesting to note that the initial design used for the feasibility studies actually provides the worst performance out of the three different layout considered. Indeed, it provides a lower fraction of detector planes able to sample the EM showers as opposed to the other two layouts. The difference between the remain candidates as subtle but layout n°1 provides a higher amount of converted photon pairs after the second layer, allowing to use the sampling of the EM showers in at least 4 of the 6 detectors planes to reconstruct the photon positions.
+		
+		The results of the simulations using AllPix Squared, provides an event per event display of the charge deposition of the photo pairs inside the Pre-Shower. For a photon pair with \SI{1}{\tera\electronvolt} energy and a separation of \SI{500}{\micro\meter}, the EM shower development can be represented in the last four planes of the Pre-Shower as the charge registered by each pixel and is given in figure \ref{im:EM_shower_dev}.
+		
+		 \begin{figure}[h]
+			\centering
+			\includegraphics[width=1.0\textwidth]{files/EM_shower_dev}
+			\caption{Development of the EM shower from two \SI{1}{\tera\electronvolt} photons with a separation of \SI{500}{\micro\meter}. The charge deposition in each pixel for the last 4 detector planes of the Pre-Shower is shown, highlighting the correlation pf the shower core position across planes. The last plane (detector plane n°6) also shows the additional (fake) core. Courtesy of Jorge Sabater Iglesias}
+			\label{im:EM_shower_dev}
+		\end{figure}
+		
+		The development of the EM shower, show a clear correlation of the shower core position across the 4 detector planes. Interestingly, the last detector planes shows what seems to be a third shower core, which is classified as fake shower core since it is the results of the shower development and not of a third photon. This becomes problematic as the fake shower cores could actually mimic a di-photon event in the case in which such a fluctuation in the EM shower happens when a single photon interacts with the Pre-Shower. Fortunately, correlating the shower core position across the four planes, allows to classify this shower core as fake shower core as it is nowhere present in the three planes upstream. On another note, this event display reinforces the argument made earlier about the need for a high dynamic range of the ASIC together with a precise enough discretisation of the deposited charge.
+		
+		The overview of the layout of the Pre-Shower presented its main characteristics by presenting the motivations behind the design choices. This also concludes this section on the Pre-Shower detector design in which a description of the entire detector, from the full detector down to its fondamental components, the ASICs, was given.    	
 		
 		
-		
-		
-		
-		
-	\section{Layout of the Pre-Shower  \textcolor{red}{ 2 pages}}
-	
-	
-% TODO CH5: insert the image of the development of the shower across different detector planes as usually shown in conference. There should be a version in perspective made for the DPNC poster somewhere
 		
 		
 		
@@ -559,6 +561,17 @@ Overall, this chapter aims to provide a comprehensive understanding of the desig
 		
 		
 	\clearpage	
-	\section{Readout and Detector Control  \textcolor{blue}{ 4 pages}}
-		\subsection{Readout Architecture\textcolor{red}{ 2 pages}}
-		\subsection{PIM and Interlock \textcolor{red}{ 2 pages}}
+%	\section{Readout and Detector Control  \textcolor{blue}{ 4 pages}}
+%		\subsection{Readout Architecture\textcolor{red}{ 2 pages}}
+%		\subsection{PIM and Interlock \textcolor{red}{ 2 pages}}
+%		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
