@@ -128,20 +128,28 @@
 \contentsline {subsubsection}{Signal integrity}{132}{section*.163}%
 \contentsline {subsubsection}{Digital: masking and test-pulse}{132}{section*.165}%
 \contentsline {subsubsection}{Baseline and Threshold}{132}{section*.166}%
-\contentsline {subsection}{\numberline {6.1.2}Module assembly \leavevmode {\color {red} 3 pages}}{134}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.2}Module assembly}{134}{subsection.6.1.2}%
 \contentsline {subsubsection}{Alignement of ASICs}{134}{section*.168}%
 \contentsline {subsubsection}{Glueing on base-plate}{134}{section*.170}%
 \contentsline {subsubsection}{Glueing of module-flex}{136}{section*.173}%
 \contentsline {subsubsection}{Wire-bonding}{137}{section*.175}%
-\contentsline {subsection}{\numberline {6.1.3}Characterisation set-up \leavevmode {\color {red} 3 pages}}{137}{subsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.1.4}Front-End working points \leavevmode {\color {red} 2 pages}}{137}{subsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.1.5}Threshold and Noise scans \leavevmode {\color {red} 4 pages}}{137}{subsection.6.1.5}%
-\contentsline {subsection}{\numberline {6.1.6}Load scan and Charge calibration \leavevmode {\color {red} 4 pages}}{137}{subsection.6.1.6}%
-\contentsline {subsection}{\numberline {6.1.7}Plane assembly \leavevmode {\color {red} 3 pages}}{137}{subsection.6.1.7}%
-\contentsline {section}{\numberline {6.2}Trigger and Data Acquisition: TDAQ \leavevmode {\color {blue} 9 pages}}{138}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Readout\leavevmode {\color {red} 2 pages}}{138}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Data conversion \leavevmode {\color {red} 3 pages}}{138}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Data corruption and solutions \leavevmode {\color {red} 3 pages}}{138}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Testbeam campaign for detector commissioning}{139}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Outlook and conclusion (4 pages)}{140}{chapter.7}%
-\contentsline {chapter}{Bibliography}{146}{chapter*.177}%
+\contentsline {subsection}{\numberline {6.1.3}Characterisation set-up}{137}{subsection.6.1.3}%
+\contentsline {subsubsection}{LV and HV power supplies}{138}{section*.178}%
+\contentsline {subsubsection}{Oscilloscope}{138}{section*.179}%
+\contentsline {subsubsection}{LB and PPB}{138}{section*.180}%
+\contentsline {subsubsection}{Computer}{139}{section*.181}%
+\contentsline {subsubsection}{Module}{139}{section*.182}%
+\contentsline {subsubsection}{Cooling and Dry-Air}{139}{section*.184}%
+\contentsline {subsection}{\numberline {6.1.4}Front-End Working Points}{140}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Threshold Calibration \leavevmode {\color {red} 4 pages}}{141}{subsection.6.1.5}%
+\contentsline {subsubsection}{Procedure}{141}{section*.187}%
+\contentsline {subsection}{\numberline {6.1.6}Noise Calibrations}{143}{subsection.6.1.6}%
+\contentsline {subsection}{\numberline {6.1.7}Charge calibration \leavevmode {\color {red} 4 pages}}{143}{subsection.6.1.7}%
+\contentsline {subsection}{\numberline {6.1.8}Plane assembly \leavevmode {\color {red} 3 pages}}{143}{subsection.6.1.8}%
+\contentsline {section}{\numberline {6.2}Trigger and Data Acquisition: TDAQ \leavevmode {\color {blue} 9 pages}}{144}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Readout\leavevmode {\color {red} 2 pages}}{144}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Data conversion \leavevmode {\color {red} 3 pages}}{144}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Data corruption and solutions \leavevmode {\color {red} 3 pages}}{144}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Testbeam campaign for detector commissioning}{145}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Outlook and conclusion (4 pages)}{146}{chapter.7}%
+\contentsline {chapter}{Bibliography}{152}{chapter*.190}%

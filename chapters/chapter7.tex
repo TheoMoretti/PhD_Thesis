@@ -88,7 +88,7 @@ Finally, two testbeam campaigns, held approximately two and a half months apart,
 			 \clearpage
 			
 		
-		\subsection{Module assembly \textcolor{red}{ 3 pages}}
+		\subsection{Module assembly}
 		
 		The assembly of 6 ASICs within a module is of critical importance as it may impact the overall performance of the detector. It was discussed before that the module is in charge of establishing both powering and communication between the ASICs and the readout and control system. It also couples thermally the ASICs to the cooling system, maintaining them at a constant operational temperature and provide support for alignement of the ASICs among themselves, aiming at the minimal additional dead-area in the detector, due to poor positioning of the ASICs. 
 		
@@ -148,34 +148,175 @@ Finally, two testbeam campaigns, held approximately two and a half months apart,
 			\begin{figure}[h]
 				\centering 
 				\includegraphics[width=0.7\linewidth]{files/bonding}
-				\caption{Wire-bonding between a module-flex and the pads of the ASIC located underneath. T}
+				\caption{Wire-bonding between a module-flex and the pads of the ASIC located underneath. Each ASIC requires 134 wire-bonds to be made between its powering and I/O pads and the ones on the module-flex. The image shows in focus the wire-bonds for ASIC 3, highlighting how precise and meticulous is the procedure.}
 				\label{im:bonding} 
 			\end{figure}
 			
-		
-		
-		
-		
-		
-		
-		
-		
-% TODO: Test with different glues, solidity and current, show the effect of dry air on the glue, show the chip getting unglued etc. Very difficult procedure  
+			A final visual inspection of the glueing of the ASICs to make sure no damage was caused during handling or wire-bonding, as well as a final inspection of the wire-bonds themselves are performed. A transparent plastic protection cap is ultimately glued on top of the module-flex, providing protection for the wire-bonds, any un-noticed contact between wire-bonds could lead to a short between different lines, eventually damaging one or more ASICs. 
 
-		\subsection{Characterisation set-up \textcolor{red}{ 3 pages}}
-% TODO: Show the two set-ups with the cooling plates, APP, LB power supplies and oscilloscope explain what needs to be followed carefully, currents. etc. etc.
+		\subsection{Characterisation set-up}
+		The modules must undergo an extensive testing procedure in order to be qualified for installation into a detector plane and later into the entire FASER Pre-Shower detector. The test set-ups were installed in the UniGe clean room so that both assembly and qualification happened in the same location, hence accelerating the entire procedure. In order to match the strict timelines of the project, two identical test set-ups were assembled in parallel in order to reach at peak productivity, a qualification rate of one module per day. 
+		
+		Figure \ref{im:test_setup} shows the dual configuration set-up used for qualification of modules and a single test set-up can be broken-down into the elements listed below. 
+		
+		\begin{figure}[h]
+			\centering 
+			\includegraphics[width=0.9\linewidth]{files/test_setup}
+			\caption{Dual test set-up configuration for the qualification of modules pre-assembly into a detector plane. The different components of the set-up are labeled. A light-tight cloth is put on top of the two modules are they are sensible to light are meant to be operated in the dark. A copper ground connection is made between the LB+PPB system to the optical table and the modules are grounded too.}
+			\label{im:test_setup} 
+		\end{figure}
+		  
+			\subsubsection{LV and HV power supplies} 
+			The LV power supply needs to provide a \SI{12}{\volt} output with a current compliance set at \SI{0.6}{\ampere} for the LB and a \SI{12}{\volt} output with a current compliance set at \SI{0.2}{\ampere} to the PPB, hence powering the modules. The HV power supply needs ti provide a \SI{120}{\volt} output with a current compliance set at \SI{1}{\micro\ampere}. The current compliances need to be strict as they have to prevent any damage to components both on board and in the ASIC itself.
+			
+			\subsubsection{Oscilloscope} 
+			Used mainly for debugging purposes to monitor the clock lines for readout and configurations, the SPI lines to check wether configurations are sent or not and the data-out lines to check wether or not the modules sends data in output but also its quality.
+			
+			\subsubsection{LB and PPB} 
+			The PPB has 6 different slots on which modules can be connected, each group of two slots share the same LV powering lines while the HV is shared among all slots and the communication lines are unique per slot. Only one module was connected per test set-up as no gain in time would have been obtained due to the nature of the test procedure and could have eventually resulted in slower qualification due to a higher overall level of parasitic noise.
+			The LB is interfaced to the PPB on one side and to the user on the other side through a 1 Gbps ethernet link. \\
+			Both the LB and PPB are grounded to the optical table for reference, itself grounded to the general reference of the laboratory. 
+			
+			\subsubsection{Computer} 
+			The ASIC in the modules are controlled through a series of commands it receives from the FPGA on the LB through the Slow-Control procedure described in \note{section ref}. The computer is also used to flash the FirmWare (FW) into the FPGA. The computer needs to be able to run the GUI designed specifically for the UniGe GPIO Board, of which the LB is a derivation. 
+			
+			\subsubsection{Module}
+			A single modules is mounted per test set-up. The interface with the PPB is performed using a communication and powering pigtail. According to the connection slot used on the PPB, the length of the pigtails have to be adjusted. The cable length can have an impact on the performance of the ASIC, especially in terms of LV and HV effectively provided to the module, a non negligible tension drop can be measured for the furthermost slots on the PPB. The frame holding the module is connected to the optical table through a copper grounding line to impose a unique reference for the entire system. The modules are also shielded from external light thanks to a light-tight cloth. 
+			Figure \ref{im:test_setup_zoom} shows a more detailed view of the set-up and what was hidden in figure \ref{im:test_setup} by the cloth.
+			
+			\begin{figure}[h]
+				\centering 
+				\includegraphics[width=0.9\linewidth]{files/test_setup_zoom}
+				\caption{Close-up view of the module connected to the PPB through the powering and communication pigtails (left) and of the connection of the pigtails onto the module (right). The modules are held into an aluminium frame for safer handling and an additional, more resistant protection cover is mounted on the aluminium frame. }
+				\label{im:test_setup_zoom} 
+			\end{figure}
+			
+			
+			\subsubsection{Cooling and Dry-Air}
+			The frame holding the modules to connected to a cooling plate with a closed water loop for which the temperature is controlled by a chiller and fixed at \SI{15}{\celsius} to mimic real operating conditions. 
+			
+			\begin{figure}[h]
+				\centering 
+				\includegraphics[width=1.0\linewidth]{files/HVcurrent_dryair}
+				\caption{HV current pulled by a module as a function of time. The current rises and fluctuates until the dry air is injected, reducing the current to the values expected from the direct sum of the current consumptions for each ASIC.}
+				\label{im:HVcurrent_dryair} 
+			\end{figure}
+			
+			During the test of the first produced modules, a drift towards high values of HV current was observed over time, but wasn't noticed at the level of the single ASIC testing. The current would ultimately reach saturation at values in the order of several $\mu$A of current which is a priori not problematic for a system of 6 ASICs but is symptomatic of an element in the system composed by the module, its frame and the cooling plate. 
+			At first glance, the problem was associated to a coupling between the base plate of the module and its holding frame due to the aluminium balls contained in the glue. The problem persisted until some dry-air was flushed within the volume between the aluminium frame and the transparent module cover (see figure \ref{im:test_setup_zoom}). The glue being hydrophilic, it needs to be dried not to become conductive, hence creating a conductive path between the ASICs and the base plate of the module. The result of the injection of dry-air on the current can be seen in figure \ref{im:HVcurrent_dryair}.
 
-		\subsection{Front-End working points \textcolor{red}{ 2 pages}}	
-% TODO: Explain how two working point are needed for the different planes and how the different working points were defined, explain that all of the test had to be done for these two working points. Minimal sensitivity to a certain TP value. 
+		\subsection{Front-End Working Points}
+		The front-end electronics of the ASIC have a default configuration that is imposed when the ASIC is powered-up. Indeed, if not fixed, the values of the registers can be random when first powering the ASIC. This could lead to unwanted configurations of the front-end electronics, hence possibly damaging the ASIC by providing a too high current to some of the elements in the circuitry.
 		
-		\subsection{Threshold and Noise scans \textcolor{red}{ 4 pages}}
-% TODO: Plot of the distribution of the threshold value for all the ASIC, also show at the threshold what is the amount of problematic pixels. 
-% TODO: Distribution of the sigma_V extracted from the S curves. 
-% TODO: Map at the level of the ASICs of the problematic pixels 
-% TODO: Map at the level of the module of the problematic pixels. 
-% TODO: On the noise scan, see if there is a correlation with the position == The Maps. 
+		\begin{table}[h]
+			\centering
+			\renewcommand{\arraystretch}{1.2}
+			\begin{tabular}{|l|c|c|c|c|}
+			\hline
+			\textbf{Register name} & \textbf{Address} & \textbf{Default} & \textbf{WP2} & \textbf{WP3} \\
+			\hline
+			bias$\_$preamp        & 0b000101 (5)   & 20  & 10  & 10 					\\ \hline
+			bias$\_$feedback      & 0b000110 (6)   & 40  & 5   & 25 					\\ \hline
+			bias$\_$disc          & 0b000111 (7)   & 1   & \multicolumn{2}{c|}{1} 	\\ \hline
+			bias$\_$idle          & 0b001000 (8)   & 200 & \multicolumn{2}{c|}{200} \\ \hline
+			bias$\_$LVDS          & 0b001001 (9)   & 100 & \multicolumn{2}{c|}{100} \\ \hline
+			bias$\_$load          & 0b001010 (10)  & 5   & var & var 				\\ \hline
+			bandgap$\_$config     & 0b001011 (11)  & 64  & \multicolumn{2}{c|}{64} 	\\ \hline
+			bias$\_$testpulse     & 0b001100 (12)  & 0   & \multicolumn{2}{c|}{0} 	\\ \hline
+			threshold$\_$set      & 0b001101 (13)  & 0   & var & var 				\\ \hline
+			threshold$\_$offset   & 0b011101 (29)  & 0   & var & var 				\\ \hline
+			bias$\_$pixel         & 0b010011 (19)  & 255 & \multicolumn{2}{c|}{255} \\ \hline
+			testpulse$\_$delay    & 0b110010 (50)  & 0   & \multicolumn{2}{c|}{0} 	\\ \hline
+			config$\_$global      & 0b011110 (30)  & 224 & \multicolumn{2}{c|}{254} \\ \hline
+			readout$\_$config     & 0b011111 (31)  & 255 & \multicolumn{2}{c|}{255} \\ \hline
+			TDC$\_$config         & 0b000011 (3)   & 100 & \multicolumn{2}{c|}{100} \\ \hline
+			\end{tabular}
+			\caption{Definition of the default configuration as well as the two operation WP. Both have similar configurations DAC-codes for many registers, at the exception of the \textit{bias$\_$preamp}, \textit{bias$\_$feedback}, \textit{bias$\_$load}, \textit{threshold$\_$set} and \textit{threshold$\_$offset} which can vary on an ASIC to ASIC basis.}
+			\label{tab:frontend_wp}
+		\end{table}
 		
-		\subsection{Load scan and Charge calibration \textcolor{red}{ 4 pages}} 
+		It was observed during simulations that the charge distribution for the different detector planes of the Pre-Shower detector were quite different has shown by figure \ref{im:EM_shower_dev}. In order to limit the amount of data sent in the output, it is not necessary to detect on the last planes, the smallest charges as these layers serve as confirmation for the position of the center of the EM shower when reconstructing the photons' positions in the Pre-Shower. 
+		Consequently, two Working Points (WP) of the front-end electronics, commonly named WP2 and WP3, were designed to have a sensitivity starting respectively at a deposited charge of \SI{1}{\femto\coulomb}, and  \SI{4}{\femto\coulomb}. Table \ref{tab:frontend_wp} summarises the different values of the registers for the default configurations and both WP2 and WP3. 
+		
+	
+		The registers responsible for the sensitivity to charge of the ASIC are the \textit{bias$\_$preamp} and \textit{bias$\_$feedback}. The charge injected for specific values of \textit{bias$\_$testpulse} are known from simulations and can be verified with radioactive source measurements. Since there is mismatch from pixel to pixel on the amount of charge injected for the same DAC-code. For this reason, a sample of $\mathcal{O}(10)$ pixels were pulsed accros the matrix to ensure that a the minimum charge could be observed for all of them, with a discrimination threshold high enough to make the ASIC silent but low enough to not compromise the sensitivity. The optimal threshold value will later be defined ASIC by ASIC by a dedicated calibration.
+		
+		 Moreover, the \textit{bias$\_$load} register also has an impact on the sensitivity of the ASIC as it defines the current charging the analog memories, hence the sensitivity to the smallest charge the ADC can be sensible to. This parameter will also need to be tuned in a dedicated calibration. 
+	
+		The modules require calibration for both Working Points of the front-end electronics as the discrimination threshold and pixels to be masked, as well as the response to deposited charge will be different. It is not to be excluded that event with the free parameters available to tune the sensitivity of the ASIC, that a modification of the DAC-codes of \textit{bias$\_$preamp} and \textit{bias$\_$feedback} is required for some peculiar ASICs. 
+		
+		
+		\subsection{Threshold Calibration \textcolor{red}{ 4 pages}}
+		The first and fondamental step in calibration of an ASIC, once its front-end electronics WP is defined, is finding its discrimination threshold. The value has to be carefully chosen far enough from the noise baseline so that the ASIC would not be triggered by spurious noise events, but close enough so that the sensitivity is not considerably reduced. 
+		
+			\subsubsection{Procedure}
+		    A threshold scan is usually performed in order to obtain as a function of the discrimination threshold, the amount of activated pixels, i.e. scanning the distribution of the level of the baseline of the noise and its spread for all the pixels collectively. The result obtained is a so called S-curve, which helps identifying the discrimination threshold per ASIC as well as quantifying the standard deviation of the noise at the ASIC level. 
+		    
+		    The procedure developed for the threshold scan of the FASER production ASIC on module is the result of the optimisation of precision of the result and time available to test each module. For this reason, the threshold scan were performed twice, once on a large range of values with coarse steps and a second time with a smaller range and smaller steps, defined by the results of the first coarse scan. 
+		    Each scan is performed the exact same way at the lower level and can be broken down as follows: 
+		    
+		    \begin{itemize}
+		    	\item Configuration for every ASIC in the module of all the registers to one of the two front-end electronics WP. The \textit{threshold$\_$set} and \textit{threshold$\_$offset} registers are set to a default DAC-code of 100 and 0 respectively. 
+		    	\item Masking the entire matrix of every ASIC in the module. 
+		    	\item Loop over the ASICs to be scanned for this iteration. 
+		    	\begin{itemize}
+		    		\item Disabling readout at the module level for all but the ASIC in the loop. 
+		    		\item Reading from configuration file, the lowest and highest threshold values to be scanned through the DAC-codes of the \textit{threshold$\_$set} and \textit{threshold$\_$offset} registers. The step size in DAC-codes units between each tested value is also read from the configuration file.
+		    		\item Loop over the threshold values 
+		    			\begin{itemize}
+		    				\item Loop over the SC of the ASIC.
+		    				\begin{itemize}
+		    					\item Unmasking every pixel in the matrix corresponding to the SC.
+		    					\item Acquiring data. If the transferred amount of data is lower than 1000 kB, the script waits 100 ms and then proceeds to check again the amount of transferred data. This check is performed 100 times so that a maximum of 10 seconds is waited before ending the data acquisition. 
+		    					\item Masking every pixel of the matrix corresponding to the SC. 
+		    				\end{itemize}
+		    			\end{itemize}
+		    		\item Entirely mask the matrix of the ASIC tested (redundancy for safety).
+		    	\end{itemize}
+		    	\item Conversion of the data for every iteration and extraction of the address of each active pixel. The list of pixels are then merged together to have one file per ASIC per threshold value. 
+		    \end{itemize}
+		    
+		    The typical result obtained after a coarse and fine threshold scan is given in figure \ref{im:Scurve_ELECT03} for module ELECT03 operated at WP2 and WP3. 
+		    
+		    \begin{figure}[h]
+				\centering 
+				\includegraphics[width=1.0\linewidth]{files/Scurve_ELECT03_WP2}
+				\includegraphics[width=1.0\linewidth]{files/Scurve_ELECT03_WP3}
+				\caption{Result of the combination of a fine and coarse threshold scan for module ELECT03 operated at WP2 (top) and WP3 (bottom). The vertical axis shows the log$_{10}$ of the number of active pixels as a function of the discrimination threshold in units of DAC-codes.}
+				\label{im:Scurve_ELECT03} 
+			\end{figure}
+			
+		Each S-curve was then fitted with a custom Cumulative Distribution Function (CDF) of a Gaussian distribution, i.e. the function usually used to described the noise, so that: 
+		\begin{equation}
+			f(x) = B + A \cdot \left[1 - \mathrm{erf}\left(\frac{x - \mu}{\sqrt{2} \sigma}\right)\right]
+		\end{equation}
+		where the parameter $B$ and $A$ are respectively the baseline of the S-curve and its maximum and $\mu$ and $\sigma$ respectively the mean and standard deviation of the Gaussian distribution of the noise. The distribution of the standard deviation of the noise, $\sigma_V$ can be built by extracting the fit parameter for each S-curve. The results are presented independently for both WP in figure \ref{im:noise_distribution_bothWP}.
+		
+		 \begin{figure}[h]
+				\centering 
+				\includegraphics[width=1.0\linewidth]{files/noise_distribution_bothWP}
+				\caption{}
+				\label{im:noise_distribution_bothWP} 
+			\end{figure}
+		
+		
+		At first glance, it is obvious that ASICs can have a wide range of
+		
+		
+		\subsection{Noise Calibrations}
+		
+		
+		
+		
+		
+% TODO: Plot of the distribution of the threshold value for all the ASIC, also show at the threshold what is the amount of problematic pixels. done 
+% TODO: Distribution of the sigma_V extracted from the S curves. done 
+% TODO: Map at the level of the ASICs of the problematic pixels. done
+% TODO: Map at the level of the module of the problematic pixels. done
+% TODO: On the noise scan, see if there is a correlation with the position == The Maps. done 
+
+		
+		\subsection{Charge calibration \textcolor{red}{ 4 pages}} 
 % TODO: Explain the procedure  
 		
 		\subsection{Plane assembly \textcolor{red}{ 3 pages}}
