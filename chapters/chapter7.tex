@@ -246,10 +246,10 @@ Finally, two testbeam campaigns, held approximately two and a half months apart,
 		The modules require calibration for both Working Points of the front-end electronics as the discrimination threshold and pixels to be masked, as well as the response to deposited charge will be different. It is not to be excluded that event with the free parameters available to tune the sensitivity of the ASIC, that a modification of the DAC-codes of \textit{bias$\_$preamp} and \textit{bias$\_$feedback} is required for some peculiar ASICs. 
 		
 		
-		\subsection{Threshold Calibration \textcolor{red}{ 4 pages}}
-		The first and fondamental step in calibration of an ASIC, once its front-end electronics WP is defined, is finding its discrimination threshold. The value has to be carefully chosen far enough from the noise baseline so that the ASIC would not be triggered by spurious noise events, but close enough so that the sensitivity is not considerably reduced. 
+		\subsection{Threshold Calibration}
+		The first and fondamental step in calibration of an ASIC, once its front-end electronics WP is defined, is finding its discrimination threshold. The value has to be carefully chosen far enough from the noise baseline so that the ASIC would not be triggered by spurious noise events, but close enough so that the sensitivity is not considerably reduced. Any pixel active at the discrimination threshold chosen will need to ne masked, hence increasing the effective fraction of dead-area in the ASIC. 
 		
-			\subsubsection{Procedure}
+%			\subsubsection{Procedure}
 		    A threshold scan is usually performed in order to obtain as a function of the discrimination threshold, the amount of activated pixels, i.e. scanning the distribution of the level of the baseline of the noise and its spread for all the pixels collectively. The result obtained is a so called S-curve, which helps identifying the discrimination threshold per ASIC as well as quantifying the standard deviation of the noise at the ASIC level. 
 		    
 		    The procedure developed for the threshold scan of the FASER production ASIC on module is the result of the optimisation of precision of the result and time available to test each module. For this reason, the threshold scan were performed twice, once on a large range of values with coarse steps and a second time with a smaller range and smaller steps, defined by the results of the first coarse scan. 
@@ -276,41 +276,203 @@ Finally, two testbeam campaigns, held approximately two and a half months apart,
 		    	\item Conversion of the data for every iteration and extraction of the address of each active pixel. The list of pixels are then merged together to have one file per ASIC per threshold value. 
 		    \end{itemize}
 		    
-		    The typical result obtained after a coarse and fine threshold scan is given in figure \ref{im:Scurve_ELECT03} for module ELECT03 operated at WP2 and WP3. 
+%		    \subsubsection{Results}
+		    The typical result obtained after a coarse and fine threshold scan can be combined, and is given in figure \ref{im:Scurve_ELECT03} for module ELECT03 operated at WP2 and WP3. 
 		    
 		    \begin{figure}[h]
 				\centering 
-				\includegraphics[width=1.0\linewidth]{files/Scurve_ELECT03_WP2}
-				\includegraphics[width=1.0\linewidth]{files/Scurve_ELECT03_WP3}
+				\includegraphics[width=0.95\linewidth]{files/Scurve_ELECT03_WP2}
+				\includegraphics[width=0.95\linewidth]{files/Scurve_ELECT03_WP3}
 				\caption{Result of the combination of a fine and coarse threshold scan for module ELECT03 operated at WP2 (top) and WP3 (bottom). The vertical axis shows the log$_{10}$ of the number of active pixels as a function of the discrimination threshold in units of DAC-codes.}
 				\label{im:Scurve_ELECT03} 
 			\end{figure}
-			
-		Each S-curve was then fitted with a custom Cumulative Distribution Function (CDF) of a Gaussian distribution, i.e. the function usually used to described the noise, so that: 
-		\begin{equation}
-			f(x) = B + A \cdot \left[1 - \mathrm{erf}\left(\frac{x - \mu}{\sqrt{2} \sigma}\right)\right]
-		\end{equation}
-		where the parameter $B$ and $A$ are respectively the baseline of the S-curve and its maximum and $\mu$ and $\sigma$ respectively the mean and standard deviation of the Gaussian distribution of the noise. The distribution of the standard deviation of the noise, $\sigma_V$ can be built by extracting the fit parameter for each S-curve. The results are presented independently for both WP in figure \ref{im:noise_distribution_bothWP}.
 		
-		 \begin{figure}[h]
+			Three different regimes can be identified for each S-curve, going from low to high threshold values: the \textit{noisy regime} in which he S-curve reaches the maximum possible number of activated pixels in the matrix, the \textit{transition regime}, in which the number of pixels with a baseline level of the noise over threshold gradually decreases and the \textit{stable regime} in which the S-curve reaches its minimum value and the number of active pixels reached a minimum. 
+
+			The threshold is extracted manually as the lowest DAC-code for which the S-curve is in the stable regime. One has to pay attention to the slope of the S-curve near the chosen threshold, the situation in which a small variation of the noise in the system would increase drastically the number of active pixels at the discrimination threshold is to be avoided. Moreover, for very high values of discrimination threshold, the number of active pixels is expected to reach 0, although this is not necessarily wanted. The choice of the discrimination threshold is always a compromise between sensitivity and amount of pixels needed to be masked. The distribution of the discrimination threshold selected for WP2 and WP3 is given in figure \ref{im:thr_scan_bothWP}.
+			
+			\begin{figure}[h]
 				\centering 
-				\includegraphics[width=1.0\linewidth]{files/noise_distribution_bothWP}
-				\caption{}
+				\includegraphics[width=0.85\linewidth]{files/thr_scan_bothWP_allasic}
+				\caption{Distribution of the discrimination threshold selected for all ASICs mounted on module for WP2 (left) and WP3 (right). }
+				\label{im:thr_scan_bothWP} 
+			\end{figure}
+			
+			The mean values of discrimination threshold are compatible between the two WP with a value of \textit{threshold$\_$set} = 117 DAC. The dispersion of the threshold is also quite similar between WP2 and WP3 with a standard deviation respectively of $\sigma_{\text{thr}}$ = 38.5 DAC and $\sigma_{\text{thr}}$ = 37.6 DAC. This results highlights that within the level of sensitivity of the threshold (i.e. its LSB), the change in noise of the front-end electronics in average did not vary significantly between the two WP. 
+			
+			\begin{figure}[h]
+				\centering 
+				\includegraphics[width=0.45\linewidth]{files/thr_scan_WP2_perasic}
+				\includegraphics[width=0.45\linewidth]{files/thr_scan_WP3_perasic}
+				\caption{Distribution of the discrimination threshold selected per ASIC position in the module for WP2 (left) and WP3 (right). }
+				\label{im:thr_scan_bothWP} 
+			\end{figure}
+			
+			A more detailed study can be performed by classifying the ASICs according to their position within the module, the results are presented in figure \ref{im:thr_scan_bothWP} and the results of the mean and standard deviation for each threshold distribution is given in table \ref{tab:threshold_perasic_bothWP}
+			
+			\begin{table}[h]
+    			\centering
+    			\renewcommand{\arraystretch}{1.15}
+    			\begin{tabular}{|c||c||c|}
+        			\hline
+        			& \textbf{WP 2} & \textbf{WP 3} \\
+        			\hline
+        			\textbf{ASIC} & $(\mu, \sigma)$ [DAC] & $(\mu, \sigma)$ [DAC] \\ \hline
+        			0 & (113, 38) & (113, 36) \\ \hline
+        			1 & (123, 32) & (121, 32) \\ \hline
+        			2 & (123, 32) & (122, 31) \\ \hline
+        			3 & (110, 38) & (112, 37) \\ \hline
+        			4 & (120, 41) & (119, 43) \\ \hline
+        			5 & (107, 46) & (109, 43) \\ \hline
+    			\end{tabular}
+    			\caption{Mean and standard deviation of threshold distributions per ASIC, for WP2 and WP3, shown as $(\mu, \sigma)$ [DAC].}
+    			\label{tab:threshold_perasic_bothWP}
+			\end{table}
+			
+			It is interesting to note the correlation between the location of the ASIC in the module and the mean discrimination threshold. 
+			
+			It seems to be like the ASICs position in the top left, bottom center and bottom right have a lower discrimination threshold can the other ASICs, by 8 DAC-codes in average . Giving an interpretation to this result is difficult as there are many possible explanation for this additional noise felt by the ASIC in specific positions in the module. \note{ too little statistic, change conclusion }
+
+		 	Each S-curve can be fitted with a custom Cumulative Distribution Function (CDF) of a Gaussian distribution, i.e. the function usually used to described the noise distribution, so that: 
+			\begin{equation}
+				S(x) = B + A \cdot \left[1 - \mathrm{erf}\left(\frac{x - \mu}{\sqrt{2} \sigma}\right)\right]
+			\end{equation}
+			where the parameter $B$ and $A$ are respectively the baseline of the S-curve and its maximum and $\mu$ and $\sigma$ respectively the mean and standard deviation of the Gaussian distribution of the noise. The distribution of the mean and standard deviation of the noise, $\mu_{\text{V}}$ and \noise can be built by extracting the fit parameters for each S-curve. The results are presented for WP2 and WP3 in figure \ref{im:noise_distribution_bothWP}.
+		
+		 	\begin{figure}[h]
+				\centering 
+				\includegraphics[width=0.49\linewidth]{files/baseline_distribution_bothWP}
+				\includegraphics[width=0.49\linewidth]{files/noise_distribution_bothWP}
+				\caption{Distribution of the mean and standard deviation of the noise \noise for WP2 (left) and WP3 (right). The units for both $\mu_{\text{V}}$ and \noise are given in DAC-codes.}
 				\label{im:noise_distribution_bothWP} 
 			\end{figure}
+			
+			
+			A calibration of the LSB of the register \textit{threshold$\_$set} would be required in order to extract the conversion factor between DAC-code values and the equivalent voltage threshold. From simulation, the LSB, with at least a 20\% mismatch, was extracted to be \SI{3}{\milli\volt} per DAC in its linear regime so that the mean of the noise for W2 and WP3 are respectively \SI{326}{\milli\volt} and \SI{308}{\milli\volt} while the standard deviation of the noise for WP2 and WP3 are respectively \SI{8.5}{\milli\volt} and \SI{9.5}{\milli\volt}. This result is interesting as it shows that the baseline of the noise has decreased from WP2 to WP3 while the standard deviation of the noise has increased. 
+			This also confirms that in average, the change in noise from one WP to the other is below the sensitivity of the LSB of the threshold registers. A further calibration to extract the conversion factor between the level of the output signal and the input charge of the amplifier, would enable the computation of the ENC of the front-end.  
 		
-		
-		At first glance, it is obvious that ASICs can have a wide range of
-		
+			Finally, it is interesting to look at the correlation between the discrimination threshold selected and the standard deviation of the noise extracted from the S-curve, the results are presented in figure \ref{im:noise_vs_thr_bothWP}.
+			
+			\begin{figure}[h]
+				\centering 
+				\includegraphics[width=0.49\linewidth]{files/noise_vs_thr_WP2}
+				\includegraphics[width=0.49\linewidth]{files/noise_vs_thr_WP3}
+				\caption{Distribution of the noise in DAC-codes values as a function of the discrimination threshold in DAC-code values, for WP2 (left) and WP3 (right). The is a linear trend showing a dependence between the two variables.} 
+			\end{figure}
+			
+			The dependence of the discrimination threshold selected as a function of the noise extracted from the S-curves seems to follow a linear trend. \note{This is explained by the linearity of the LSB that changes as a function of the DAC-code you set}
 		
 		\subsection{Noise Calibrations}
+		Once the discrimination threshold is fixed, one can move to the second step in ASIC calibration, i.e. the identification of the noisy pixels to be masked in order to operate the ASIC in stable conditions. Since noise is a stochastic process, the identification of noisy pixels has to be performed on a sufficiently long interval of time in order to reduce as much as possible the Noise Hit Rate (NHR). 
+		
+		\subsubsection{Procedure}
+		A noise scan is usually performed in order to obtain the list of pixels to be masked for a stable operation of the ASIC. The procedure developed for the noise scan of the FASER production ASIC on module is again the results of the optimisation of the accuracy of the result and time available to test each module. For this reason, the noise scans were performed three times, every time with a different acquisition time per ASIC in order to identify even the pixels rather fare from the baseline but still exhibit excess noise above the discrimination threshold. From one iteration to the other, the list of noisy pixel was extracted and masked. Indeed, some pixel could be so noisy that they could saturate the read-out hence making it almost impossible to identify less noisy pixels. Each noise scan with different time is performed in the exact same way at the lower level and can be broken down as follows: 
+		
+		\begin{itemize}
+			\item Definition of the \textit{acquisition time}.
+			\item Configuration for every ASIC in the module of all the registers to one of the two front-end WPs. The values for the threshold associated registers are the one found previously. 
+			\item Reading of the mask configuration for every ASIC in the module. If a previous iteration was performed, the list is made of the addresses of the noisy pixels found, otherwise it is empty. 
+			\item Masking the entire matrix of every ASIC in the module. 
+			\item Loop over the ASICs to be scanned for this iteration.
+			\begin{itemize}
+				\item Disabling readout at the module level for all but the ASIC in the loop.
+				\item Loop over the SC.
+				\begin{itemize}
+					\item Mask the SC accordingly to the pixels addresses found in the mask configuration.
+					\item Acquiring data. if the transferred amount of data is lower than 1000 kB, the script waits 5$\times$ \textit{acquisition time} ms and proceeds to check again the transferred amount of data. This is repeated 200 times, in total, the amount of time waited is equal to \textit{acquisition time}. Once one or the other condition is reached, the data acquisition is interrupted.
+					\item Masking every pixel in the matrix corresponding to the SC.  
+				\end{itemize}
+				\item Disabling readout for the ASIC in the loop.
+			\end{itemize}
+			\item Conversion of the data for every SC into a single file per ASIC. The unique list of pixels to be masked at the next iteration is added to the mask configuration. 
+		\end{itemize}
+		
+		
+		\subsubsection{Results}
+		
+		The typical result obtained after the combination of three separate noise scans with \textit{acquisition time} of \SI{1}{\second}, \SI{10}{\second} and \SI{60}{\second} can be combined and is given in figure \ref{im:noisescan_typical_result} for module ELECT03 operated at WP2 and WP3. 
+		
+		\begin{figure}[h]
+			\centering 
+			\includegraphics[width=1.0\linewidth]{files/noisescan_typical_result}
+			\caption{Result of the combination of three consecutive iteration of noise scan with \textit{acquisition time} of \SI{1}{\second}, \SI{10}{\second} and \SI{60}{\second}. The image shows the distribution of the pixels to be masked for the 6 ASICs in module ELECT03.}
+			\label{im:noisescan_typical_result} 
+		\end{figure}
+		
+		This example is particularly useful as it highlight different types of noisy structures an ASIC can have in its matrix. The first and most striking one is the entire SP located in ASIC 3 (bottom center position), which could result noisier than other areas because of a mismatch in the local biasing circuit or in the ADC being too more sensitive than others. The second most striking structure is the bottom edge of ASIC 1 (bottom left), which could result noisier because \note{insert explanation here, ask LORENZO}. Finally some vertical structures are also present \note{ask LORENZO for explanation}.
+		
+		The number of pixels to be masked is a key indicator of the performance of an ASIC as it represents the additional amount of dead-area in an ASIC's matrix. This number can be extracted for every ASIC in every module and its distribution is given for WP2 and WP3 in figure \ref{im:noise_scan_bothWP_allasics}
+		
+		\begin{figure}[h]
+			\centering 
+			\includegraphics[width=1.0\linewidth]{files/noise_scan_bothWP_allasics}
+			\caption{Distribution of the number of active pixels (i.e. pixels to be masked) per ASIC for WP2 (left) and WP3 (right). The distribution show that very rarely, more than 1\% of the ASIC's matrix need to be masked. }
+			\label{im:noise_scan_bothWP_allasics} 
+		\end{figure}
+		
+		The number of pixels to be masked rarely get past the point in which more than 1\% (~270 pixels) of the ASIC's matrix need to be masked. As a matter of fact the average number of noisy pixels for WP2 and WP3 are respectively 68 pixels and 63 pixels, with a standard deviation respectively of 97 pixels and 101 pixels. It is interesting to note that for WP3, ASICs require in general less noisy pixels to be masked than for WP2. \note{Ask Lorenzo for explanation.}
+		
+		A more detailed study can be performed by classifying the ASICs according to their position within the module, the results are presented in figure \ref{im:} and the results of the mean and standard deviation for each distribution is given in table \ref{tab:noise_perasic_bothWP}
+% TODO: Add line equivalent at 1% of problematic ASICs in plot, also make the x axis go until 26600. 
+		\begin{figure}[h]
+			\centering 
+			\includegraphics[width=0.49\linewidth]{files/noise_scan_WP2_perasic}
+			\includegraphics[width=0.49\linewidth]{files/noise_scan_WP3_perasic}
+			\caption{Distribution of the discrimination threshold selected per ASIC position in the module for WP2 (left) and WP3 (right). }
+			\label{im:noise_scan_bothWP} 
+		\end{figure}
+		
+% TODO verify the values of mean and sigma, maybe restrict in range until 500 
+		\begin{table}[h]
+    			\centering
+    			\renewcommand{\arraystretch}{1.15}
+    			\begin{tabular}{|c||c||c|}
+        			\hline
+        			& \textbf{WP 2} & \textbf{WP 3} \\
+        			\hline
+        			\textbf{ASIC} & $(\mu, \sigma)$ [pixels] & $(\mu, \sigma)$ [pixels] \\ \hline
+        			0 & (60, 71)  & (73, 114) \\ \hline
+        			1 & (68, 97)  & (66, 103) \\ \hline
+        			2 & (82, 123) & (48, 88) \\ \hline
+        			3 & (50, 80)  & (48, 93) \\ \hline
+        			4 & (66, 103) & (58, 109) \\ \hline
+        			5 & (83, 92)  & (72, 84) \\ \hline
+    			\end{tabular}
+    			\caption{Mean and standard deviation of number of pixels to be masked per ASIC, for WP2 and WP3, shown as $(\mu, \sigma)$ [pixels].}
+    			\label{tab:noise_perasic_bothWP}
+			\end{table}
+			
+			There is no clear trend to be observed as a function of the position of the ASIC within the module. The number of noisy pixels is of course also linked to threshold. It was previously said that the threshold needs to be taken in the stable regime of the S-curve but as close as possible to the beginning of the transition regime to find the best compromise between sensitivity and amount of pixels to be masked. In average, not more than 0.35\% of the matrix has to be masked at the level of the ASIC. 
+			
+			Furthermore, it is interesting to study the position within the ASIC of the pixels to be masked, the results are presented for WP2 and WP3 in figure \ref{im:noisy_pixelmap_ASIC}.
+			
+			\begin{figure}[h]
+				\centering 
+				\includegraphics[width=1.0\linewidth]{files/noisy_pixelmap_ASIC}
+				\caption{Map of the position of the noisy pixel to be masked at the level of the ASIC for WP2 (left) and WP3 (right). The colour scale start at 2 so that only pixel that have to be masked more than once are highlighted.} 
+				\label{im:noisy_pixelmap_ASIC}
+			\end{figure}
+			
+			The results show effectively that more pixels have to be masked for WP2 than WP3 as anticipated from the distributions of number of pixels to be masked per WP. Moreover, it is quite clear, especially in the case of WP3, that there seems to be more noisy pixels at the center of the ASIC, and that only one SC out of two seems to suffer from higher noise. This result is interesting as it probably highlights that the discrimination threshold might be too hard for some SC but too loose for some of the others. The interpretation of the higher concentration of noisy pixel at the center of the ASIC can be understood by looking how the threshold level is distributed within the ASIC. Indeed, the threshold level is generated at the edges of the ASIC, the effective level that is propagated to the central SC suffers from the resistance of the lines transporting the signal, effectively reducing its value. \note{The threshold is generated in the bottom left corner but then distributed from the top, central columns still are more sensible to dispersion}
+			
+			To get more insight into the situation at the level of the module, it is possible to build the same distribution but positioning the ASIC at their location in the module, the results are given for both WP in figure \ref{im:noisy_pixelmap_module}.
+			
+			 \begin{figure}[h]
+				\centering 
+				\includegraphics[width=1.0\linewidth]{files/noisy_pixelmap_module}
+				\caption{Map of the position of the noisy pixel to be masked at the level of the ASIC for WP2 (left) and WP3 (right). The colour scale start at 2 so that only pixel that have to be masked more than once are highlighted.} 
+				\label{im:noisy_pixelmap_module}
+			\end{figure}
+			
+			The situation becomes more interesting as it seems to be that a specific location with the module, bottom right corner, shows a higher number of noisy pixels both for WP2 and WP3. Moreover, the situation is even worst for a single SC within ASIC 5. The attentive reader would have noticed that this is not the first time such a problem is mentioned. Indeed, while testing the assembly procedure, it was discovered that the HV via in the module-flex, located on top of ASIC 5 had the effect of making the ASIC pull particularly high HV current when specific pixels in a specific SC were unmasked. The SC 7 correspond to the position on the module-flex of the HV via and seems to be a more noisy SC, this could indicate that even if the problem was mitigated by adding a \SI{50}{\micro\meter}-thick layer of kapton tape below the position of the HV via, there still seems to be a problem associated to it, resulting in higher number of noisy pixels around its location.     
+			
+			
 		
 		
 		
 		
 		
-% TODO: Plot of the distribution of the threshold value for all the ASIC, also show at the threshold what is the amount of problematic pixels. done 
-% TODO: Distribution of the sigma_V extracted from the S curves. done 
+		
 % TODO: Map at the level of the ASICs of the problematic pixels. done
 % TODO: Map at the level of the module of the problematic pixels. done
 % TODO: On the noise scan, see if there is a correlation with the position == The Maps. done 

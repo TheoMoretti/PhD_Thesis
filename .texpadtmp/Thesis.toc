@@ -141,15 +141,16 @@
 \contentsline {subsubsection}{Module}{139}{section*.182}%
 \contentsline {subsubsection}{Cooling and Dry-Air}{139}{section*.184}%
 \contentsline {subsection}{\numberline {6.1.4}Front-End Working Points}{140}{subsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.1.5}Threshold Calibration \leavevmode {\color {red} 4 pages}}{141}{subsection.6.1.5}%
-\contentsline {subsubsection}{Procedure}{141}{section*.187}%
-\contentsline {subsection}{\numberline {6.1.6}Noise Calibrations}{143}{subsection.6.1.6}%
-\contentsline {subsection}{\numberline {6.1.7}Charge calibration \leavevmode {\color {red} 4 pages}}{143}{subsection.6.1.7}%
-\contentsline {subsection}{\numberline {6.1.8}Plane assembly \leavevmode {\color {red} 3 pages}}{143}{subsection.6.1.8}%
-\contentsline {section}{\numberline {6.2}Trigger and Data Acquisition: TDAQ \leavevmode {\color {blue} 9 pages}}{144}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Readout\leavevmode {\color {red} 2 pages}}{144}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Data conversion \leavevmode {\color {red} 3 pages}}{144}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Data corruption and solutions \leavevmode {\color {red} 3 pages}}{144}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Testbeam campaign for detector commissioning}{145}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Outlook and conclusion (4 pages)}{146}{chapter.7}%
-\contentsline {chapter}{Bibliography}{152}{chapter*.190}%
+\contentsline {subsection}{\numberline {6.1.5}Threshold Calibration}{141}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}Noise Calibrations}{145}{subsection.6.1.6}%
+\contentsline {subsubsection}{Procedure}{145}{section*.193}%
+\contentsline {subsubsection}{Results}{146}{section*.194}%
+\contentsline {subsection}{\numberline {6.1.7}Charge calibration \leavevmode {\color {red} 4 pages}}{149}{subsection.6.1.7}%
+\contentsline {subsection}{\numberline {6.1.8}Plane assembly \leavevmode {\color {red} 3 pages}}{149}{subsection.6.1.8}%
+\contentsline {section}{\numberline {6.2}Trigger and Data Acquisition: TDAQ \leavevmode {\color {blue} 9 pages}}{150}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Readout\leavevmode {\color {red} 2 pages}}{150}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Data conversion \leavevmode {\color {red} 3 pages}}{150}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Data corruption and solutions \leavevmode {\color {red} 3 pages}}{150}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Testbeam campaign for detector commissioning}{151}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Outlook and conclusion (4 pages)}{152}{chapter.7}%
+\contentsline {chapter}{Bibliography}{158}{chapter*.201}%
